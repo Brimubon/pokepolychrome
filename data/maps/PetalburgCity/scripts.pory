@@ -774,3 +774,28 @@ script PetalburgCity_EventScript_TestSign {
 	msgbox("Look! I'm a sign!")
 	releaseall
 }
+
+script PetalburgCity_EventScript_GiveJournal {
+    lockall
+	faceplayer
+	if (flag(FLAG_SYS_QUEST_MENU_GET)) {
+	    msgbox(PetalburgCity_EventScript_ExplainJournal)
+	    waitmessage
+	    releaseall
+	    end
+	} else {
+	    msgbox("Hey, here's a journal!")
+	    playfanfare(MUS_OBTAIN_ITEM)
+	    msgbox("Recieved Journal!")
+	    setflag(FLAG_SYS_QUEST_MENU_GET)
+	    waitmessage
+	    releaseall
+	    end
+	}
+}
+
+text PetalburgCity_EventScript_ExplainJournal {
+     "That journal will be very useful.\n"
+	 "You can use it to keep track of\l"
+	 "requests you get from others."
+}

@@ -1545,6 +1545,51 @@ PetalburgCity_EventScript_TestSign::
 	return
 
 
+PetalburgCity_EventScript_GiveJournal::
+# 779 "data/maps/PetalburgCity/scripts.pory"
+	lockall
+# 780 "data/maps/PetalburgCity/scripts.pory"
+	faceplayer
+# 781 "data/maps/PetalburgCity/scripts.pory"
+	goto_if_set FLAG_SYS_QUEST_MENU_GET, PetalburgCity_EventScript_GiveJournal_1
+# 787 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_GiveJournal_Text_0
+# 788 "data/maps/PetalburgCity/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 789 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_GiveJournal_Text_1
+# 790 "data/maps/PetalburgCity/scripts.pory"
+	setflag FLAG_SYS_QUEST_MENU_GET
+# 791 "data/maps/PetalburgCity/scripts.pory"
+	waitmessage
+# 792 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
+	end
+
+PetalburgCity_EventScript_GiveJournal_1:
+# 782 "data/maps/PetalburgCity/scripts.pory"
+	msgbox PetalburgCity_EventScript_ExplainJournal
+# 783 "data/maps/PetalburgCity/scripts.pory"
+	waitmessage
+# 784 "data/maps/PetalburgCity/scripts.pory"
+	releaseall
+	end
+
+
 PetalburgCity_EventScript_TestSign_Text_0:
 # 774 "data/maps/PetalburgCity/scripts.pory"
 	.string "Look! I'm a sign!$"
+
+PetalburgCity_EventScript_GiveJournal_Text_0:
+# 787 "data/maps/PetalburgCity/scripts.pory"
+	.string "Hey, here's a journal!$"
+
+PetalburgCity_EventScript_GiveJournal_Text_1:
+# 789 "data/maps/PetalburgCity/scripts.pory"
+	.string "Recieved Journal!$"
+
+PetalburgCity_EventScript_ExplainJournal::
+# 797 "data/maps/PetalburgCity/scripts.pory"
+	.string "That journal will be very useful.\n"
+	.string "You can use it to keep track of\l"
+	.string "requests you get from others.$"
