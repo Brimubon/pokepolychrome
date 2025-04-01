@@ -1438,9 +1438,9 @@ static const u8 *ReturnEmptyStringIfNull(const u8 *string)
 
 static const u8 *GetIntroSpeechOfApproachingTrainer(void)
 {
-    if (gApproachingTrainerId == 0)
+    if (gApproachingTrainerId == 0) 
         return ReturnEmptyStringIfNull(TRAINER_BATTLE_PARAM.introTextA);
-    else
+    else 
         return ReturnEmptyStringIfNull(TRAINER_BATTLE_PARAM.introTextB);
 }
 

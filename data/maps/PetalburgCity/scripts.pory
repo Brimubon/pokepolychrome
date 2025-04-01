@@ -775,6 +775,16 @@ script PetalburgCity_EventScript_TestSign {
 	releaseall
 }
 
+script PetalburgCity_EventScript_TestNamebox {
+	lockall
+	faceplayer
+	msgbox("This is a test script for a namebox.")
+	speakername("Tester")
+	msgbox("Look! Did you see the namebox?")
+	speakername(NULL)
+	releaseall
+}
+
 script PetalburgCity_EventScript_GiveJournal {
     lockall
 	faceplayer
