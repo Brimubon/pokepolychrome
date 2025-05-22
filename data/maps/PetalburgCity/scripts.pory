@@ -770,28 +770,28 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 `
 
 script PetalburgCity_EventScript_TestSign {
-    lockall
+    lock
 	msgbox("Look! I'm a sign!")
-	releaseall
+	release
 }
 
 script PetalburgCity_EventScript_TestNamebox {
-	lockall
+	lock
 	faceplayer
 	msgbox("This is a test script for a namebox.")
 	speakername("Tester")
 	msgbox("Look! Did you see the namebox?")
 	speakername(NULL)
-	releaseall
+	release
 }
 
 script PetalburgCity_EventScript_GiveJournal {
-    lockall
+    lock
 	faceplayer
 	if (flag(FLAG_SYS_QUEST_MENU_GET)) {
 	    msgbox(PetalburgCity_EventScript_ExplainJournal)
 	    waitmessage
-	    releaseall
+	    release
 	    end
 	} else {
 	    msgbox("Hey, here's a journal!")
@@ -799,7 +799,7 @@ script PetalburgCity_EventScript_GiveJournal {
 	    msgbox("Recieved Journal!")
 	    setflag(FLAG_SYS_QUEST_MENU_GET)
 	    waitmessage
-	    releaseall
+	    release
 	    end
 	}
 }

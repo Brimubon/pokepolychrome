@@ -1537,17 +1537,17 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 
 PetalburgCity_EventScript_TestSign::
 # 773 "data/maps/PetalburgCity/scripts.pory"
-	lockall
+	lock
 # 774 "data/maps/PetalburgCity/scripts.pory"
 	msgbox PetalburgCity_EventScript_TestSign_Text_0
 # 775 "data/maps/PetalburgCity/scripts.pory"
-	releaseall
+	release
 	return
 
 
 PetalburgCity_EventScript_TestNamebox::
 # 779 "data/maps/PetalburgCity/scripts.pory"
-	lockall
+	lock
 # 780 "data/maps/PetalburgCity/scripts.pory"
 	faceplayer
 # 781 "data/maps/PetalburgCity/scripts.pory"
@@ -1559,13 +1559,13 @@ PetalburgCity_EventScript_TestNamebox::
 # 784 "data/maps/PetalburgCity/scripts.pory"
 	speakername NULL
 # 785 "data/maps/PetalburgCity/scripts.pory"
-	releaseall
+	release
 	return
 
 
 PetalburgCity_EventScript_GiveJournal::
 # 789 "data/maps/PetalburgCity/scripts.pory"
-	lockall
+	lock
 # 790 "data/maps/PetalburgCity/scripts.pory"
 	faceplayer
 # 791 "data/maps/PetalburgCity/scripts.pory"
@@ -1581,7 +1581,7 @@ PetalburgCity_EventScript_GiveJournal::
 # 801 "data/maps/PetalburgCity/scripts.pory"
 	waitmessage
 # 802 "data/maps/PetalburgCity/scripts.pory"
-	releaseall
+	release
 	end
 
 PetalburgCity_EventScript_GiveJournal_1:
@@ -1590,7 +1590,7 @@ PetalburgCity_EventScript_GiveJournal_1:
 # 793 "data/maps/PetalburgCity/scripts.pory"
 	waitmessage
 # 794 "data/maps/PetalburgCity/scripts.pory"
-	releaseall
+	release
 	end
 
 
