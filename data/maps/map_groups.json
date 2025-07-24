@@ -1,6 +1,7 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
+    "gMapGroup_PlychrmTownsRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -92,7 +93,9 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125",
+    "Underwater_Route125"
+  ],
+  "gMapGroup_PlychrmTownsRoutes": [
     "HoneydewTown"
   ],
   "gMapGroup_IndoorLittleroot": [
