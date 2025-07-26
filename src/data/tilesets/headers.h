@@ -841,3 +841,14 @@ const struct Tileset gTileset_NewGeneral =
     .metatileAttributes = gMetatileAttributes_NewGeneral,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Honeydew =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Honeydew,
+    .palettes = gTilesetPalettes_Honeydew,
+    .metatiles = gMetatiles_Honeydew,
+    .metatileAttributes = gMetatileAttributes_Honeydew,
+    .callback = NULL,
+};

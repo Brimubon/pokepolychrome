@@ -1,0 +1,81 @@
+mapscripts HoneydewTown_MapScripts {
+}
+
+script HoneydewTown_EventScript_Welcome {
+    lock
+    faceplayer
+    msgbox(HoneydewTown_EventScript_WelcomeText)
+    release
+}
+
+script HoneydewTown_EventScript_GiveMap {
+    lock
+    faceplayer 
+    msgbox(HoneydewTown_EventScript_GiveMapText)
+    release
+}
+
+script HoneydewTown_EventScript_Shoes {
+    lock
+    faceplayer
+    msgbox(HoneydewTown_EventScript_ShoesText)
+    release 
+}
+
+script HoneydewTown_EventScript_Garden {
+    lock
+    faceplayer
+    msgbox(HoneydewTown_EventScript_GardenText)
+    release
+}
+
+script HoneydewTown_EventScript_MainSign {
+    lock
+	msgbox(HoneydewTown_EventScript_MainSignText)
+	release
+}
+
+script HoneydewTown_EventScript_ProfSign {
+    lock
+    msgbox(HoneydewTown_EventScript_ProfSignText)
+    release
+}
+
+text HoneydewTown_EventScript_WelcomeText {
+    "We've made it to Honeydew!\n"
+    "Hope the ride wasn't too rough, hehehe.\p"
+    "If you're lookin' for the professor,\n"
+    "he's probably in his lab, in the\l"
+    "northwest part of town. Hard to miss."
+}
+
+text HoneydewTown_EventScript_GiveMapText {
+    "I saw you get off that boat...\n"
+    "Are you new to the Coeze region?\p"
+    "Here, take this.\n"
+    "Consider it a welcome present."
+}
+
+text HoneydewTown_EventScript_ShoesText {
+    "Um... I like your running shoes!\n"
+    "I have a pair like that, too.\p"
+    "Uh... you can press B to start running,\n"
+    "but you probably already knew that..."
+}
+
+text HoneydewTown_EventScript_GardenText {
+    "Tending to this garden isn't easy,\n"
+    "but to me, it's worth it.\p"
+    "With all the people coming to Coeze for\n"
+    "the League challenge, I want to make\l"
+    "this town as pretty as it can be."
+}
+
+text HoneydewTown_EventScript_MainSignText {
+    "Honeydew Town- \n"
+    "“The town of fresh beginnings.”"
+}
+
+text HoneydewTown_EventScript_ProfSignText {
+    "Prof. Hawthorne's Lab"
+}

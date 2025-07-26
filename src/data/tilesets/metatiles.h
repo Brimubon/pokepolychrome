@@ -210,3 +210,6 @@ const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_NewGeneral[] = INCBIN_U16("data/tilesets/primary/new_general/metatiles.bin");
 const u16 gMetatileAttributes_NewGeneral[] = INCBIN_U16("data/tilesets/primary/new_general/metatile_attributes.bin");
+
+const u16 gMetatiles_Honeydew[] = INCBIN_U16("data/tilesets/secondary/honeydew/metatiles.bin");
+const u16 gMetatileAttributes_Honeydew[] = INCBIN_U16("data/tilesets/secondary/honeydew/metatile_attributes.bin");

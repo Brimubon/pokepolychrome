@@ -4417,7 +4417,7 @@
       "width": 36,
       "height": 34,
       "primary_tileset": "gTileset_NewGeneral",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Honeydew",
       "border_filepath": "data/layouts/HoneydewTown/border.bin",
       "blockdata_filepath": "data/layouts/HoneydewTown/map.bin"
     }

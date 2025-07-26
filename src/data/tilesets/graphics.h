@@ -1653,3 +1653,22 @@ const u16 gTilesetPalettes_NewGeneral[][16] =
 };
 
 const u32 gTilesetTiles_NewGeneral[] = INCBIN_U32("data/tilesets/primary/new_general/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Honeydew[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/honeydew/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Honeydew[] = INCBIN_U32("data/tilesets/secondary/honeydew/tiles.4bpp.lz");
