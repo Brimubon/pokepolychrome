@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_Honeydew",
       "border_filepath": "data/layouts/HoneydewTown/border.bin",
       "blockdata_filepath": "data/layouts/HoneydewTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE301",
+      "name": "Route301_Layout",
+      "width": 53,
+      "height": 28,
+      "primary_tileset": "gTileset_NewGeneral",
+      "secondary_tileset": "gTileset_Honeydew",
+      "border_filepath": "data/layouts/Route301/border.bin",
+      "blockdata_filepath": "data/layouts/Route301/map.bin"
     }
   ]
 }
