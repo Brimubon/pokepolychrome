@@ -1,0 +1,39 @@
+mapscripts MulberryTown_MapScripts {
+}
+
+script MulberryTown_EventScript_Artist1 {
+    lock
+    faceplayer
+    msgbox(MulberryTown_EventScript_Artist1Text)
+    release 
+}
+
+script MulberryTown_EventScript_MainSign {
+    lock
+    msgbox(MulberryTown_EventScript_MainSignText)
+    release 
+}
+
+script MulberryTown_EventScript_ForestSign {
+    lock
+    msgbox(MulberryTown_EventScript_ForestSignText)
+    release
+}
+
+text MulberryTown_EventScript_Artist1Text {
+    "Every now and then, I go into Mulberry\n"
+    "Woods in search of the perfect muse.\p"
+    "Sadly, the Pokemon there don't seem to\n"
+    "appreciate my creative choices."
+}
+
+text MulberryTown_EventScript_MainSignText {
+    "Mulberry Town- \n"
+    "“A mysterious forest surrounds it.”"
+}
+
+text MulberryTown_EventScript_ForestSignText {
+    "Entering Mulberry Woods\p"
+    "NOTE: Please stop putting top hats on\n"
+    "the wild Pokemon here."
+}

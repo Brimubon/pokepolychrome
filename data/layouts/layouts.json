@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Honeydew",
       "border_filepath": "data/layouts/Route301/border.bin",
       "blockdata_filepath": "data/layouts/Route301/map.bin"
+    },
+    {
+      "id": "LAYOUT_MULBERRY_TOWN",
+      "name": "MulberryTown_Layout",
+      "width": 49,
+      "height": 29,
+      "primary_tileset": "gTileset_NewGeneral",
+      "secondary_tileset": "gTileset_Honeydew",
+      "border_filepath": "data/layouts/MulberryTown/border.bin",
+      "blockdata_filepath": "data/layouts/MulberryTown/map.bin"
     }
   ]
 }

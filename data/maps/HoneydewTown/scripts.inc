@@ -103,7 +103,7 @@ HoneydewTown_EventScript_GardenText::
 HoneydewTown_EventScript_MainSignText::
 # 74 "data/maps/HoneydewTown/scripts.pory"
 	.string "Honeydew Town- \n"
-	.string "“The town of fresh beginnings.”$"
+	.string "“Facilitating new beginnings.”$"
 
 HoneydewTown_EventScript_ProfSignText::
 # 79 "data/maps/HoneydewTown/scripts.pory"

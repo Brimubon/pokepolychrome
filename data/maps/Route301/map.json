@@ -17,6 +17,11 @@
       "map": "MAP_HONEYDEW_TOWN",
       "offset": 2,
       "direction": "left"
+    },
+    {
+      "map": "MAP_MULBERRY_TOWN",
+      "offset": -2,
+      "direction": "right"
     }
   ],
   "object_events": [],

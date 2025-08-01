@@ -73,7 +73,7 @@ text HoneydewTown_EventScript_GardenText {
 
 text HoneydewTown_EventScript_MainSignText {
     "Honeydew Town- \n"
-    "“The town of fresh beginnings.”"
+    "“Facilitating new beginnings.”"
 }
 
 text HoneydewTown_EventScript_ProfSignText {
