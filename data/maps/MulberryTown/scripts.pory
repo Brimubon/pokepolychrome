@@ -8,6 +8,43 @@ script MulberryTown_EventScript_Artist1 {
     release 
 }
 
+script MulberryTown_EventScript_BoyWithDog {
+    lock 
+    faceplayer
+    msgbox(MulberryTown_EventScript_BoyWithDogText)
+    applymovement(5, moves(face_left))
+    waitmovement
+    release
+}
+
+script MulberryTown_EventScript_Growlithe {
+    lock 
+    faceplayer
+    playmoncry(SPECIES_GROWLITHE, CRY_MODE_NORMAL)
+    msgbox("Grr-woof!")
+    waitmoncry
+    applymovement(6, moves(face_right))
+    waitmovement
+    release
+}
+
+script MulberryTown_EventScript_OldLady {
+    lock
+    dotimebasedevents
+    gettimeofday
+    if(var(VAR_0x8000) == TIME_EVENING || var(VAR_0x8000) == TIME_NIGHT) {
+        msgbox("Zzzz....\p" "(Looks like she fell asleep...)")
+        release
+        end
+    } else {
+        faceplayer
+        msgbox(MulberryTown_EventScript_OldLadyAwakeText)
+        release
+        end
+    }
+}
+
+
 script MulberryTown_EventScript_MainSign {
     lock
     msgbox(MulberryTown_EventScript_MainSignText)
@@ -23,8 +60,28 @@ script MulberryTown_EventScript_ForestSign {
 text MulberryTown_EventScript_Artist1Text {
     "Every now and then, I go into Mulberry\n"
     "Woods in search of the perfect muse.\p"
-    "Sadly, the Pokemon there don't seem to\n"
-    "appreciate my creative choices."
+    "I hear rumors of a truly elegant\n"
+    "Pokémon that resides there, but I fear\l"
+    "my own Pokémon aren't strong enough to\l"
+    "go looking for it on my own.\p"
+    "Maybe if...oh, never you mind."
+}
+
+text MulberryTown_EventScript_BoyWithDogText {
+    "A strange Pokémon just ran through\n"
+    "town and into the woods over there.\p"
+    "It moved so fast, it spooked my\n"
+    "Growlithe.\p"
+    "Be careful if you're going in there, ok?"
+}
+
+text MulberryTown_EventScript_OldLadyAwakeText {
+    "This town is always so quiet and\n" 
+    "peaceful.\p"
+    "Sitting out here, with the ocean breeze\n"
+    "and the tranquil sounds of nature...\p"
+    "Why, I feel like I could stay here\n" 
+    "forever!"
 }
 
 text MulberryTown_EventScript_MainSignText {
@@ -33,7 +90,5 @@ text MulberryTown_EventScript_MainSignText {
 }
 
 text MulberryTown_EventScript_ForestSignText {
-    "Entering Mulberry Woods\p"
-    "NOTE: Please stop putting top hats on\n"
-    "the wild Pokemon here."
+    "Entering Mulberry Woods"
 }

@@ -2,7 +2,7 @@
   "id": "MAP_HONEYDEW_TOWN",
   "name": "HoneydewTown",
   "layout": "LAYOUT_HONEYDEW_TOWN",
-  "music": "MUS_LITTLEROOT",
+  "music": "MUS_HG_CIANWOOD",
   "region_map_section": "MAPSEC_HONEYDEW_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
