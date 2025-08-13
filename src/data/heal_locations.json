@@ -131,6 +131,18 @@
       "map": "MAP_BATTLE_FRONTIER_OUTSIDE_EAST",
       "x": 3,
       "y": 52
+    },
+    {
+      "id": "HEAL_LOCATION_HONEYDEW_TOWN",
+      "map": "MAP_HONEYDEW_TOWN",
+      "x": 8,
+      "y": 11
+    },
+    {
+      "id": "HEAL_LOCATION_MULBERRY_TOWN",
+      "map": "MAP_MULBERRY_TOWN",
+      "x": 21,
+      "y": 10
     }
   ]
 }

@@ -1,0 +1,41 @@
+mapscripts MulberryWoods_MapScripts {
+}
+
+script MulberryWoods_EventScript_NormalGirl {
+    lock
+    faceplayer
+    msgbox(MulberryWoods_EventScript_NormalGirlText)
+    release
+}
+
+script MulberryWoods_EventScript_PressBSign {
+    lock
+    msgbox(MulberryWoods_EventScript_PressBSignText)
+    release
+}
+
+script MulberryWoods_EventScript_ExitSign {
+    lock
+    msgbox(MulberryWoods_EventScript_ExitSignText)
+    release 
+}
+
+text MulberryWoods_EventScript_NormalGirlText {
+    "Hm? Oh no, I'm not a trainer.\p"
+    "But there are quite a few of them\n"
+    "between here and Bisque City, so you\l"
+    "should make sure to stock up on\l"
+    "supplies at a Pokémon Center."
+}
+
+text MulberryWoods_EventScript_PressBSignText {
+    "Trainer Tips!\p"
+    "When facing a wild Pokémon you don't\n"
+    "feel like fighting, press B to quickly\l"
+    "move your cursor to the “Run” option!"
+}
+
+text MulberryWoods_EventScript_ExitSignText {
+    "Leaving Mulberry Woods\n"
+    "Bisque City Ahead"
+}

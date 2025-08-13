@@ -2,6 +2,7 @@
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_PlychrmTownsRoutes",
+    "gMapGroup_PlychrmDungeons",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
@@ -99,6 +100,9 @@
     "HoneydewTown",
     "Route301",
     "MulberryTown"
+  ],
+  "gMapGroup_PlychrmDungeons": [
+    "MulberryWoods"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

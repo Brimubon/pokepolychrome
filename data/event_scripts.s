@@ -1164,3 +1164,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route301/scripts.inc"
 
 	.include "data/maps/MulberryTown/scripts.inc"
+
+	.include "data/maps/MulberryWoods/scripts.inc"

@@ -4434,12 +4434,22 @@
     {
       "id": "LAYOUT_MULBERRY_TOWN",
       "name": "MulberryTown_Layout",
-      "width": 49,
+      "width": 51,
       "height": 29,
       "primary_tileset": "gTileset_NewGeneral",
       "secondary_tileset": "gTileset_Honeydew",
       "border_filepath": "data/layouts/MulberryTown/border.bin",
       "blockdata_filepath": "data/layouts/MulberryTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_MULBERRY_WOODS",
+      "name": "MulberryWoods_Layout",
+      "width": 56,
+      "height": 48,
+      "primary_tileset": "gTileset_NewGeneral",
+      "secondary_tileset": "gTileset_Honeydew",
+      "border_filepath": "data/layouts/MulberryWoods/border.bin",
+      "blockdata_filepath": "data/layouts/MulberryWoods/map.bin"
     }
   ]
 }
