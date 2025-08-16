@@ -1186,3 +1186,58 @@ static void BlendAnimPalette_BattleDome_FloorLightsNoBlend(u16 timer)
             sSecondaryTilesetAnimCallback = NULL;
     }
 }
+
+// Polychrome custom animations code starts here:
+
+const u16 gTilesetAnims_NewGeneral_RFlower_Frame0[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-red/00.4bpp");
+const u16 gTilesetAnims_NewGeneral_RFlower_Frame1[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-red/01.4bpp");
+const u16 gTilesetAnims_NewGeneral_RFlower_Frame2[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-red/02.4bpp");
+const u16 gTilesetAnims_NewGeneral_RFlower_Frame3[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-red/03.4bpp");
+const u16 gTilesetAnims_NewGeneral_RFlower_Frame4[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-red/04.4bpp");
+
+const u16 *const gTilesetAnims_NewGeneral_RFlower[] = {
+    gTilesetAnims_NewGeneral_RFlower_Frame0,
+    gTilesetAnims_NewGeneral_RFlower_Frame1,
+    gTilesetAnims_NewGeneral_RFlower_Frame2,
+    gTilesetAnims_NewGeneral_RFlower_Frame3,
+    gTilesetAnims_NewGeneral_RFlower_Frame4
+};
+
+static void QueueAnimTiles_NewGeneral_RFlower(u16 timer) {
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_NewGeneral_RFlower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_NewGeneral_RFlower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(5)), 4 * TILE_SIZE_4BPP);
+}
+
+const u16 gTilesetAnims_NewGeneral_PFlower_Frame0[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-purple/00.4bpp");
+const u16 gTilesetAnims_NewGeneral_PFlower_Frame1[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-purple/01.4bpp");
+const u16 gTilesetAnims_NewGeneral_PFlower_Frame2[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-purple/02.4bpp");
+const u16 gTilesetAnims_NewGeneral_PFlower_Frame3[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-purple/03.4bpp");
+const u16 gTilesetAnims_NewGeneral_PFlower_Frame4[] = INCBIN_U16("data/tilesets/primary/new_general/anim/flower-purple/04.4bpp");
+
+
+const u16 *const gTilesetAnims_NewGeneral_PFlower[] = {
+    gTilesetAnims_NewGeneral_PFlower_Frame0,
+    gTilesetAnims_NewGeneral_PFlower_Frame4,
+    gTilesetAnims_NewGeneral_PFlower_Frame3,
+    gTilesetAnims_NewGeneral_PFlower_Frame2,
+    gTilesetAnims_NewGeneral_PFlower_Frame1
+};
+
+static void QueueAnimTiles_NewGeneral_PFlower(u16 timer) {
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_NewGeneral_PFlower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_NewGeneral_PFlower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(1)), 4 * TILE_SIZE_4BPP);
+}
+
+
+static void TilesetAnim_NewGeneral(u16 timer) {
+    if (timer % 16 == 0) 
+        QueueAnimTiles_NewGeneral_RFlower(timer / 16);
+    if (timer % 16 == 1) 
+        QueueAnimTiles_NewGeneral_PFlower(timer / 16);
+}
+
+void InitTilesetAnim_NewGeneral(void) {
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_NewGeneral;
+}

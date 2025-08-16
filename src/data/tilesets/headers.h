@@ -839,7 +839,7 @@ const struct Tileset gTileset_NewGeneral =
     .palettes = gTilesetPalettes_NewGeneral,
     .metatiles = gMetatiles_NewGeneral,
     .metatileAttributes = gMetatileAttributes_NewGeneral,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NewGeneral,
 };
 
 const struct Tileset gTileset_Honeydew =

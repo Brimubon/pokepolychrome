@@ -32,4 +32,9 @@ void InitTilesetAnim_EliteFour(void);
 void InitTilesetAnim_BattleDome(void);
 void InitTilesetAnim_BattlePyramid(void);
 
+// Polychrome custom tileset animations:
+
+void InitTilesetAnim_NewGeneral(void);
+
+
 #endif // GUARD_TILESET_ANIMS_H
