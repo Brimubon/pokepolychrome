@@ -1,4 +1,26 @@
 mapscripts MulberryTown_MapScripts {
+    MAP_SCRIPT_ON_LOAD {
+        setflag(FLAG_TEMP_5)
+        setflag(FLAG_TEMP_6)
+        setflag(FLAG_TEMP_7)
+        setflag(FLAG_TEMP_8)
+
+        random(4)
+        switch(var(VAR_RESULT)) {
+            case 0:
+                clearflag(FLAG_TEMP_7)
+                clearflag(FLAG_TEMP_8)
+            case 1:
+                clearflag(FLAG_TEMP_5)
+                clearflag(FLAG_TEMP_6)
+            case 2:
+                clearflag(FLAG_TEMP_6)
+                clearflag(FLAG_TEMP_7)
+                clearflag(FLAG_TEMP_8)
+            case 3:
+                clearflag(FLAG_TEMP_5)
+        }
+    }
 }
 
 script MulberryTown_EventScript_Artist1 {
@@ -86,7 +108,7 @@ text MulberryTown_EventScript_OldLadyAwakeText {
 
 text MulberryTown_EventScript_MainSignText {
     "Mulberry Town- \n"
-    "“A mysterious forest surrounds it.”"
+    "“The town with an air of elegance.”"
 }
 
 text MulberryTown_EventScript_ForestSignText {
