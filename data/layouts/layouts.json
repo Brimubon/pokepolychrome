@@ -4450,6 +4450,16 @@
       "secondary_tileset": "gTileset_Honeydew",
       "border_filepath": "data/layouts/MulberryWoods/border.bin",
       "blockdata_filepath": "data/layouts/MulberryWoods/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_POKEMON_CENTER",
+      "name": "MulberryTown_PokemonCenter_Layout",
+      "width": 15,
+      "height": 18,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_NewPokemonCenter",
+      "border_filepath": "data/layouts/MulberryTown_PokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/MulberryTown_PokemonCenter/map.bin"
     }
   ]
 }

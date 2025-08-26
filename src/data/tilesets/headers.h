@@ -852,3 +852,14 @@ const struct Tileset gTileset_Honeydew =
     .metatileAttributes = gMetatileAttributes_Honeydew,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_NewPokemonCenter =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_NewPokemonCenter,
+    .palettes = gTilesetPalettes_NewPokemonCenter,
+    .metatiles = gMetatiles_NewPokemonCenter,
+    .metatileAttributes = gMetatileAttributes_NewPokemonCenter,
+    .callback = NULL,
+};

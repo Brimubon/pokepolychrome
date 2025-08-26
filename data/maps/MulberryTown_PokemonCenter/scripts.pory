@@ -1,0 +1,45 @@
+mapscripts MulberryTown_PokemonCenter_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: MulberryTown_PokemonCenter_OnTransition
+    MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script MulberryTown_PokemonCenter_OnTransition {
+    setrespawn(HEAL_LOCATION_MULBERRY_TOWN)
+}
+
+script MulberryTown_PokemonCenter_EventScript_Nurse {
+    setvar(VAR_0x800B, LOCALID_MULBERRY_NURSE)
+    call(Common_EventScript_PkmnCenterNurse)
+    waitmessage
+    waitbuttonpress
+    release
+}
+
+script MulberryTown_PokemonCenter_EventScript_Girl1 {
+    lock
+    faceplayer
+    msgbox(MulberryTown_PokemonCenter_EventScript_Girl1Text)
+    release 
+}
+
+script MulberryTown_PokemonCenter_EventScript_Boy1 {
+    lock
+    faceplayer
+    msgbox(MulberryTown_PokemonCenter_EventScript_Boy1Text)
+    release
+}
+
+text MulberryTown_PokemonCenter_EventScript_Girl1Text {
+    "My Pokémon got poisoned while I was\n"
+    "training it in the woods.\p"
+    "I forgot to buy any antidotes, but my\n"
+    "Pokémon was able to recover on its own\l"
+    "before it fainted."
+}
+
+text MulberryTown_PokemonCenter_EventScript_Boy1Text {
+    "Pokémon Centers are amazing!\p"
+    "Not only do they heal your Pokémon for\n"
+    "free, they have beds you can rest in if\l"
+    "you wanna pass the time."
+}

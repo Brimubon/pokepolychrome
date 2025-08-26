@@ -2,6 +2,7 @@
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_PlychrmTownsRoutes",
+    "gMapGroup_IndoorMulberry",
     "gMapGroup_PlychrmDungeons",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
@@ -100,6 +101,9 @@
     "HoneydewTown",
     "Route301",
     "MulberryTown"
+  ],
+  "gMapGroup_IndoorMulberry": [
+    "MulberryTown_PokemonCenter"
   ],
   "gMapGroup_PlychrmDungeons": [
     "MulberryWoods"

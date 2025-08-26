@@ -213,3 +213,6 @@ const u16 gMetatileAttributes_NewGeneral[] = INCBIN_U16("data/tilesets/primary/n
 
 const u16 gMetatiles_Honeydew[] = INCBIN_U16("data/tilesets/secondary/honeydew/metatiles.bin");
 const u16 gMetatileAttributes_Honeydew[] = INCBIN_U16("data/tilesets/secondary/honeydew/metatile_attributes.bin");
+
+const u16 gMetatiles_NewPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/new_pokemon_center/metatiles.bin");
+const u16 gMetatileAttributes_NewPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/new_pokemon_center/metatile_attributes.bin");
