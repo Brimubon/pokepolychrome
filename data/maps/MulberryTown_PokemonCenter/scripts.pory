@@ -29,10 +29,45 @@ script MulberryTown_PokemonCenter_EventScript_Boy1 {
     release
 }
 
+script MulberryTown_PokemonCenter_EventScript_Girl2 {
+    lock 
+    faceplayer
+    msgbox(MulberryTown_PokemonCenter_EventScript_Girl2Text1)
+    applymovement(5, moves(face_up))
+    waitmovement(5)
+    msgbox(MulberryTown_PokemonCenter_EventScript_Girl2Text2)
+    playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
+    msgbox("Stufful...?")
+    waitmoncry
+    applymovement(6, moves(walk_in_place_up, walk_in_place_down, walk_in_place_left, walk_in_place_right, walk_in_place_down))
+    waitmovement(6)
+    msgbox(MulberryTown_PokemonCenter_EventScript_Girl2Text3)
+    applymovement(5, moves(walk_in_place_up))
+    waitmovement(5)
+    msgbox(".....")
+    applymovement(5, moves(face_player))
+    waitmovement(5)
+    msgbox("...It's having an off day.")
+    applymovement(5, moves(face_up))
+    waitmovement(5)
+    release
+}
+
+script MulberryTown_PokemonCenter_EventScript_Stufful {
+    lock
+    faceplayer
+    playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
+    msgbox("Stufful!")
+    waitmoncry
+    applymovement(6, moves(walk_in_place_down))
+    waitmovement
+    release
+}
+
 text MulberryTown_PokemonCenter_EventScript_Girl1Text {
     "My Pokémon got poisoned while I was\n"
     "training it in the woods.\p"
-    "I forgot to buy any antidotes, but my\n"
+    "I forgot to buy antidotes, but my\n"
     "Pokémon was able to recover on its own\l"
     "before it fainted."
 }
@@ -41,5 +76,24 @@ text MulberryTown_PokemonCenter_EventScript_Boy1Text {
     "Pokémon Centers are amazing!\p"
     "Not only do they heal your Pokémon for\n"
     "free, they have beds you can rest in if\l"
-    "you wanna pass the time."
+    "you want to pass the time."
+}
+
+text MulberryTown_PokemonCenter_EventScript_Girl2Text1 {
+    "Isn't my Stufful just the cutest?\n"
+    "You won't find a cuter Pokémon in all of\l"
+    "Coeze, I assure you.\p"
+    "Oh, and it's really smart and can do all\n"
+    "kinds of neat tricks, too! Watch!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_Girl2Text2 {
+    "C'mon, Stufful!\n"
+    "Do the Baby-Doll Eyes and Brutal Swing\l"
+    "combo, like we practiced!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_Girl2Text3 {
+    "(The Stufful tripped on its feet and\n"
+    "flailed around wildly...)"
 }
