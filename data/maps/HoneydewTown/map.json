@@ -48,8 +48,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 13,
-      "y": 22,
+      "x": 25,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -74,8 +74,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
-      "x": 25,
-      "y": 14,
+      "x": 13,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -101,7 +101,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARLY)",
       "x": 8,
-      "y": 8,
+      "y": 7,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 4,
@@ -151,7 +151,15 @@
       "flag": "FLAG_TEMP_8"
     }
   ],
-  "warp_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_HONEYDEW_TOWN_PROFS_LAB",
+      "dest_warp_id": "0"
+    }
+  ],
   "coord_events": [],
   "bg_events": [
     {

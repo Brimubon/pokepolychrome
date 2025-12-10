@@ -1,0 +1,73 @@
+mapscripts HoneydewTown_ProfsLab_MapScripts {}
+
+script HoneydewTown_ProfsLab_Aide1 {
+    lock
+    msgbox(HoneydewTown_ProfsLab_Aide1Text)
+    release
+}
+
+script HoneydewTown_ProfsLab_Aide2 {
+    lock
+    faceplayer
+    msgbox(HoneydewTown_ProfsLab_Aide2Text)
+    release
+}
+
+script HoneydewTown_ProfsLab_Hoothoot {
+    lock 
+    faceplayer
+    playmoncry(SPECIES_HOOTHOOT, CRY_MODE_NORMAL)
+    msgbox("Hoo!")
+    waitmoncry
+    msgbox("(It's carrying a bunch of papers in its\n" "beak.)")
+    release
+}
+
+script HoneydewTown_ProfsLab_Bookshelf {
+    lock
+    msgbox("(It's crammed with notes on Pokémon.\n" "...They're a little hard to read...)")
+    release
+}
+
+script HoneydewTown_ProfsLab_Machine {
+    lock
+    msgbox(HoneydewTown_ProfsLab_MachineText)
+    release
+}
+
+script HoneydewTown_ProfsLab_PC {
+    lock
+    msgbox(HoneydewTown_ProfsLab_PCText)
+    release
+}
+
+text HoneydewTown_ProfsLab_Aide1Text {
+    "...Scyther....Seadra........\n"
+    "...Sealeo...Seedot......\p"
+    "Ugh, why can't I find our notes on\n"
+    "Seaking?"
+}
+
+text HoneydewTown_ProfsLab_Aide2Text {
+    "Prof. Hawthorne studies the relations\n"
+    "between different species of Pokémon.\p"
+    "He used to go out a lot on fieldwork,\n"
+    "but he's gotten too old for that\l"
+    "nowadays.\p"
+    "Now he leaves most of the fieldwork to\n"
+    "his niece, Lucidia."
+}
+
+text HoneydewTown_ProfsLab_MachineText {
+    "(It's a weird looking machine.)\p"
+    "(There are tons of buttons and\n" 
+    "flashing lights on it...best to leave it\l"
+    "alone.)"
+}
+
+text HoneydewTown_ProfsLab_PCText {
+    "(It's the Prof's PC.)\p"
+    "(There's a picture of the Prof. and\n"
+    "another person holding a Pokémon\l"
+    "and smiling.)"
+}

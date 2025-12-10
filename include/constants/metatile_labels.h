@@ -1,6 +1,7 @@
 #ifndef GUARD_METATILE_LABELS_H
 #define GUARD_METATILE_LABELS_H
 
+
 // gTileset_BattleArena
 #define METATILE_BattleArena_Door  0x21B
 
@@ -249,6 +250,9 @@
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
+// gTileset_Honeydew
+#define METATILE_Honeydew_PlychrmeHawthDoor  0x214
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215
@@ -372,6 +376,7 @@
 
 // gTileset_NewGeneral
 #define METATILE_NewGeneral_PlychrmePCDoor  0x11D
+
 
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A

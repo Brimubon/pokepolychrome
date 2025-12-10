@@ -1169,3 +1169,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MulberryWoods/scripts.inc"
 
 	.include "data/maps/MulberryTown_PokemonCenter/scripts.inc"
+
+	.include "data/maps/HoneydewTown_ProfsLab/scripts.inc"
