@@ -1,5 +1,13 @@
 mapscripts HoneydewTown_ProfsLab_MapScripts {}
 
+
+script HoneydewTown_ProfsLab_HawthIntro {
+    lock
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox(HoneydewTown_ProfsLab_HawthIntroText)
+    release
+}
+
 script HoneydewTown_ProfsLab_Aide1 {
     lock
     msgbox(HoneydewTown_ProfsLab_Aide1Text)
@@ -39,6 +47,10 @@ script HoneydewTown_ProfsLab_PC {
     lock
     msgbox(HoneydewTown_ProfsLab_PCText)
     release
+}
+
+text HoneydewTown_ProfsLab_HawthIntroText {
+    "Hello! Welcome to my lab!"
 }
 
 text HoneydewTown_ProfsLab_Aide1Text {
