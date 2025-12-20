@@ -598,7 +598,7 @@ static void Task_EggHatchPlayBGM(u8 taskId)
 
     if (gTasks[taskId].tTimer > 60)
     {
-        PlayBGM(MUS_EVOLUTION);
+        PlayBGM(MUS_HG_EVOLUTION_NO_INTRO);
         DestroyTask(taskId);
     }
     gTasks[taskId].tTimer++;
@@ -655,7 +655,7 @@ static void CB2_EggHatch(void)
         GetMonNickname(&gPlayerParty[sEggHatchData->eggPartyId], gStringVar1);
         StringExpandPlaceholders(gStringVar4, gText_HatchedFromEgg);
         EggHatchPrintMessage(sEggHatchData->windowId, gStringVar4, 0, 3, TEXT_SKIP_DRAW);
-        PlayFanfare(MUS_EVOLVED);
+        PlayFanfare(MUS_HG_EVOLVED);
         sEggHatchData->state++;
         PutWindowTilemap(sEggHatchData->windowId);
         CopyWindowToVram(sEggHatchData->windowId, COPYWIN_FULL);

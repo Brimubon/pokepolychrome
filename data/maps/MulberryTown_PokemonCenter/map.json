@@ -2,7 +2,7 @@
   "id": "MAP_MULBERRY_TOWN_POKEMON_CENTER",
   "name": "MulberryTown_PokemonCenter",
   "layout": "LAYOUT_NEW_POKEMON_CENTER",
-  "music": "MUS_DP_POKE_CENTER_DAY",
+  "music": "MUS_HG_POKE_CENTER",
   "region_map_section": "MAPSEC_MULBERRY_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
