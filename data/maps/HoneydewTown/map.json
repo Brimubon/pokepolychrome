@@ -160,7 +160,53 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_HAWTH_LAB_STATE",
+      "var_value": "0",
+      "script": "HoneydewTown_EventScript_MeetHawthFirst"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_HAWTH_LAB_STATE",
+      "var_value": "0",
+      "script": "HoneydewTown_EventScript_MeetHawthFirst"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_HAWTH_LAB_STATE",
+      "var_value": "0",
+      "script": "HoneydewTown_EventScript_MeetHawthFirst"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_HAWTH_LAB_STATE",
+      "var_value": "0",
+      "script": "HoneydewTown_EventScript_MeetHawthFirst"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_HAWTH_LAB_STATE",
+      "var_value": "0",
+      "script": "HoneydewTown_EventScript_MeetHawthFirst"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

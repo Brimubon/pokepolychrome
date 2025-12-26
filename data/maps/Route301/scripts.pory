@@ -1,1 +1,77 @@
 mapscripts Route301_MapScripts {}
+
+script Route301_EventScript_ZangooseEncounter0 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(Route301_EventScript_ZangooseEncounter)
+    end
+}
+
+script Route301_EventScript_ZangooseEncounter1 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(Route301_EventScript_ZangooseEncounter)
+    end
+}
+
+script Route301_EventScript_ZangooseEncounter2 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(Route301_EventScript_ZangooseEncounter)
+    end
+}
+
+script Route301_EventScript_ZangooseEncounter {
+    playse(SE_PIN)
+    applymovement(LOCALID_PLAYER, moves(emote_question_mark, face_right))
+    waitmovement(LOCALID_PLAYER)
+    msgbox("...Oh?\n" "It's a Pokémon!", MSGBOX_AUTOCLOSE)
+    if(var(VAR_0x8008) == 0) {
+        applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_down, walk_right))
+        waitmovement(LOCALID_PLAYER)
+    } elif(var(VAR_0x8008) == 1) {
+        applymovement(LOCALID_PLAYER, moves(walk_right * 3))
+        waitmovement(LOCALID_PLAYER)
+    } elif(var(VAR_0x8008) == 2) {
+        applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_up, walk_right))
+        waitmovement(LOCALID_PLAYER)
+    }
+    delay(16)
+    playse(SE_PIN)
+    applymovement(1, moves(face_player, emote_exclamation_mark))
+    waitmovement(0)
+    playmoncry(SPECIES_ZANGOOSE, CRY_MODE_NORMAL)
+    waitmoncry
+    delay(30)
+    applymovement(1, moves(lock_facing_direction, walk_slow_right, unlock_facing_direction))
+    waitmovement(0)
+    msgbox("(It's got a small black band on its foot\n" "that it's trying to rip off...)", MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, moves(walk_right))
+    waitmovement(LOCALID_PLAYER)
+    applymovement(1, moves(walk_in_place_left))
+    waitmovement(0)
+    delay(48)
+    msgbox(".......{PAUSE 60} ............", MSGBOX_AUTOCLOSE)
+    delay(48)
+    msgbox("(You removed the band.)", MSGBOX_AUTOCLOSE) 
+    playse(SE_PIN)
+    applymovement(1, moves(walk_in_place_left, emote_question_mark))
+    waitmovement(0)
+    delay(72)
+    playse(SE_PIN)
+    applymovement(1, moves(emote_double_exclamation_mark, delay_16, jump_in_place_left, walk_in_place_up, delay_16, walk_in_place_fast_down, delay_16, walk_in_place_right, walk_in_place_fast_down, delay_16, walk_in_place_left))
+    playmoncry(SPECIES_ZANGOOSE, CRY_MODE_NORMAL)
+    waitmovement(0)
+    waitmoncry
+    delay(72)
+    applymovement(1, moves(lock_facing_direction, walk_slow_right, unlock_facing_direction, face_left))
+    waitmovement(0)
+    delay(72)
+    applymovement(1, moves(walk_faster_right * 8))
+    waitmovement(0)
+    delay(30)
+    removeobject(1)
+    setvar(VAR_MET_PLYCHRME_STARTERS, 1)
+    setflag(FLAG_HIDE_ZANGOOSE)
+    releaseall
+}

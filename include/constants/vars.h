@@ -103,7 +103,7 @@
 #define VAR_LAVARIDGE_TOWN_STATE                         0x4053
 #define VAR_CURRENT_SECRET_BASE                          0x4054 // was probably allocated for VAR_FALLARBOR_TOWN_STATE at one point
 #define VAR_HAWTH_LAB_STATE                              0x4055 // previously unused var VAR_VERDANTURF_TOWN_STATE
-#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
+#define VAR_MET_PLYCHRME_STARTERS                        0x4056 // previously unused var VAR_PACIFIDLOG_TOWN_STATE; 0= Met neither, 1= Met Zangoose, 2= Met Seviper
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var

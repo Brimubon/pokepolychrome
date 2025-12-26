@@ -1,21 +1,21 @@
 mapscripts HoneydewTown_ProfsLab_MapScripts {
 
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_HAWTH_LAB_STATE, 0: HoneydewTown_ProfsLab_HawthIntro
+        VAR_HAWTH_LAB_STATE, 0: HoneydewTown_ProfsLab_EventScript_HawthIntro
     ]
 
 }
 
 
-script HoneydewTown_ProfsLab_HawthIntro {
+script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     lockall
     applymovement(LOCALID_PLAYER, moves(walk_up * 7))
     waitmovement(LOCALID_PLAYER)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthIntroText1, MSGBOX_AUTOCLOSE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText1, MSGBOX_AUTOCLOSE)
     delay(60)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthIntroText2, MSGBOX_AUTOCLOSE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText2, MSGBOX_AUTOCLOSE)
     applymovement(2, moves(face_left))
     waitmovement(0)
     setspeaker(SP_NAME_HAWTHORNE)
@@ -38,47 +38,47 @@ script HoneydewTown_ProfsLab_HawthIntro {
     applymovement(2, moves(walk_down * 2))
     waitmovement(0)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthIntroText3, MSGBOX_AUTOCLOSE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText3, MSGBOX_AUTOCLOSE)
     delay(48)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthIntroText4, MSGBOX_AUTOCLOSE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText4, MSGBOX_AUTOCLOSE)
     applymovement(2, moves(walk_right))
     waitmovement(0)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthIntroText5, MSGBOX_AUTOCLOSE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText5, MSGBOX_AUTOCLOSE)
     applymovement(2, moves(walk_left, face_down))
     waitmovement(0)
     playfanfare(MUS_LEVEL_UP)
     msgbox("(A small tag was attached to your bag.)", MSGBOX_AUTOCLOSE)
     waitfanfare
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthIntroText6)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText6)
     setvar(VAR_HAWTH_LAB_STATE, 1)
     releaseall
 }
 
-script HoneydewTown_ProfsLab_Hawth {
+script HoneydewTown_ProfsLab_EventScript_Hawth {
     lock
     faceplayer
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_HawthRegText1)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthRegText1)
     release
 }
 
-script HoneydewTown_ProfsLab_Aide1 {
+script HoneydewTown_ProfsLab_EventScript_Aide1 {
     lock
-    msgbox(HoneydewTown_ProfsLab_Aide1Text)
+    msgbox(HoneydewTown_ProfsLab_EventScript_Aide1Text)
     release
 }
 
-script HoneydewTown_ProfsLab_Aide2 {
+script HoneydewTown_ProfsLab_EventScript_Aide2 {
     lock
     faceplayer
-    msgbox(HoneydewTown_ProfsLab_Aide2Text)
+    msgbox(HoneydewTown_ProfsLab_EventScript_Aide2Text)
     release
 }
 
-script HoneydewTown_ProfsLab_Hoothoot {
+script HoneydewTown_ProfsLab_EventScript_Hoothoot {
     lock 
     faceplayer
     playmoncry(SPECIES_HOOTHOOT, CRY_MODE_NORMAL)
@@ -88,38 +88,38 @@ script HoneydewTown_ProfsLab_Hoothoot {
     release
 }
 
-script HoneydewTown_ProfsLab_Bookshelf {
+script HoneydewTown_ProfsLab_EventScript_Bookshelf {
     lock
     msgbox("(It's crammed with notes on Pokémon.\n" "...They're a little hard to read...)")
     release
 }
 
-script HoneydewTown_ProfsLab_Machine {
+script HoneydewTown_ProfsLab_EventScript_Machine {
     lock
-    msgbox(HoneydewTown_ProfsLab_MachineText)
+    msgbox(HoneydewTown_ProfsLab_EventScript_MachineText)
     release
 }
 
-script HoneydewTown_ProfsLab_PC {
+script HoneydewTown_ProfsLab_EventScript_PC {
     lock
-    msgbox(HoneydewTown_ProfsLab_PCText)
+    msgbox(HoneydewTown_ProfsLab_EventScript_PCText)
     release
 }
 
-text HoneydewTown_ProfsLab_HawthIntroText1 {
+text HoneydewTown_ProfsLab_EventScript_HawthIntroText1 {
     "......Hm?{PAUSE 72} Ah, hello there!\n"
     "Welcome to my lab!\p"
     "What can I do for you?"
 }
 
-text HoneydewTown_ProfsLab_HawthIntroText2 {
+text HoneydewTown_ProfsLab_EventScript_HawthIntroText2 {
     "...........Oh?\p"
     "So you say your name is {PLAYER} and\n"
     "you're here to receive your Pokémon?\p"
     "...I{PAUSE 48}-I see."
 }
 
-text HoneydewTown_ProfsLab_HawthIntroText3 {
+text HoneydewTown_ProfsLab_EventScript_HawthIntroText3 {
     "R-right! {PLAYER}!\n"
     "So good to finally see you in person!\p"
     "I apologize, my schedule's been rather\n"
@@ -136,7 +136,7 @@ text HoneydewTown_ProfsLab_HawthIntroText3 {
     "yet to return, so I'm quite worried..."
 }
 
-text HoneydewTown_ProfsLab_HawthIntroText4 {
+text HoneydewTown_ProfsLab_EventScript_HawthIntroText4 {
     "Oh, I know!{PAUSE 60} {PLAYER}!\p"
     "Could you stop by Mulberry Town for me\n"
     "and make sure everything's alright?\p"
@@ -145,7 +145,7 @@ text HoneydewTown_ProfsLab_HawthIntroText4 {
     "away."
 }
 
-text HoneydewTown_ProfsLab_HawthIntroText5 {
+text HoneydewTown_ProfsLab_EventScript_HawthIntroText5 {
     "Now, Mulberry Town is just to the right\n"
     "of Honeydew, but you'll have to pass\l"
     "through some tall grass to get there.\p"
@@ -153,7 +153,7 @@ text HoneydewTown_ProfsLab_HawthIntroText5 {
     "here, that won't be an issue!"
 }
 
-text HoneydewTown_ProfsLab_HawthIntroText6 {
+text HoneydewTown_ProfsLab_EventScript_HawthIntroText6 {
     "There! With that extra-strength\n"
     "Cleanse Tag, no wild Pokémon will\l"
     "approach you, no matter how strong.\p"
@@ -162,21 +162,21 @@ text HoneydewTown_ProfsLab_HawthIntroText6 {
     "Well, off you go, then!"
 }
 
-text HoneydewTown_ProfsLab_HawthRegText1 {
+text HoneydewTown_ProfsLab_EventScript_HawthRegText1 {
     "Remember, Mulberry Town is just to the\n"
     "right of here.\p"
     "With that special Cleanse Tag I gave\n"
     "you, it should be easy to reach."
 }
 
-text HoneydewTown_ProfsLab_Aide1Text {
+text HoneydewTown_ProfsLab_EventScript_Aide1Text {
     "...Scyther.... Seadra........{PAUSE 60}\n"
     "...Sealeo... Seedot......\p"
     "Ugh, why can't I find our notes on\n"
     "Seaking?"
 }
 
-text HoneydewTown_ProfsLab_Aide2Text {
+text HoneydewTown_ProfsLab_EventScript_Aide2Text {
     "Prof. Hawthorne studies the relations\n"
     "between different species of Pokémon.\p"
     "He used to go out a lot on fieldwork,\n"
@@ -186,14 +186,14 @@ text HoneydewTown_ProfsLab_Aide2Text {
     "his niece, Scarlett."
 }
 
-text HoneydewTown_ProfsLab_MachineText {
+text HoneydewTown_ProfsLab_EventScript_MachineText {
     "(It's a weird looking machine.)\p"
     "(There are tons of buttons and\n" 
     "flashing lights on it... best to leave it\l"
     "alone.)"
 }
 
-text HoneydewTown_ProfsLab_PCText {
+text HoneydewTown_ProfsLab_EventScript_PCText {
     "(It's the Prof's PC.)\p"
     "(There's a picture of the Prof. and\n"
     "another person holding a Pokémon\l"
