@@ -1,7 +1,6 @@
 #ifndef GUARD_METATILE_LABELS_H
 #define GUARD_METATILE_LABELS_H
 
-
 // gTileset_BattleArena
 #define METATILE_BattleArena_Door  0x21B
 
@@ -376,7 +375,6 @@
 
 // gTileset_NewGeneral
 #define METATILE_NewGeneral_PlychrmePCDoor  0x11D
-
 
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A

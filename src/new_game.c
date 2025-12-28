@@ -132,7 +132,8 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(MAP_HONEYDEW_TOWN), MAP_NUM(MAP_HONEYDEW_TOWN), WARP_ID_NONE, 34, 32);
+    FlagSet(FLAG_SPAWN_INVISIBLE);
     WarpIntoMap();
 }
 

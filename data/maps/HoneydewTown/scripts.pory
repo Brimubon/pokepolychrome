@@ -19,6 +19,46 @@ mapscripts HoneydewTown_MapScripts {
                 clearflag(FLAG_TEMP_8)
         }
     }
+
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_PLYCHRME_BOAT_SPAWN, 0: HoneydewTown_EventScript_SpawnBoat
+    ]
+
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_PLYCHRME_INTRO, 0: HoneydewTown_EventScript_IntroCutscene
+    ]
+
+}
+
+script HoneydewTown_EventScript_SpawnBoat {
+    setvar(VAR_PLYCHRME_BOAT_SPAWN, 1)
+    setobjectxyperm(LOCALID_INTRO_SHIP, 34, 32)
+    addobject(LOCALID_INTRO_SHIP)
+}
+
+script HoneydewTown_EventScript_IntroCutscene {
+    lockall
+    removeobject(4)
+    setvar(VAR_PLYCHRME_INTRO, 1)
+    special(SpawnCameraObject)
+    applymovement(LOCALID_INTRO_SHIP, moves(walk_fast_left * 6, walk_left * 10))
+    applymovement(LOCALID_CAMERA, moves(walk_fast_left * 6, walk_left * 10))
+    waitmovement(0)
+    special(RemoveCameraObject)
+    delay(60)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    delay(16)
+    applymovement(LOCALID_PLAYER, moves(set_visible))
+    waitmovement(0)
+    playse(SE_EXIT)
+    waitse
+    addobject(4)
+    clearflag(FLAG_HIDE_HONEYDEW_SAILOR)
+    warpsilent(MAP_HONEYDEW_TOWN, 18, 31)
+    waitstate()
+    delay(16)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    releaseall
 }
 
 script HoneydewTown_EventScript_Welcome {

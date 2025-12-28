@@ -106,9 +106,9 @@
 #define VAR_MET_PLYCHRME_STARTERS                        0x4056 // previously unused var VAR_PACIFIDLOG_TOWN_STATE; 0= Met neither, 1= Met Zangoose, 2= Met Seviper
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
-#define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var
+#define VAR_PLYCHRME_INTRO                               0x4059 // previously unused var VAR_MAUVILLE_CITY_STATE
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
+#define VAR_PLYCHRME_BOAT_SPAWN                          0x405B // previously unused var VAR_FORTREE_CITY_STATE
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
