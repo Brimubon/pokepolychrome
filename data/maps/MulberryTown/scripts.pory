@@ -23,6 +23,31 @@ mapscripts MulberryTown_MapScripts {
     }
 }
 
+script MulberryTown_EventScript_SuspiciousGrunt {
+    lockall
+    playse(SE_PIN)
+    applymovement(12, moves(walk_in_place_fast_right, emote_exclamation_mark))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
+    waitmovement(0)
+    delay(16)
+    msgbox(MulberryTown_EventScript_SuspiciousGruntText1, MSGBOX_AUTOCLOSE)
+    playse(SE_LEDGE)
+    applymovement(LOCALID_PLAYER, moves(face_up, lock_facing_direction, jump_down, unlock_facing_direction))
+    applymovement(12, moves(walk_right, face_down))
+    waitmovement(0)
+    msgbox("Now SCRAM!", MSGBOX_AUTOCLOSE)
+    applymovement(12, moves(walk_left, face_up))
+    waitmovement(0)
+    releaseall
+}
+
+script MulberryTown_EventScript_Grunt {
+    lock
+    msgbox(MulberryTown_EventScript_GruntText)
+    release
+}
+
 script MulberryTown_EventScript_Artist1 {
     lock
     faceplayer
@@ -79,14 +104,28 @@ script MulberryTown_EventScript_ForestSign {
     release
 }
 
+text MulberryTown_EventScript_SuspiciousGruntText1 {
+    "Huh?{PAUSE 72} H-hey!\n"
+    "You can't go in there right now!\p"
+    "....What? D{PAUSE 48}-don't ask me why!\n"
+    "I don't need to explain myself to you!"
+}
+
+text MulberryTown_EventScript_GruntText {
+    "...Those little pests must've gone in\n"
+    "here... there's nowhere else they could\l"
+    "possibly be...\p"
+    "I swear, once I get my hands on those..."
+}
+
 text MulberryTown_EventScript_Artist1Text {
     "Every now and then, I go into Mulberry\n"
     "Woods in search of the perfect muse.\p"
     "I hear rumors of a truly elegant\n"
-    "Pokémon that resides there, but I fear\l"
-    "my own Pokémon aren't strong enough to\l"
-    "go looking for it on my own.\p"
-    "Maybe if...oh, never you mind."
+    "Pokémon that resides there, but...\p"
+    "I fear my own Pokémon aren't strong\n"
+    "enough to go looking for it on my own.\p"
+    "Maybe if... oh, never you mind."
 }
 
 text MulberryTown_EventScript_BoyWithDogText {

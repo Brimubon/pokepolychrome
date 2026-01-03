@@ -109,7 +109,7 @@
 #define VAR_PLYCHRME_INTRO                               0x4059 // previously unused var VAR_MAUVILLE_CITY_STATE
 #define VAR_RUSTBORO_CITY_STATE                          0x405A
 #define VAR_PLYCHRME_BOAT_SPAWN                          0x405B // previously unused var VAR_FORTREE_CITY_STATE
-#define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
+#define VAR_MULBERRY_TOWN_GRUNT                          0x405C // previously unused var VAR_LILYCOVE_CITY_STATE, also used to manage Scarlett intro cutscene
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
 #define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var

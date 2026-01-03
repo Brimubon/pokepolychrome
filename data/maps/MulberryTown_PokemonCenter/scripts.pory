@@ -1,18 +1,107 @@
 mapscripts MulberryTown_PokemonCenter_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: MulberryTown_PokemonCenter_OnTransition
     MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_MULBERRY_TOWN_GRUNT, 0: MulberryTown_PokemonCenter_EventScript_Scarlett
+    ]
 }
 
 script MulberryTown_PokemonCenter_OnTransition {
     setrespawn(HEAL_LOCATION_MULBERRY_TOWN)
 }
 
+script MulberryTown_PokemonCenter_EventScript_Scarlett {
+    lockall
+    applymovement(LOCALID_PLAYER, moves(walk_up * 2, walk_right * 2, face_up))
+    waitmovement(0)
+    delay(16)
+    applymovement(2, moves(walk_in_place_down))
+    waitmovement(0)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText1, MSGBOX_AUTOCLOSE)
+    applymovement(7, moves(walk_in_place_up))
+    waitmovement(0)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText2, MSGBOX_AUTOCLOSE)
+    applymovement(2, moves(walk_in_place_slow_down))
+    waitmovement(0)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText3, MSGBOX_AUTOCLOSE)
+    playse(SE_PIN)
+    applymovement(3, moves(emote_exclamation_mark, walk_in_place_left))
+    waitmovement(0)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText4, MSGBOX_AUTOCLOSE)
+    applymovement(7, moves(walk_in_place_right))
+    waitmovement(0)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText5, MSGBOX_AUTOCLOSE)
+    playse(SE_LEDGE)
+    applymovement(7, moves(walk_fast_down, lock_facing_direction, jump_up, unlock_facing_direction))
+    waitmovement(0)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox("ACK!", MSGBOX_AUTOCLOSE)
+    delay(16)
+    applymovement(7, moves(walk_down))
+    waitmovement(0)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox("E{PAUSE 48}-excuse me!\n" "I'm kinda in a hurry right now!", MSGBOX_AUTOCLOSE)
+    delay(60)
+    setspeaker(SP_NAME_UNKNOWN)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText6, MSGBOX_AUTOCLOSE)
+    applymovement(7, moves(walk_left * 2, walk_down * 2, walk_in_place_right))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText7, MSGBOX_AUTOCLOSE)
+    applymovement(7, moves(walk_down))
+    waitmovement(0)
+    delay(16)
+    removeobject(7)
+    setflag(FLAG_HIDE_SCARLETT_MULBERRY)
+    removeobject(12, MAP_MULBERRY_TOWN)
+    setflag(FLAG_HIDE_MULBERRY_GRUNT)
+    setvar(VAR_MULBERRY_TOWN_GRUNT, 1)
+    releaseall
+}
+
 script MulberryTown_PokemonCenter_EventScript_Nurse {
-    setvar(VAR_0x800B, LOCALID_MULBERRY_NURSE)
-    call(Common_EventScript_PkmnCenterNurse)
-    waitmessage
-    waitbuttonpress
+    if(flag(FLAG_SYS_POKEMON_GET) == FALSE) {
+        lock
+        msgbox(MulberryTown_PokemonCenter_EventScript_NoPokemonText)
+        applymovement(LOCALID_PLAYER, moves(face_down))
+        waitmovement(0)
+
+    } else {
+        setvar(VAR_0x800B, LOCALID_MULBERRY_NURSE)
+        call(Common_EventScript_PkmnCenterNurse)
+        waitmessage
+        waitbuttonpress
+
+    }
     release
+}
+
+script MulberryTown_PokemonCenter_EventScript_Clerk {
+    lock
+    faceplayer
+    if(flag(FLAG_SYS_POKEMON_GET) == FALSE) {
+        msgbox(MulberryTown_PokemonCenter_EventScript_UnpackingText)
+        applymovement(LOCALID_PLAYER, moves(face_down))
+        waitmovement(0)
+    } else {
+        message(gText_HowMayIServeYou)
+        waitmessage
+        pokemart(MulberryTown_PokemonCenter_Pokemart)
+        msgbox(gText_PleaseComeAgain)
+    }
+    release
+}
+
+mart MulberryTown_PokemonCenter_Pokemart {
+    ITEM_POKE_BALL
+    ITEM_POTION 
+    ITEM_ANTIDOTE 
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
 }
 
 script MulberryTown_PokemonCenter_EventScript_Girl1 {
@@ -39,7 +128,7 @@ script MulberryTown_PokemonCenter_EventScript_Girl2 {
     playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
     msgbox("Stufful...?")
     waitmoncry
-    applymovement(6, moves(walk_in_place_up, walk_in_place_down, walk_in_place_left, walk_in_place_right, walk_in_place_down))
+    applymovement(6, moves(walk_in_place_up, delay_16, walk_in_place_down, delay_16, walk_in_place_left, walk_in_place_right, walk_in_place_down))
     waitmovement(6)
     msgbox(MulberryTown_PokemonCenter_EventScript_Girl2Text3)
     applymovement(5, moves(walk_in_place_up))
@@ -62,6 +151,75 @@ script MulberryTown_PokemonCenter_EventScript_Stufful {
     applymovement(6, moves(walk_in_place_down))
     waitmovement
     release
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText1 {
+    "My apologies, ma'am. I've triple checked\n"
+    "all the deliveries we've made today,\l"
+    "but...\p"
+    "It seems the package you're looking for\n"
+    "has already been picked up."
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText2 {
+    "Really? Oh no...\p"
+    "Do you at least remember what the\n"
+    "person who took it looked like?"
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText3 {
+    ".....Hmm....\p"
+    "Oh! I think they were wearing some kind\n"
+    "of weird, all-black outfit.\p"
+    "It made it pretty hard to see what\n"
+    "their face looked like..."
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText4 {
+    "Hey! I think I saw someone like that\n"
+    "take off towards Mulberry Woods!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText5 {
+    "Mulberry Woods?! I've gotta catch up to\n"
+    "them before they get too far!\p"
+    "Thanks for the help!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText6 {
+    ".....Hey, wait.\n"
+    "Haven't I seen you somewhere before?\p"
+    "...{PAUSE 72}Oh, you're {PLAYER}, aren't you?\n"
+    "I guess my uncle must've sent you here.\p"
+    "{SPEAKER NAME_SCARLETT}My name's Scarlett.\n"
+    "It's nice to finally meet you!\p"
+    "...{PAUSE 72} .....\p"
+    "Ah, right!{PAUSE 48} Listen! {PLAYER}!\n"
+    "I'm gonna need your help!\p"
+    "Someone ran off with the Pokémon we\n"
+    "were going to give away.\p"
+    "You've gotta help me catch them before\n"
+    "it's too late!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_ScarlettText7 {
+    "Meet me in Mulberry Woods, alright?\n"
+    "We'll talk more there!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_NoPokemonText {
+    "Hello, and welcome to... oh?\p"
+    "It doesn't seem like you have any\n"
+    "Pokémon.\p"
+    "Make sure to come back once you do so\n"
+    "we can restore them to full health!"
+}
+
+text MulberryTown_PokemonCenter_EventScript_UnpackingText {
+    "Apologies, we're still busy unpacking\n"
+    "some of our supplies.\p"
+    "Come back later and we should have\n"
+    "some goods available to sell to you!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_Girl1Text {
