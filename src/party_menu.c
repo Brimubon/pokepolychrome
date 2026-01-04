@@ -1109,7 +1109,7 @@ static void DisplayPartyPokemonDataForRelearner(u8 slot)
         hasMoves = HasRelearnerTutorMoves(mon);
         break;
     default:
-        hasMoves = HasRelearnerTutorMoves(mon);
+        hasMoves = HasRelearnerLevelUpMoves(mon);
         break;
     }
 
