@@ -656,12 +656,12 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_HIDE_ZANGOOSE          0x264 // previously unused flag, hides Zangoose after Plychrme cutscene
-#define FLAG_HIDE_HONEYDEW_SAILOR   0x265 // previously unused flag
-#define FLAG_HIDE_HONEYDEW_SHIP     0x266 // previously unused flag, not yet used but will be
-#define FLAG_HIDE_SCARLETT_MULBERRY 0x267 // previously unused flag, hides Scarlett after Mulberry cutscene
-#define FLAG_HIDE_MULBERRY_GRUNT    0x268 // previously unused flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
+#define FLAG_HIDE_ZANGOOSE           0x264 // previously unused flag, hides Zangoose after Plychrme cutscene
+#define FLAG_HIDE_HONEYDEW_SAILOR    0x265 // previously unused flag
+#define FLAG_HIDE_HONEYDEW_SHIP      0x266 // previously unused flag, not yet used but will be
+#define FLAG_HIDE_SCARLETT_MULBERRY  0x267 // previously unused flag, hides Scarlett after Mulberry cutscene
+#define FLAG_HIDE_MULBERRY_GRUNT     0x268 // previously unused flag
+#define FLAG_HIDE_SCARLETT_MULWOODS1 0x269 // previously unused flag, hides Scarlett after first Mulberry Woods cutscene
 #define FLAG_UNUSED_0x26A  0x26A // Unused Flag
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag

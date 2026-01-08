@@ -41,7 +41,7 @@ script HoneydewTown_EventScript_IntroCutscene {
     removeobject(4)
     setvar(VAR_PLYCHRME_INTRO, 1)
     special(SpawnCameraObject)
-    applymovement(LOCALID_INTRO_SHIP, moves(walk_fast_left * 6, walk_left * 6, walk_slow_left * 4))
+    applymovement(LOCALID_INTRO_SHIP, moves(walk_fast_left * 6, walk_left * 8, walk_slow_left * 2))
     applymovement(LOCALID_CAMERA, moves(walk_fast_left * 6, walk_left * 10))
     waitmovement(0)
     special(RemoveCameraObject)

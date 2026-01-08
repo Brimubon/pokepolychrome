@@ -234,9 +234,9 @@ HoneydewTown_EventScript_IntroCutscene_Movement_0:
 # 44 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
 # 44 "data/maps/HoneydewTown/scripts.pory"
-	walk_slow_left
+	walk_left
 # 44 "data/maps/HoneydewTown/scripts.pory"
-	walk_slow_left
+	walk_left
 # 44 "data/maps/HoneydewTown/scripts.pory"
 	walk_slow_left
 # 44 "data/maps/HoneydewTown/scripts.pory"

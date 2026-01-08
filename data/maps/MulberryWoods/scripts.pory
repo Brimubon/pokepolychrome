@@ -1,6 +1,55 @@
 mapscripts MulberryWoods_MapScripts {
 }
 
+script MulberryWoods_EventScript_ScarlettEncounter0 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(MulberryWoods_EventScript_Scarlett)
+    end
+}
+
+script MulberryWoods_EventScript_ScarlettEncounter1 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(MulberryWoods_EventScript_Scarlett)
+    end
+}
+
+script MulberryWoods_EventScript_Scarlett {
+    playse(SE_PIN)
+    applymovement(10, moves(walk_in_place_down, emote_exclamation_mark))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_ScarlettText1, MSGBOX_AUTOCLOSE)
+    if(var(VAR_0x8008) == 0) {
+        applymovement(LOCALID_PLAYER, moves(walk_up * 3, walk_in_place_left))
+        waitmovement(LOCALID_PLAYER)
+    } elif (var(VAR_0x8008) == 1) {
+        applymovement(LOCALID_PLAYER, moves(walk_up, walk_right, walk_up * 2, walk_in_place_left))
+        waitmovement(LOCALID_PLAYER)
+    }
+    applymovement(10, moves(walk_in_place_right))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_ScarlettText2, MSGBOX_AUTOCLOSE)
+    applymovement(10, moves(walk_in_place_left))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_ScarlettText3, MSGBOX_AUTOCLOSE)
+    applymovement(10, moves(walk_in_place_right))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_ScarlettText4, MSGBOX_AUTOCLOSE)
+    applymovement(10, moves(walk_left * 8))
+    waitmovement(0)
+    removeobject(10)
+    setflag(FLAG_HIDE_SCARLETT_MULWOODS1)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
+    waitmovement(0)
+    setvar(VAR_MULBERRY_TOWN_GRUNT, 2)
+    releaseall
+}
+
 script MulberryWoods_EventScript_NormalGirl {
     lock
     faceplayer
@@ -20,12 +69,54 @@ script MulberryWoods_EventScript_ExitSign {
     release 
 }
 
+text MulberryWoods_EventScript_ScarlettText1 {
+    "Oh, {PLAYER}. There you are!\n"
+    "Took you long enough!"
+}
+
+text MulberryWoods_EventScript_ScarlettText2 {
+    "Alright, so. Here's the plan.\p"
+    "Whoever stole those Pokémon couldn't\n"
+    "have gotten very far."
+}
+
+text MulberryWoods_EventScript_ScarlettText3 {
+    "I'll check this side of the woods, and\n"
+    "ask the trainers here if they saw\l"
+    "anyone suspicious run by."
+}
+
+text MulberryWoods_EventScript_ScarlettText4 {
+    "Meanwhile, you'll cover this side of the\n"
+    "woods.\p"
+    "If you run into the thief, then...{PAUSE 80}\n"
+    "... um....\p"
+    "Right, you, uh, don't have any Pokémon\n"
+    "yet, do you...\p"
+    "Then...{PAUSE 48} uh....{PAUSE 48} try distracting them!\n"
+    "Make a loud noise or something!\p"
+    "I promise, I'll come running to help as\n"
+    "soon as I hear it!\p"
+    ".... ..... .....\p"
+    "Don't give me that look, alright?!\n"
+    "We don't have time to come up with\l"
+    "a better plan!\p"
+    "Listen, I know you'll be fine.\n"
+    "I know we've only just met, but...\p"
+    "You seem like the kind of person who\n"
+    "can handle themselves in any situation.\p"
+    "So... I know that things will turn out\n"
+    "just fine.\p"
+    "...Okay?{PAUSE 72} Okay!\p"
+    "Let's go thief hunting!"
+}
+
 text MulberryWoods_EventScript_NormalGirlText {
     "Hm? Oh no, I'm not a trainer.\p"
     "But there are quite a few of them\n"
     "between here and Bisque City, so you\l"
-    "should make sure to stock up on\l"
-    "supplies at a Pokémon Center."
+    "should make sure you're stocked up on\l"
+    "supplies."
 }
 
 text MulberryWoods_EventScript_PressBSignText {
