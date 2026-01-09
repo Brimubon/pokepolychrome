@@ -443,7 +443,7 @@ static const u16 sMoveTypes_Pal_BW[]                        = INCBIN_U16("graphi
 #endif
 static const u32 sTeraTypes_Gfx[]                           = INCBIN_U32("graphics/types_bw/tera/tera_types_bw.4bpp.smol");
 static const u32 sSummaryMoveSelect_Gfx_BW[]                = INCBIN_U32("graphics/summary_screen/bw/move_select.4bpp.smol");
-static const u16 sSummaryMoveSelect_Pal_BW[]                = INCBIN_U16("graphics/summary_screen/bw/move_select.gbapal.lz");
+static const u16 sSummaryMoveSelect_Pal_BW[]                = INCBIN_U16("graphics/summary_screen/bw/move_select.gbapal");
 static const u16 sMarkings_Pal_BW[]                         = INCBIN_U16("graphics/summary_screen/bw/markings.gbapal");
 static const u32 sShinyIcon_Gfx_BW[]                        = INCBIN_U32("graphics/summary_screen/bw/shiny_icon.4bpp.smol");
 static const u32 sPokerusCuredIcon_Gfx_BW[]                 = INCBIN_U32("graphics/summary_screen/bw/pokerus_cured_icon.4bpp.smol");
@@ -1618,7 +1618,7 @@ static const union AnimCmd *const sSpriteAnimTable_StatusCondition[] = {
 
 #if BW_SUMMARY_BW_STATUS_ICONS == TRUE
 static const u32 sStatusGfx_Icons[] = INCBIN_U32("graphics/summary_screen/bw/status_icons.4bpp.smol");
-static const u16 sStatusPal_Icons[] = INCBIN_U16("graphics/summary_screen/bw/status_icons.gbapal.lz");
+static const u16 sStatusPal_Icons[] = INCBIN_U16("graphics/summary_screen/bw/status_icons.gbapal");
 #endif
 
 static const struct CompressedSpriteSheet sStatusIconsSpriteSheet =
