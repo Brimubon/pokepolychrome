@@ -270,8 +270,8 @@ HoneydewTown_ProfsLab_EventScript_HawthIntro_Text_1:
 
 HoneydewTown_ProfsLab_EventScript_HawthIntro_Text_2:
 # 31 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "....{PAUSE 60} .........{PAUSE 72}\n"
-	.string ".................$"
+	.string "... ... ...{PAUSE 72} ... ... ... ... ... ... ...{PAUSE 84}\n"
+	.string "... ... ... ... ... ... ... ... ... ...$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntro_Text_3:
 # 37 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
@@ -297,7 +297,7 @@ HoneydewTown_ProfsLab_EventScript_Bookshelf_Text_0:
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText1::
 # 109 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "......Hm?{PAUSE 72} Ah, hello there!\n"
+	.string "....Hm?{PAUSE 84} Ah, hello there!\n"
 	.string "Welcome to my lab!\p"
 	.string "What can I do for you?$"
 
@@ -327,7 +327,7 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText3::
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText4::
 # 139 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "Oh, I know!{PAUSE 60} {PLAYER}!\p"
+	.string "Oh, I know!{PAUSE 72} {PLAYER}!\p"
 	.string "Could you stop by Mulberry Town for me\n"
 	.string "and make sure everything's alright?\p"
 	.string "If there are any major problems, I want\n"
@@ -336,8 +336,8 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText4::
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText5::
 # 148 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "Now, Mulberry Town is just to the right\n"
-	.string "of Honeydew, but you'll have to pass\l"
+	.string "Now, Mulberry Town is just east of\n"
+	.string "Honeydew, but you'll have to pass\l"
 	.string "through some tall grass to get there.\p"
 	.string "However, with this little tool right\n"
 	.string "here, that won't be an issue!$"
@@ -353,15 +353,15 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText6::
 
 HoneydewTown_ProfsLab_EventScript_HawthRegText1::
 # 165 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "Remember, Mulberry Town is just to the\n"
-	.string "right of here.\p"
+	.string "Remember, Mulberry Town is just east\n"
+	.string "of here.\p"
 	.string "With that special Cleanse Tag I gave\n"
 	.string "you, it should be easy to reach.$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1Text::
 # 172 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "...Scyther.... Seadra........{PAUSE 60}\n"
-	.string "...Sealeo... Seedot......\p"
+	.string "...Scyther....{PAUSE 72} Seadra....{PAUSE 84}\n"
+	.string "...Sealeo...{PAUSE 72} Seedot......\p"
 	.string "Ugh, why can't I find our notes on\n"
 	.string "Seaking?$"
 

@@ -80,7 +80,7 @@ script MulberryTown_EventScript_OldLady {
     dotimebasedevents
     gettimeofday
     if(var(VAR_0x8000) == TIME_EVENING || var(VAR_0x8000) == TIME_NIGHT) {
-        msgbox("Zzzz....\p" "(Looks like she fell asleep...)")
+        msgbox("Zzzz...\p" "(Looks like she fell asleep...)")
         release
         end
     } else {
@@ -137,17 +137,15 @@ text MulberryTown_EventScript_BoyWithDogText {
 }
 
 text MulberryTown_EventScript_OldLadyAwakeText {
-    "This town is always so quiet and\n" 
-    "peaceful.\p"
-    "Sitting out here, with the ocean breeze\n"
-    "and the tranquil sounds of nature...\p"
-    "Why, I feel like I could stay here\n" 
-    "forever!"
+    "This town's atmosphere is always so\n"
+    "quiet and peaceful.\p"
+    "Sometimes I worry I'll fall asleep\n"
+    "sitting out here like this, ohoho..."
 }
 
 text MulberryTown_EventScript_MainSignText {
     "Mulberry Town- \n"
-    "“The town with an air of elegance.”"
+    "“The elegant seaside town.”"
 }
 
 text MulberryTown_EventScript_ForestSignText {

@@ -51,7 +51,7 @@ script Route301_EventScript_ZangooseEncounter {
     applymovement(1, moves(walk_in_place_left))
     waitmovement(0)
     delay(48)
-    msgbox(".......{PAUSE 60} ............", MSGBOX_AUTOCLOSE)
+    msgbox("... ... ... ... ...{PAUSE 84} ... ... ... ... ... ... ...", MSGBOX_AUTOCLOSE)
     delay(48)
     msgbox("(You removed the band.)", MSGBOX_AUTOCLOSE) 
     playse(SE_PIN)

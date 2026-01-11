@@ -133,7 +133,7 @@ script MulberryTown_PokemonCenter_EventScript_Girl2 {
     msgbox(MulberryTown_PokemonCenter_EventScript_Girl2Text3)
     applymovement(5, moves(walk_in_place_up))
     waitmovement(5)
-    msgbox(".....")
+    msgbox("... ... ... ...")
     applymovement(5, moves(face_player))
     waitmovement(5)
     msgbox("...It's having an off day.")
@@ -168,7 +168,7 @@ text MulberryTown_PokemonCenter_EventScript_ScarlettText2 {
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText3 {
-    ".....Hmm....\p"
+    "....Hmm...\p"
     "Oh! I think they were wearing some kind\n"
     "of weird, all-black outfit.\p"
     "It made it pretty hard to see what\n"
@@ -187,14 +187,14 @@ text MulberryTown_PokemonCenter_EventScript_ScarlettText5 {
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText6 {
-    ".....Hey, wait.\n"
+    "...Hey, wait.\n"
     "Haven't I seen you somewhere before?\p"
     "...{PAUSE 72}Oh, you're {PLAYER}, aren't you?\n"
     "I guess my uncle must've sent you here.\p"
     "{SPEAKER NAME_SCARLETT}My name's Scarlett.\n"
     "It's nice to finally meet you!\p"
-    "...{PAUSE 72} .....\p"
-    "Ah, right!{PAUSE 48} Listen! {PLAYER}!\n"
+    "... ... {PAUSE 72} ... ... ....\p"
+    "Ah, right!{PAUSE 60} Listen! {PLAYER}!\n"
     "I'm gonna need your help!\p"
     "Someone ran off with the Pokémon we\n"
     "were going to give away.\p"
@@ -240,7 +240,7 @@ text MulberryTown_PokemonCenter_EventScript_Boy1Text {
 text MulberryTown_PokemonCenter_EventScript_Girl2Text1 {
     "Isn't my Stufful just the cutest?\n"
     "You won't find a cuter Pokémon in all of\l"
-    "Coeze, I assure you.\p"
+    "Myset, I assure you.\p"
     "Oh, and it's really smart and can do all\n"
     "kinds of neat tricks, too! Watch!"
 }

@@ -142,6 +142,8 @@ static const u8 sDoorAnimTiles_NewPokeCenter[] = INCBIN_U8("graphics/door_anims/
 static const u16 sDoorNullPalette50[16] = {};
 static const u8 sDoorAnimTiles_HawthsLab[] = INCBIN_U8("graphics/door_anims/hawth_lab.4bpp");
 static const u16 sDoorNullPalette51[16] = {};
+static const u8 sDoorAnimTiles_Honeydew[] = INCBIN_U8("graphics/door_anims/honeydew.4bpp");
+static const u16 sDoorNullPalette52[16] = {};
 
 #define CLOSED_DOOR_TILES_OFFSET 0xFFFF
 
@@ -252,6 +254,7 @@ static const u8 sDoorAnimPalettes_TrainerHillLobbyElevator[] = {7, 7, 7, 7, 7, 7
 static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7, 7, 7};
 static const u8 sDoorAnimPalettes_NewPokeCenter[] = {1, 1, 1, 1, 1, 1, 1, 1};
 static const u8 sDoorAnimPalettes_HawthsLab[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimPalettes_Honeydew[] = {6, 6, 6, 6, 6, 6, 6, 6};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -308,7 +311,8 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_TrainerHill_Door_Elevator_Lobby,              DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_TrainerHillLobbyElevator, sDoorAnimPalettes_TrainerHillLobbyElevator},
     {METATILE_TrainerHill_Door_Elevator_Roof,               DOOR_SOUND_SLIDING, DOOR_SIZE_1x2, sDoorAnimTiles_TrainerHillRoofElevator, sDoorAnimPalettes_TrainerHillRoofElevator},
     {METATILE_NewGeneral_PlychrmePCDoor,                    DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_NewPokeCenter, sDoorAnimPalettes_NewPokeCenter},
-    {METATILE_Honeydew_PlychrmeHawthDoor,                   DOOR_SOUND_NORMAL,  DOOR_SIZE_1x1, sDoorAnimTiles_HawthsLab, sDoorAnimPalettes_HawthsLab},
+    {METATILE_Honeydew_PlychrmeHawthDoor,                   DOOR_SOUND_FRLG,  DOOR_SIZE_1x1, sDoorAnimTiles_HawthsLab, sDoorAnimPalettes_HawthsLab},
+    {METATILE_Honeydew_PlychrmeHoneydewDoor,                DOOR_SOUND_FRLG,  DOOR_SIZE_1x1, sDoorAnimTiles_Honeydew, sDoorAnimPalettes_Honeydew},
     {},
 };
 

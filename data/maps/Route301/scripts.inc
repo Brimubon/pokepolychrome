@@ -301,7 +301,7 @@ Route301_EventScript_ZangooseEncounter_Text_1:
 
 Route301_EventScript_ZangooseEncounter_Text_2:
 # 54 "data/maps/Route301/scripts.pory"
-	.string ".......{PAUSE 60} ............$"
+	.string "... ... ... ... ...{PAUSE 84} ... ... ... ... ... ... ...$"
 
 Route301_EventScript_ZangooseEncounter_Text_3:
 # 56 "data/maps/Route301/scripts.pory"

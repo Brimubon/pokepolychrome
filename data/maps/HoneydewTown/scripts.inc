@@ -149,13 +149,13 @@ HoneydewTown_EventScript_GiveMap::
 	return
 
 
-HoneydewTown_EventScript_Shoes::
+HoneydewTown_EventScript_LittleGirl::
 # 81 "data/maps/HoneydewTown/scripts.pory"
 	lock
 # 82 "data/maps/HoneydewTown/scripts.pory"
 	faceplayer
 # 83 "data/maps/HoneydewTown/scripts.pory"
-	msgbox HoneydewTown_EventScript_ShoesText
+	msgbox HoneydewTown_EventScript_LittleGirlText
 # 84 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
@@ -193,16 +193,26 @@ HoneydewTown_EventScript_ProfSign::
 	return
 
 
-HoneydewTown_EventScript_MeetHawthFirst::
+HoneydewTown_EventScript_ProfHouseSign::
 # 107 "data/maps/HoneydewTown/scripts.pory"
 	lock
 # 108 "data/maps/HoneydewTown/scripts.pory"
-	msgbox HoneydewTown_EventScript_MeetHawthFirstText, MSGBOX_AUTOCLOSE
+	msgbox HoneydewTown_EventScript_ProfHouseSignText
 # 109 "data/maps/HoneydewTown/scripts.pory"
+	release
+	return
+
+
+HoneydewTown_EventScript_MeetHawthFirst::
+# 113 "data/maps/HoneydewTown/scripts.pory"
+	lock
+# 114 "data/maps/HoneydewTown/scripts.pory"
+	msgbox HoneydewTown_EventScript_MeetHawthFirstText, MSGBOX_AUTOCLOSE
+# 115 "data/maps/HoneydewTown/scripts.pory"
 	applymovement LOCALID_PLAYER, HoneydewTown_EventScript_MeetHawthFirst_Movement_0
-# 110 "data/maps/HoneydewTown/scripts.pory"
+# 116 "data/maps/HoneydewTown/scripts.pory"
 	waitmovement LOCALID_PLAYER
-# 111 "data/maps/HoneydewTown/scripts.pory"
+# 117 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
@@ -285,53 +295,56 @@ HoneydewTown_EventScript_IntroCutscene_Movement_2:
 	set_visible
 	step_end
 
-# 109 "data/maps/HoneydewTown/scripts.pory"
+# 115 "data/maps/HoneydewTown/scripts.pory"
 HoneydewTown_EventScript_MeetHawthFirst_Movement_0:
-# 109 "data/maps/HoneydewTown/scripts.pory"
+# 115 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
 	step_end
 
 HoneydewTown_EventScript_WelcomeText::
-# 114 "data/maps/HoneydewTown/scripts.pory"
+# 120 "data/maps/HoneydewTown/scripts.pory"
 	.string "We've made it to Honeydew!\n"
-	.string "Hope the ride wasn't too rough, hehehe.\p"
+	.string "Hope the ride wasn't too rough, hahaha.\p"
 	.string "If you're lookin' for the professor,\n"
 	.string "he's probably in his lab, in the\l"
 	.string "northwest part of town. Hard to miss.$"
 
 HoneydewTown_EventScript_GiveMapText::
-# 122 "data/maps/HoneydewTown/scripts.pory"
+# 128 "data/maps/HoneydewTown/scripts.pory"
 	.string "I saw you get off that boat...\n"
-	.string "Are you new to the Coeze region?\p"
+	.string "Are you new to the Myset region?\p"
 	.string "Here, take this.\n"
 	.string "Consider it a welcome present.$"
 
-HoneydewTown_EventScript_ShoesText::
-# 129 "data/maps/HoneydewTown/scripts.pory"
-	.string "Um... I like your running shoes!\n"
-	.string "I have a pair like that, too.\p"
-	.string "Uh... you can press B to start running,\n"
-	.string "but you probably already knew that...$"
+HoneydewTown_EventScript_LittleGirlText::
+# 135 "data/maps/HoneydewTown/scripts.pory"
+	.string "I wanna get a Pokémon and go on an\n"
+	.string "adventure too, but my dad says I'm not\l"
+	.string "old enough yet.$"
 
 HoneydewTown_EventScript_GardenText::
-# 136 "data/maps/HoneydewTown/scripts.pory"
+# 141 "data/maps/HoneydewTown/scripts.pory"
 	.string "Tending to this garden isn't easy,\n"
 	.string "but to me, it's worth it.\p"
-	.string "With all the people coming to Coeze for\n"
-	.string "the League challenge, I want to make\l"
+	.string "With all the people coming to Myset for\n"
+	.string "the League Challenge, I want to make\l"
 	.string "this town as pretty as it can be.$"
 
 HoneydewTown_EventScript_MainSignText::
-# 144 "data/maps/HoneydewTown/scripts.pory"
+# 149 "data/maps/HoneydewTown/scripts.pory"
 	.string "Honeydew Town- \n"
 	.string "“Facilitating new beginnings.”$"
 
 HoneydewTown_EventScript_ProfSignText::
-# 149 "data/maps/HoneydewTown/scripts.pory"
+# 154 "data/maps/HoneydewTown/scripts.pory"
 	.string "Prof. Hawthorne's Lab$"
 
+HoneydewTown_EventScript_ProfHouseSignText::
+# 158 "data/maps/HoneydewTown/scripts.pory"
+	.string "Prof. Hawthorne's House$"
+
 HoneydewTown_EventScript_MeetHawthFirstText::
-# 153 "data/maps/HoneydewTown/scripts.pory"
+# 162 "data/maps/HoneydewTown/scripts.pory"
 	.string "(You should probably meet with Prof.\n"
 	.string "Hawthorne first.)\p"
 	.string "(His lab should be somewhere around\n"

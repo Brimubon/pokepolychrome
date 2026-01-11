@@ -83,7 +83,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "HoneydewTown_EventScript_Shoes",
+      "script": "HoneydewTown_EventScript_LittleGirl",
       "flag": "0"
     },
     {
@@ -159,6 +159,27 @@
       "elevation": 0,
       "dest_map": "MAP_HONEYDEW_TOWN_PROFS_LAB",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_HONEYDEW_TOWN_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_HONEYDEW_TOWN_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_HONEYDEW_TOWN_PROF_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -224,6 +245,14 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "HoneydewTown_EventScript_ProfSign"
+    },
+    {
+      "type": "sign",
+      "x": 22,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "HoneydewTown_EventScript_ProfHouseSign"
     }
   ]
 }

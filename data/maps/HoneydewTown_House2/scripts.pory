@@ -1,0 +1,30 @@
+mapscripts HoneydewTown_House2_MapScripts {}
+
+script HoneydewTown_House2_EventScript_Girl {
+    lock
+    faceplayer
+    msgbox(HoneydewTown_House2_EventScript_GirlText)
+    release 
+}
+
+script HoneydewTown_House2_EventScript_Man {
+    lock
+    faceplayer
+    msgbox(HoneydewTown_House2_EventScript_ManText)
+    release
+}
+
+text HoneydewTown_House2_EventScript_GirlText {
+    "Have you been to Painter's Peak?\n"
+    "It's just west of here.\p"
+    "Sometimes, at night, I like to sit on the\n"
+    "docks there, close my eyes, and listen\l"
+    "to the sound of the waves crashing."
+}
+
+text HoneydewTown_House2_EventScript_ManText {
+    "We moved to Honeydew from the big city\n"
+    "not too long ago.\p"
+    "The clean air here does wonders for my\n"
+    "health."
+}

@@ -104,7 +104,10 @@
     "MulberryTown"
   ],
   "gMapGroup_IndoorHoneydew": [
-    "HoneydewTown_ProfsLab"
+    "HoneydewTown_ProfsLab",
+    "HoneydewTown_House1",
+    "HoneydewTown_House2",
+    "HoneydewTown_ProfHouse"
   ],
   "gMapGroup_IndoorMulberry": [
     "MulberryTown_PokemonCenter"

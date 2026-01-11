@@ -1,0 +1,18 @@
+mapscripts HoneydewTown_House1_MapScripts {}
+
+script HoneydewTown_House1_EventScript_Fisher {
+    lock
+    faceplayer 
+    msgbox(HoneydewTown_House1_EventScript_FisherText)
+    release
+}
+
+text HoneydewTown_House1_EventScript_FisherText {
+    "Recently, Prof. Hawthorne's spent most\n"
+    "of his time cooped up in his lab.\p"
+    "He doesn't even stop by for our weekly\n"
+    "chess matches anymore.\p"
+    "Poor guy must be swamped with work....\n"
+    "Or maybe he's just scared of losing his\l"
+    "winning streak, hehehe."
+}

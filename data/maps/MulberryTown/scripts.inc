@@ -262,7 +262,7 @@ MulberryTown_EventScript_Growlithe_Text_0:
 
 MulberryTown_EventScript_OldLady_Text_0:
 # 83 "data/maps/MulberryTown/scripts.pory"
-	.string "Zzzz....\p"
+	.string "Zzzz...\p"
 	.string "(Looks like she fell asleep...)$"
 
 MulberryTown_EventScript_SuspiciousGruntText1::
@@ -299,18 +299,16 @@ MulberryTown_EventScript_BoyWithDogText::
 
 MulberryTown_EventScript_OldLadyAwakeText::
 # 139 "data/maps/MulberryTown/scripts.pory"
-	.string "This town is always so quiet and\n"
-	.string "peaceful.\p"
-	.string "Sitting out here, with the ocean breeze\n"
-	.string "and the tranquil sounds of nature...\p"
-	.string "Why, I feel like I could stay here\n"
-	.string "forever!$"
+	.string "This town's atmosphere is always so\n"
+	.string "quiet and peaceful.\p"
+	.string "Sometimes I worry I'll fall asleep\n"
+	.string "sitting out here like this, ohoho...$"
 
 MulberryTown_EventScript_MainSignText::
-# 148 "data/maps/MulberryTown/scripts.pory"
+# 146 "data/maps/MulberryTown/scripts.pory"
 	.string "Mulberry Town- \n"
-	.string "“The town with an air of elegance.”$"
+	.string "“The elegant seaside town.”$"
 
 MulberryTown_EventScript_ForestSignText::
-# 153 "data/maps/MulberryTown/scripts.pory"
+# 151 "data/maps/MulberryTown/scripts.pory"
 	.string "Entering Mulberry Woods$"

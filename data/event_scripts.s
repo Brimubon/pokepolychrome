@@ -1176,3 +1176,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HoneydewTown_ProfsLab/scripts.inc"
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
+
+	.include "data/maps/HoneydewTown_House1/scripts.inc"
+
+	.include "data/maps/HoneydewTown_House2/scripts.inc"
+
+	.include "data/maps/HoneydewTown_ProfHouse/scripts.inc"

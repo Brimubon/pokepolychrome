@@ -421,7 +421,7 @@ MulberryTown_PokemonCenter_EventScript_Girl2_Text_0:
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_1:
 # 136 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.string ".....$"
+	.string "... ... ... ...$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_2:
 # 139 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
@@ -447,7 +447,7 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText2::
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText3::
 # 170 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.string ".....Hmm....\p"
+	.string "....Hmm...\p"
 	.string "Oh! I think they were wearing some kind\n"
 	.string "of weird, all-black outfit.\p"
 	.string "It made it pretty hard to see what\n"
@@ -466,14 +466,14 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText5::
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText6::
 # 189 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.string ".....Hey, wait.\n"
+	.string "...Hey, wait.\n"
 	.string "Haven't I seen you somewhere before?\p"
 	.string "...{PAUSE 72}Oh, you're {PLAYER}, aren't you?\n"
 	.string "I guess my uncle must've sent you here.\p"
 	.string "{SPEAKER NAME_SCARLETT}My name's Scarlett.\n"
 	.string "It's nice to finally meet you!\p"
-	.string "...{PAUSE 72} .....\p"
-	.string "Ah, right!{PAUSE 48} Listen! {PLAYER}!\n"
+	.string "... ... {PAUSE 72} ... ... ....\p"
+	.string "Ah, right!{PAUSE 60} Listen! {PLAYER}!\n"
 	.string "I'm gonna need your help!\p"
 	.string "Someone ran off with the Pokémon we\n"
 	.string "were going to give away.\p"
@@ -519,7 +519,7 @@ MulberryTown_PokemonCenter_EventScript_Girl2Text1::
 # 240 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Isn't my Stufful just the cutest?\n"
 	.string "You won't find a cuter Pokémon in all of\l"
-	.string "Coeze, I assure you.\p"
+	.string "Myset, I assure you.\p"
 	.string "Oh, and it's really smart and can do all\n"
 	.string "kinds of neat tricks, too! Watch!$"
 

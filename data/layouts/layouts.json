@@ -4470,6 +4470,26 @@
       "secondary_tileset": "gTileset_Lab",
       "border_filepath": "data/layouts/HoneydewTown_ProfsLab/border.bin",
       "blockdata_filepath": "data/layouts/HoneydewTown_ProfsLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_HONEYDEW_TOWN_HOUSE1",
+      "name": "HoneydewTown_House1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HoneydewTown_House1/border.bin",
+      "blockdata_filepath": "data/layouts/HoneydewTown_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_HONEYDEW_TOWN_HOUSE2",
+      "name": "HoneydewTown_ProfHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HoneydewTown_ProfHouse/border.bin",
+      "blockdata_filepath": "data/layouts/HoneydewTown_ProfHouse/map.bin"
     }
   ]
 }

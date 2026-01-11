@@ -250,7 +250,8 @@
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
 // gTileset_Honeydew
-#define METATILE_Honeydew_PlychrmeHawthDoor  0x214
+#define METATILE_Honeydew_PlychrmeHawthDoor     0x214
+#define METATILE_Honeydew_PlychrmeHoneydewDoor  0x203
 
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
