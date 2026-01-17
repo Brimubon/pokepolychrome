@@ -296,7 +296,7 @@ Route301_EventScript_ZangooseEncounter_Text_0:
 
 Route301_EventScript_ZangooseEncounter_Text_1:
 # 48 "data/maps/Route301/scripts.pory"
-	.string "(It's got a small black band on its foot\n"
+	.string "(Its got a black tag on its foot\n"
 	.string "that it's trying to rip off...)$"
 
 Route301_EventScript_ZangooseEncounter_Text_2:
@@ -305,4 +305,4 @@ Route301_EventScript_ZangooseEncounter_Text_2:
 
 Route301_EventScript_ZangooseEncounter_Text_3:
 # 56 "data/maps/Route301/scripts.pory"
-	.string "(You removed the band.)$"
+	.string "(You removed the tag.)$"

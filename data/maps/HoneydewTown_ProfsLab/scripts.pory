@@ -49,7 +49,7 @@ script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     applymovement(2, moves(walk_left, face_down))
     waitmovement(0)
     playfanfare(MUS_LEVEL_UP)
-    msgbox("(A small tag was attached to your bag.)", MSGBOX_AUTOCLOSE)
+    msgbox("(A small piece of paper was attached to\n" "your bag.)", MSGBOX_AUTOCLOSE)
     waitfanfare
     setspeaker(SP_NAME_HAWTHORNE)
     msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText6)

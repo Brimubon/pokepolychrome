@@ -662,7 +662,7 @@
 #define FLAG_HIDE_SCARLETT_MULBERRY  0x267 // previously unused flag, hides Scarlett after Mulberry cutscene
 #define FLAG_HIDE_MULBERRY_GRUNT     0x268 // previously unused flag
 #define FLAG_HIDE_SCARLETT_MULWOODS1 0x269 // previously unused flag, hides Scarlett after first Mulberry Woods cutscene
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
+#define FLAG_HIDE_SEVIPER            0x26A // previously unused flag, hides Seviper after Plychrme cutscene
 #define FLAG_UNUSED_0x26B  0x26B // Unused Flag
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag

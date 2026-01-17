@@ -279,7 +279,8 @@ HoneydewTown_ProfsLab_EventScript_HawthIntro_Text_3:
 
 HoneydewTown_ProfsLab_EventScript_HawthIntro_Text_4:
 # 52 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "(A small tag was attached to your bag.)$"
+	.string "(A small piece of paper was attached to\n"
+	.string "your bag.)$"
 
 HoneydewTown_ProfsLab_EventScript_Hoothoot_Text_0:
 # 85 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
