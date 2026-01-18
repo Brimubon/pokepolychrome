@@ -2358,7 +2358,7 @@ static u8 *AddTextPrinterAndCreateWindowOnHealthboxWithFont(const u8 *str, u32 x
     FillWindowPixelBuffer(winId, PIXEL_FILL(bgColor));
 
     color[0] = bgColor;
-    color[1] = 1;
+    color[1] = 6;
     color[2] = isHP ? 4 : 3;
 
     AddTextPrinterParameterized4(winId, fontId, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
@@ -2434,12 +2434,12 @@ static void SafariTextIntoHealthboxObject(void *dest, u8 *windowTileData, u32 wi
  * SH = SHadow
  */
 #define ABILITY_POP_UP_BATTLER_BG_TXTCLR 9
-#define ABILITY_POP_UP_BATTLER_FG_TXTCLR 11
-#define ABILITY_POP_UP_BATTLER_SH_TXTCLR 1
+#define ABILITY_POP_UP_BATTLER_FG_TXTCLR 7
+#define ABILITY_POP_UP_BATTLER_SH_TXTCLR 8
 
 #define ABILITY_POP_UP_ABILITY_BG_TXTCLR 8
-#define ABILITY_POP_UP_ABILITY_FG_TXTCLR 11
-#define ABILITY_POP_UP_ABILITY_SH_TXTCLR 2
+#define ABILITY_POP_UP_ABILITY_FG_TXTCLR 7
+#define ABILITY_POP_UP_ABILITY_SH_TXTCLR 6
 
 #define sState          data[0]
 #define sAutoDestroy    data[1]
