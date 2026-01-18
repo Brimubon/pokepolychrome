@@ -2,8 +2,10 @@ HoneydewTown_MapScripts::
 # 2 "data/maps/HoneydewTown/scripts.pory"
 	map_script MAP_SCRIPT_ON_LOAD, HoneydewTown_MapScripts_MAP_SCRIPT_ON_LOAD
 # 23 "data/maps/HoneydewTown/scripts.pory"
-	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, HoneydewTown_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
+	map_script MAP_SCRIPT_ON_TRANSITION, HoneydewTown_MapScripts_MAP_SCRIPT_ON_TRANSITION
 # 27 "data/maps/HoneydewTown/scripts.pory"
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, HoneydewTown_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
+# 31 "data/maps/HoneydewTown/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, HoneydewTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
 
@@ -52,257 +54,262 @@ HoneydewTown_MapScripts_MAP_SCRIPT_ON_LOAD_5:
 	clearflag FLAG_TEMP_8
 	return
 
-HoneydewTown_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
+HoneydewTown_MapScripts_MAP_SCRIPT_ON_TRANSITION:
 # 24 "data/maps/HoneydewTown/scripts.pory"
+	setrespawn HEAL_LOCATION_HONEYDEW_TOWN
+	return
+
+HoneydewTown_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
+# 28 "data/maps/HoneydewTown/scripts.pory"
 	map_script_2 VAR_PLYCHRME_BOAT_SPAWN, 0, HoneydewTown_EventScript_SpawnBoat
 	.2byte 0
 
 HoneydewTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 28 "data/maps/HoneydewTown/scripts.pory"
+# 32 "data/maps/HoneydewTown/scripts.pory"
 	map_script_2 VAR_PLYCHRME_INTRO, 0, HoneydewTown_EventScript_IntroCutscene
 	.2byte 0
 
 
 HoneydewTown_EventScript_SpawnBoat::
-# 34 "data/maps/HoneydewTown/scripts.pory"
+# 38 "data/maps/HoneydewTown/scripts.pory"
 	setvar VAR_PLYCHRME_BOAT_SPAWN, 1
-# 35 "data/maps/HoneydewTown/scripts.pory"
+# 39 "data/maps/HoneydewTown/scripts.pory"
 	setobjectxyperm LOCALID_INTRO_SHIP, 34, 32
-# 36 "data/maps/HoneydewTown/scripts.pory"
+# 40 "data/maps/HoneydewTown/scripts.pory"
 	addobject LOCALID_INTRO_SHIP
 	return
 
 
 HoneydewTown_EventScript_IntroCutscene::
-# 40 "data/maps/HoneydewTown/scripts.pory"
-	lockall
-# 41 "data/maps/HoneydewTown/scripts.pory"
-	removeobject 4
-# 42 "data/maps/HoneydewTown/scripts.pory"
-	setvar VAR_PLYCHRME_INTRO, 1
-# 43 "data/maps/HoneydewTown/scripts.pory"
-	special SpawnCameraObject
 # 44 "data/maps/HoneydewTown/scripts.pory"
-	applymovement LOCALID_INTRO_SHIP, HoneydewTown_EventScript_IntroCutscene_Movement_0
+	lockall
 # 45 "data/maps/HoneydewTown/scripts.pory"
-	applymovement LOCALID_CAMERA, HoneydewTown_EventScript_IntroCutscene_Movement_1
+	removeobject 4
 # 46 "data/maps/HoneydewTown/scripts.pory"
-	waitmovement 0
+	setvar VAR_PLYCHRME_INTRO, 1
 # 47 "data/maps/HoneydewTown/scripts.pory"
-	special RemoveCameraObject
+	special SpawnCameraObject
 # 48 "data/maps/HoneydewTown/scripts.pory"
-	delay 72
+	applymovement LOCALID_INTRO_SHIP, HoneydewTown_EventScript_IntroCutscene_Movement_0
 # 49 "data/maps/HoneydewTown/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
+	applymovement LOCALID_CAMERA, HoneydewTown_EventScript_IntroCutscene_Movement_1
 # 50 "data/maps/HoneydewTown/scripts.pory"
-	delay 16
-# 51 "data/maps/HoneydewTown/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_EventScript_IntroCutscene_Movement_2
-# 52 "data/maps/HoneydewTown/scripts.pory"
 	waitmovement 0
+# 51 "data/maps/HoneydewTown/scripts.pory"
+	special RemoveCameraObject
+# 52 "data/maps/HoneydewTown/scripts.pory"
+	delay 72
 # 53 "data/maps/HoneydewTown/scripts.pory"
-	playse SE_EXIT
+	fadescreenswapbuffers FADE_TO_BLACK
 # 54 "data/maps/HoneydewTown/scripts.pory"
-	waitse
-# 55 "data/maps/HoneydewTown/scripts.pory"
-	addobject 4
-# 56 "data/maps/HoneydewTown/scripts.pory"
-	clearflag FLAG_HIDE_HONEYDEW_SAILOR
-# 57 "data/maps/HoneydewTown/scripts.pory"
-	setmetatile 34, 32, 0x0BC, FALSE
-# 58 "data/maps/HoneydewTown/scripts.pory"
-	special DrawWholeMapView
-# 59 "data/maps/HoneydewTown/scripts.pory"
-	warpsilent MAP_HONEYDEW_TOWN, 18, 31
-# 60 "data/maps/HoneydewTown/scripts.pory"
-	waitstate
-# 61 "data/maps/HoneydewTown/scripts.pory"
 	delay 16
+# 55 "data/maps/HoneydewTown/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_EventScript_IntroCutscene_Movement_2
+# 56 "data/maps/HoneydewTown/scripts.pory"
+	waitmovement 0
+# 57 "data/maps/HoneydewTown/scripts.pory"
+	playse SE_EXIT
+# 58 "data/maps/HoneydewTown/scripts.pory"
+	waitse
+# 59 "data/maps/HoneydewTown/scripts.pory"
+	addobject 4
+# 60 "data/maps/HoneydewTown/scripts.pory"
+	clearflag FLAG_HIDE_HONEYDEW_SAILOR
+# 61 "data/maps/HoneydewTown/scripts.pory"
+	setmetatile 34, 32, 0x0BC, FALSE
 # 62 "data/maps/HoneydewTown/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
+	special DrawWholeMapView
 # 63 "data/maps/HoneydewTown/scripts.pory"
+	warpsilent MAP_HONEYDEW_TOWN, 18, 31
+# 64 "data/maps/HoneydewTown/scripts.pory"
+	waitstate
+# 65 "data/maps/HoneydewTown/scripts.pory"
+	delay 16
+# 66 "data/maps/HoneydewTown/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 67 "data/maps/HoneydewTown/scripts.pory"
 	releaseall
 	return
 
 
 HoneydewTown_EventScript_Welcome::
-# 67 "data/maps/HoneydewTown/scripts.pory"
+# 71 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 68 "data/maps/HoneydewTown/scripts.pory"
+# 72 "data/maps/HoneydewTown/scripts.pory"
 	faceplayer
-# 69 "data/maps/HoneydewTown/scripts.pory"
+# 73 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_WelcomeText
-# 70 "data/maps/HoneydewTown/scripts.pory"
+# 74 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_GiveMap::
-# 74 "data/maps/HoneydewTown/scripts.pory"
+# 78 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 75 "data/maps/HoneydewTown/scripts.pory"
+# 79 "data/maps/HoneydewTown/scripts.pory"
 	faceplayer
-# 76 "data/maps/HoneydewTown/scripts.pory"
+# 80 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_GiveMapText
-# 77 "data/maps/HoneydewTown/scripts.pory"
+# 81 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_LittleGirl::
-# 81 "data/maps/HoneydewTown/scripts.pory"
+# 85 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 82 "data/maps/HoneydewTown/scripts.pory"
+# 86 "data/maps/HoneydewTown/scripts.pory"
 	faceplayer
-# 83 "data/maps/HoneydewTown/scripts.pory"
+# 87 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_LittleGirlText
-# 84 "data/maps/HoneydewTown/scripts.pory"
+# 88 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_Garden::
-# 88 "data/maps/HoneydewTown/scripts.pory"
+# 92 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 89 "data/maps/HoneydewTown/scripts.pory"
+# 93 "data/maps/HoneydewTown/scripts.pory"
 	faceplayer
-# 90 "data/maps/HoneydewTown/scripts.pory"
+# 94 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_GardenText
-# 91 "data/maps/HoneydewTown/scripts.pory"
+# 95 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_MainSign::
-# 95 "data/maps/HoneydewTown/scripts.pory"
+# 99 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 96 "data/maps/HoneydewTown/scripts.pory"
+# 100 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_MainSignText
-# 97 "data/maps/HoneydewTown/scripts.pory"
+# 101 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_ProfSign::
-# 101 "data/maps/HoneydewTown/scripts.pory"
+# 105 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 102 "data/maps/HoneydewTown/scripts.pory"
+# 106 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_ProfSignText
-# 103 "data/maps/HoneydewTown/scripts.pory"
+# 107 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_ProfHouseSign::
-# 107 "data/maps/HoneydewTown/scripts.pory"
+# 111 "data/maps/HoneydewTown/scripts.pory"
 	lock
-# 108 "data/maps/HoneydewTown/scripts.pory"
+# 112 "data/maps/HoneydewTown/scripts.pory"
 	msgbox HoneydewTown_EventScript_ProfHouseSignText
-# 109 "data/maps/HoneydewTown/scripts.pory"
+# 113 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_EventScript_MeetHawthFirst::
-# 113 "data/maps/HoneydewTown/scripts.pory"
-	lock
-# 114 "data/maps/HoneydewTown/scripts.pory"
-	msgbox HoneydewTown_EventScript_MeetHawthFirstText, MSGBOX_AUTOCLOSE
-# 115 "data/maps/HoneydewTown/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_EventScript_MeetHawthFirst_Movement_0
-# 116 "data/maps/HoneydewTown/scripts.pory"
-	waitmovement LOCALID_PLAYER
 # 117 "data/maps/HoneydewTown/scripts.pory"
+	lock
+# 118 "data/maps/HoneydewTown/scripts.pory"
+	msgbox HoneydewTown_EventScript_MeetHawthFirstText, MSGBOX_AUTOCLOSE
+# 119 "data/maps/HoneydewTown/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_EventScript_MeetHawthFirst_Movement_0
+# 120 "data/maps/HoneydewTown/scripts.pory"
+	waitmovement LOCALID_PLAYER
+# 121 "data/maps/HoneydewTown/scripts.pory"
 	release
 	return
 
 
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 HoneydewTown_EventScript_IntroCutscene_Movement_0:
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_slow_left
-# 44 "data/maps/HoneydewTown/scripts.pory"
+# 48 "data/maps/HoneydewTown/scripts.pory"
 	walk_slow_left
 	step_end
 
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 HoneydewTown_EventScript_IntroCutscene_Movement_1:
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_fast_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
-# 45 "data/maps/HoneydewTown/scripts.pory"
+# 49 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
 	step_end
 
-# 51 "data/maps/HoneydewTown/scripts.pory"
+# 55 "data/maps/HoneydewTown/scripts.pory"
 HoneydewTown_EventScript_IntroCutscene_Movement_2:
-# 51 "data/maps/HoneydewTown/scripts.pory"
+# 55 "data/maps/HoneydewTown/scripts.pory"
 	set_visible
 	step_end
 
-# 115 "data/maps/HoneydewTown/scripts.pory"
+# 119 "data/maps/HoneydewTown/scripts.pory"
 HoneydewTown_EventScript_MeetHawthFirst_Movement_0:
-# 115 "data/maps/HoneydewTown/scripts.pory"
+# 119 "data/maps/HoneydewTown/scripts.pory"
 	walk_left
 	step_end
 
 HoneydewTown_EventScript_WelcomeText::
-# 120 "data/maps/HoneydewTown/scripts.pory"
+# 124 "data/maps/HoneydewTown/scripts.pory"
 	.string "We've made it to Honeydew!\n"
 	.string "Hope the ride wasn't too rough, hahaha.\p"
 	.string "If you're lookin' for the professor,\n"
@@ -310,20 +317,20 @@ HoneydewTown_EventScript_WelcomeText::
 	.string "northwest part of town. Hard to miss.$"
 
 HoneydewTown_EventScript_GiveMapText::
-# 128 "data/maps/HoneydewTown/scripts.pory"
+# 132 "data/maps/HoneydewTown/scripts.pory"
 	.string "I saw you get off that boat...\n"
 	.string "Are you new to the Myset region?\p"
 	.string "Here, take this.\n"
 	.string "Consider it a welcome present.$"
 
 HoneydewTown_EventScript_LittleGirlText::
-# 135 "data/maps/HoneydewTown/scripts.pory"
+# 139 "data/maps/HoneydewTown/scripts.pory"
 	.string "I wanna get a Pokémon and go on an\n"
 	.string "adventure too, but my dad says I'm not\l"
 	.string "old enough yet.$"
 
 HoneydewTown_EventScript_GardenText::
-# 141 "data/maps/HoneydewTown/scripts.pory"
+# 145 "data/maps/HoneydewTown/scripts.pory"
 	.string "Tending to this garden isn't easy,\n"
 	.string "but to me, it's worth it.\p"
 	.string "With all the people coming to Myset for\n"
@@ -331,20 +338,20 @@ HoneydewTown_EventScript_GardenText::
 	.string "this town as pretty as it can be.$"
 
 HoneydewTown_EventScript_MainSignText::
-# 149 "data/maps/HoneydewTown/scripts.pory"
+# 153 "data/maps/HoneydewTown/scripts.pory"
 	.string "Honeydew Town- \n"
 	.string "“Facilitating new beginnings.”$"
 
 HoneydewTown_EventScript_ProfSignText::
-# 154 "data/maps/HoneydewTown/scripts.pory"
+# 158 "data/maps/HoneydewTown/scripts.pory"
 	.string "Prof. Hawthorne's Lab$"
 
 HoneydewTown_EventScript_ProfHouseSignText::
-# 158 "data/maps/HoneydewTown/scripts.pory"
+# 162 "data/maps/HoneydewTown/scripts.pory"
 	.string "Prof. Hawthorne's House$"
 
 HoneydewTown_EventScript_MeetHawthFirstText::
-# 162 "data/maps/HoneydewTown/scripts.pory"
+# 166 "data/maps/HoneydewTown/scripts.pory"
 	.string "(You should probably meet with Prof.\n"
 	.string "Hawthorne first.)\p"
 	.string "(His lab should be somewhere around\n"

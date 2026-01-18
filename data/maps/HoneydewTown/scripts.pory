@@ -20,6 +20,10 @@ mapscripts HoneydewTown_MapScripts {
         }
     }
 
+    MAP_SCRIPT_ON_TRANSITION {
+        setrespawn(HEAL_LOCATION_HONEYDEW_TOWN)
+    }
+
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
         VAR_PLYCHRME_BOAT_SPAWN, 0: HoneydewTown_EventScript_SpawnBoat
     ]
