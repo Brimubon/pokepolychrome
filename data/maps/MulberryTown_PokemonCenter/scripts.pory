@@ -60,6 +60,7 @@ script MulberryTown_PokemonCenter_EventScript_Scarlett {
     removeobject(12, MAP_MULBERRY_TOWN)
     setflag(FLAG_HIDE_MULBERRY_GRUNT)
     setvar(VAR_MULBERRY_TOWN_GRUNT, 1)
+    setvar(VAR_MULBERRY_TOWN_STATE, 1)
     releaseall
 }
 
@@ -146,7 +147,7 @@ script MulberryTown_PokemonCenter_EventScript_Stufful {
     lock
     faceplayer
     playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
-    msgbox("Stufful!")
+    msgbox("Stufful!", MSGBOX_AUTOCLOSE)
     waitmoncry
     applymovement(6, moves(walk_in_place_down))
     waitmovement

@@ -104,6 +104,14 @@ script MulberryTown_EventScript_ForestSign {
     release
 }
 
+script MulberryTown_EventScript_GoBack {
+    lock
+    msgbox(MulberryTown_EventScript_GoBackText, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, moves(walk_right))
+    waitmovement(LOCALID_PLAYER)
+    release
+}
+
 text MulberryTown_EventScript_SuspiciousGruntText1 {
     "Huh?{PAUSE 72} H-hey!\n"
     "You can't go in there right now!\p"
@@ -150,4 +158,10 @@ text MulberryTown_EventScript_MainSignText {
 
 text MulberryTown_EventScript_ForestSignText {
     "Entering Mulberry Woods"
+}
+
+text MulberryTown_EventScript_GoBackText {
+    "(Too late to go back now...\n"
+    "You've got to catch that Pokemon thief\l"
+    "before it's too late!)"
 }

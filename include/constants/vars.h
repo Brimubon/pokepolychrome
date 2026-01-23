@@ -112,9 +112,9 @@
 #define VAR_MULBERRY_TOWN_GRUNT                          0x405C // previously unused var VAR_LILYCOVE_CITY_STATE, also used to manage Scarlett intro cutscene
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
-#define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
+#define VAR_MULBERRY_WOODS_STATE                         0x405F // previously unused var VAR_EVER_GRANDE_CITY_STATE, for blocking player from visting left side until getting pokedex
 #define VAR_ROUTE101_STATE                               0x4060
-#define VAR_ROUTE102_STATE                               0x4061 // Unused Var
+#define VAR_MULBERRY_TOWN_STATE                          0x4061 // previously unused var VAR_ROUTE102_STATE
 #define VAR_ROUTE103_STATE                               0x4062 // Unused Var
 #define VAR_ROUTE104_STATE                               0x4063
 #define VAR_ROUTE105_STATE                               0x4064 // Unused Var

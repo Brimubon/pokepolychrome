@@ -57,7 +57,7 @@ script Route301_EventScript_ZangooseEncounter {
     playse(SE_PIN)
     applymovement(1, moves(walk_in_place_left, emote_question_mark))
     waitmovement(0)
-    delay(72)
+    delay(100)
     playse(SE_PIN)
     applymovement(1, moves(emote_double_exclamation_mark, delay_16, jump_in_place_left, walk_in_place_up, delay_16, walk_in_place_fast_down, delay_16, walk_in_place_right, walk_in_place_fast_down, delay_16, walk_in_place_left))
     playmoncry(SPECIES_ZANGOOSE, CRY_MODE_NORMAL)

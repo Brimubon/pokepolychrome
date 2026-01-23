@@ -17,7 +17,7 @@ script MulberryWoods_EventScript_ScarlettEncounter1 {
 
 script MulberryWoods_EventScript_Scarlett {
     playse(SE_PIN)
-    applymovement(10, moves(walk_in_place_down, emote_exclamation_mark))
+    applymovement(9, moves(walk_in_place_down, emote_exclamation_mark))
     waitmovement(0)
     setspeaker(SP_NAME_SCARLETT)
     msgbox(MulberryWoods_EventScript_ScarlettText1, MSGBOX_AUTOCLOSE)
@@ -28,21 +28,21 @@ script MulberryWoods_EventScript_Scarlett {
         applymovement(LOCALID_PLAYER, moves(walk_up, walk_right, walk_up * 2, walk_in_place_left))
         waitmovement(LOCALID_PLAYER)
     }
-    applymovement(10, moves(walk_in_place_right))
+    applymovement(9, moves(walk_in_place_right))
     waitmovement(0)
     setspeaker(SP_NAME_SCARLETT)
     msgbox(MulberryWoods_EventScript_ScarlettText2, MSGBOX_AUTOCLOSE)
-    applymovement(10, moves(walk_in_place_left))
+    applymovement(9, moves(walk_in_place_left))
     waitmovement(0)
     setspeaker(SP_NAME_SCARLETT)
     msgbox(MulberryWoods_EventScript_ScarlettText3, MSGBOX_AUTOCLOSE)
-    applymovement(10, moves(walk_in_place_right))
+    applymovement(9, moves(walk_in_place_right))
     waitmovement(0)
     setspeaker(SP_NAME_SCARLETT)
     msgbox(MulberryWoods_EventScript_ScarlettText4, MSGBOX_AUTOCLOSE)
-    applymovement(10, moves(walk_left * 8))
+    applymovement(9, moves(walk_left * 8))
     waitmovement(0)
-    removeobject(10)
+    removeobject(9)
     setflag(FLAG_HIDE_SCARLETT_MULWOODS1)
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     waitmovement(0)
@@ -100,7 +100,7 @@ script MulberryWoods_EventScript_SeviperEncounter {
         waitmovement(LOCALID_PLAYER)
     }
     playse(SE_PIN)
-    applymovement(14, moves(face_player, emote_exclamation_mark))
+    applymovement(12, moves(face_player, emote_exclamation_mark))
     waitmovement(0)
     delay(72)
     msgbox("(There's that black tag from before...\n" "This time it's wrapped around its tail.)", MSGBOX_AUTOCLOSE)
@@ -108,39 +108,40 @@ script MulberryWoods_EventScript_SeviperEncounter {
     waitmovement(LOCALID_PLAYER)
     delay(72)
     playse(SE_PIN)
-    applymovement(14, moves(emote_question_mark))
+    applymovement(12, moves(emote_question_mark))
     waitmovement(0)
-    delay(48)
-    applymovement(14, moves(walk_in_place_left))
+    delay(90)
+    applymovement(12, moves(walk_in_place_left))
     waitmovement(0)
     delay(60)
     msgbox("... ... ... ... ...{PAUSE 84} ... ... ... ... ... ... ...", MSGBOX_AUTOCLOSE)
     delay(48)
     msgbox("(You removed the tag.)", MSGBOX_AUTOCLOSE) 
     playse(SE_PIN)
-    applymovement(14, moves(face_player, emote_exclamation_mark))
+    applymovement(12, moves(face_player, emote_exclamation_mark))
     waitmovement(0)
     delay(72)
     playse(SE_PIN)
-    applymovement(14, moves(emote_heart))
+    applymovement(12, moves(emote_heart))
     waitmovement(0)
     delay(120)
     applymovement(LOCALID_PLAYER, moves(lock_facing_direction, walk_down, unlock_facing_direction))
     waitmovement(LOCALID_PLAYER)
-    applymovement(14, moves(walk_down, walk_right * 4, delay_16, face_left))
+    applymovement(12, moves(walk_down, walk_right * 4, delay_16, face_left))
     waitmovement(0)
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     waitmovement(LOCALID_PLAYER)
     delay(120)
     playmoncry(SPECIES_SEVIPER, CRY_MODE_NORMAL)
-    applymovement(14, moves(emote_heart))
+    applymovement(12, moves(emote_heart))
     waitmovement(0)
     delay(60)
-    applymovement(14, moves(walk_right * 6))
+    applymovement(12, moves(walk_up, walk_right * 6))
     waitmovement(0)
-    removeobject(14)
+    removeobject(12)
     setvar(VAR_MET_PLYCHRME_STARTERS, 2)
     setflag(FLAG_HIDE_SEVIPER)
+    delay(90)
     releaseall
 }
 
@@ -161,6 +162,14 @@ script MulberryWoods_EventScript_ExitSign {
     lock
     msgbox(MulberryWoods_EventScript_ExitSignText)
     release 
+}
+
+script MulberryWoods_EventScript_GoOtherWay {
+    lock
+    msgbox(MulberryWoods_EventScript_GoOtherWayText, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, moves(walk_right))
+    waitmovement(LOCALID_PLAYER)
+    release
 }
 
 text MulberryWoods_EventScript_ScarlettText1 {
@@ -223,4 +232,9 @@ text MulberryWoods_EventScript_PressBSignText {
 text MulberryWoods_EventScript_ExitSignText {
     "Leaving Mulberry Woods\n"
     "Bisque City Ahead"
+}
+
+text MulberryWoods_EventScript_GoOtherWayText {
+    "(There are Pokémon trainers past here...\n"
+    "Best to go the other way for now.)"
 }

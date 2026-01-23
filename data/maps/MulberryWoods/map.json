@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 2,
-      "y": 38,
+      "y": 43,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -43,11 +43,11 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
       "x": 4,
-      "y": 23,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 2,
+      "movement_range_x": 3,
+      "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MulberryWoods_EventScript_NormalGirl",
@@ -56,7 +56,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 7,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
       "x": 18,
-      "y": 26,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
@@ -82,7 +82,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
       "x": 28,
-      "y": 18,
+      "y": 24,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
@@ -119,22 +119,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 31,
-      "y": 4,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_ANABEL",
       "x": 15,
-      "y": 38,
+      "y": 44,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
@@ -147,7 +134,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 51,
-      "y": 4,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -171,11 +158,24 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 31,
-      "y": 4,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEVIPER)",
+      "x": 44,
+      "y": 37,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_SEVIPER"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZANGOOSE)",
+      "x": 42,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -186,28 +186,67 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEVIPER)",
       "x": 44,
-      "y": 31,
+      "y": 20,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_HIDE_SEVIPER"
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 19,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 4,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_MULBERRY_WOODS_ORAN_1",
+      "script": "BerryTreeScript",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 5,
+      "y": 23,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_MULBERRY_WOODS_ORAN_2",
+      "script": "BerryTreeScript",
+      "flag": "0"
     }
   ],
   "warp_events": [
     {
       "x": 15,
-      "y": 42,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_MULBERRY_TOWN",
       "dest_warp_id": "0"
     },
     {
       "x": 16,
-      "y": 42,
+      "y": 48,
       "elevation": 0,
       "dest_map": "MAP_MULBERRY_TOWN",
       "dest_warp_id": "1"
@@ -217,7 +256,7 @@
     {
       "type": "trigger",
       "x": 16,
-      "y": 41,
+      "y": 47,
       "elevation": 0,
       "var": "VAR_MULBERRY_TOWN_GRUNT",
       "var_value": "1",
@@ -226,7 +265,7 @@
     {
       "type": "trigger",
       "x": 15,
-      "y": 41,
+      "y": 47,
       "elevation": 0,
       "var": "VAR_MULBERRY_TOWN_GRUNT",
       "var_value": "1",
@@ -235,7 +274,7 @@
     {
       "type": "trigger",
       "x": 42,
-      "y": 34,
+      "y": 40,
       "elevation": 0,
       "var": "VAR_MET_PLYCHRME_STARTERS",
       "var_value": "1",
@@ -244,7 +283,7 @@
     {
       "type": "trigger",
       "x": 42,
-      "y": 35,
+      "y": 41,
       "elevation": 0,
       "var": "VAR_MET_PLYCHRME_STARTERS",
       "var_value": "1",
@@ -253,7 +292,7 @@
     {
       "type": "trigger",
       "x": 42,
-      "y": 36,
+      "y": 42,
       "elevation": 0,
       "var": "VAR_MET_PLYCHRME_STARTERS",
       "var_value": "1",
@@ -262,18 +301,45 @@
     {
       "type": "trigger",
       "x": 42,
-      "y": 37,
+      "y": 43,
       "elevation": 0,
       "var": "VAR_MET_PLYCHRME_STARTERS",
       "var_value": "1",
       "script": "MulberryWoods_EventScript_SeviperEncounter3"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 45,
+      "elevation": 0,
+      "var": "VAR_MULBERRY_WOODS_STATE",
+      "var_value": "0",
+      "script": "MulberryWoods_EventScript_GoOtherWay"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 44,
+      "elevation": 0,
+      "var": "VAR_MULBERRY_WOODS_STATE",
+      "var_value": "0",
+      "script": "MulberryWoods_EventScript_GoOtherWay"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 43,
+      "elevation": 0,
+      "var": "VAR_MULBERRY_WOODS_STATE",
+      "var_value": "0",
+      "script": "MulberryWoods_EventScript_GoOtherWay"
     }
   ],
   "bg_events": [
     {
       "type": "sign",
       "x": 12,
-      "y": 26,
+      "y": 32,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
       "script": "MulberryWoods_EventScript_PressBSign"

@@ -110,6 +110,12 @@ EventScript_ResetAllBerries::
 
 	@ Mirage Island
 	setberrytree BERRY_TREE_ROUTE_130_LIECHI, ITEM_TO_BERRY(ITEM_LIECHI_BERRY), BERRY_STAGE_BERRIES
+
+	@ Polychrome berries start here
+
+	@ Mulberry Woods
+	setberrytree BERRY_TREE_MULBERRY_WOODS_ORAN_1, ITEM_TO_BERRY(ITEM_ORAN_BERRY),  BERRY_STAGE_BERRIES
+	setberrytree BERRY_TREE_MULBERRY_WOODS_ORAN_2, ITEM_TO_BERRY(ITEM_ORAN_BERRY), BERRY_STAGE_BERRIES
 	return
 
 EventScript_ResetAllMapFlags::

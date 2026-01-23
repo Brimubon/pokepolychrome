@@ -198,6 +198,20 @@ MulberryTown_EventScript_ForestSign::
 	return
 
 
+MulberryTown_EventScript_GoBack::
+# 108 "data/maps/MulberryTown/scripts.pory"
+	lock
+# 109 "data/maps/MulberryTown/scripts.pory"
+	msgbox MulberryTown_EventScript_GoBackText, MSGBOX_AUTOCLOSE
+# 110 "data/maps/MulberryTown/scripts.pory"
+	applymovement LOCALID_PLAYER, MulberryTown_EventScript_GoBack_Movement_0
+# 111 "data/maps/MulberryTown/scripts.pory"
+	waitmovement LOCALID_PLAYER
+# 112 "data/maps/MulberryTown/scripts.pory"
+	release
+	return
+
+
 # 29 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_SuspiciousGrunt_Movement_0:
 # 29 "data/maps/MulberryTown/scripts.pory"
@@ -252,6 +266,12 @@ MulberryTown_EventScript_Growlithe_Movement_0:
 	face_right
 	step_end
 
+# 110 "data/maps/MulberryTown/scripts.pory"
+MulberryTown_EventScript_GoBack_Movement_0:
+# 110 "data/maps/MulberryTown/scripts.pory"
+	walk_right
+	step_end
+
 MulberryTown_EventScript_SuspiciousGrunt_Text_0:
 # 39 "data/maps/MulberryTown/scripts.pory"
 	.string "Now SCRAM!$"
@@ -266,21 +286,21 @@ MulberryTown_EventScript_OldLady_Text_0:
 	.string "(Looks like she fell asleep...)$"
 
 MulberryTown_EventScript_SuspiciousGruntText1::
-# 107 "data/maps/MulberryTown/scripts.pory"
+# 115 "data/maps/MulberryTown/scripts.pory"
 	.string "Huh?{PAUSE 72} H-hey!\n"
 	.string "You can't go in there right now!\p"
 	.string "....What? D{PAUSE 48}-don't ask me why!\n"
 	.string "I don't need to explain myself to you!$"
 
 MulberryTown_EventScript_GruntText::
-# 114 "data/maps/MulberryTown/scripts.pory"
+# 122 "data/maps/MulberryTown/scripts.pory"
 	.string "...Those little pests must've gone in\n"
 	.string "here... there's nowhere else they could\l"
 	.string "possibly be...\p"
 	.string "I swear, once I get my hands on those...$"
 
 MulberryTown_EventScript_Artist1Text::
-# 121 "data/maps/MulberryTown/scripts.pory"
+# 129 "data/maps/MulberryTown/scripts.pory"
 	.string "Every now and then, I go into Mulberry\n"
 	.string "Woods in search of the perfect muse.\p"
 	.string "I hear rumors of a truly elegant\n"
@@ -290,7 +310,7 @@ MulberryTown_EventScript_Artist1Text::
 	.string "Maybe if... oh, never you mind.$"
 
 MulberryTown_EventScript_BoyWithDogText::
-# 131 "data/maps/MulberryTown/scripts.pory"
+# 139 "data/maps/MulberryTown/scripts.pory"
 	.string "A strange Pokémon just ran through\n"
 	.string "town and into the woods over there.\p"
 	.string "It moved so fast, it spooked my\n"
@@ -298,17 +318,23 @@ MulberryTown_EventScript_BoyWithDogText::
 	.string "Be careful if you're going in there, ok?$"
 
 MulberryTown_EventScript_OldLadyAwakeText::
-# 139 "data/maps/MulberryTown/scripts.pory"
+# 147 "data/maps/MulberryTown/scripts.pory"
 	.string "This town's atmosphere is always so\n"
 	.string "quiet and peaceful.\p"
 	.string "Sometimes I worry I'll fall asleep\n"
 	.string "sitting out here like this, ohoho...$"
 
 MulberryTown_EventScript_MainSignText::
-# 146 "data/maps/MulberryTown/scripts.pory"
+# 154 "data/maps/MulberryTown/scripts.pory"
 	.string "Mulberry Town- \n"
 	.string "“The elegant seaside town.”$"
 
 MulberryTown_EventScript_ForestSignText::
-# 151 "data/maps/MulberryTown/scripts.pory"
+# 159 "data/maps/MulberryTown/scripts.pory"
 	.string "Entering Mulberry Woods$"
+
+MulberryTown_EventScript_GoBackText::
+# 163 "data/maps/MulberryTown/scripts.pory"
+	.string "(Too late to go back now...\n"
+	.string "You've got to catch that Pokemon thief\l"
+	.string "before it's too late!)$"

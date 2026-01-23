@@ -94,7 +94,7 @@ Route301_EventScript_ZangooseEncounter_1:
 # 59 "data/maps/Route301/scripts.pory"
 	waitmovement 0
 # 60 "data/maps/Route301/scripts.pory"
-	delay 72
+	delay 100
 # 61 "data/maps/Route301/scripts.pory"
 	playse SE_PIN
 # 62 "data/maps/Route301/scripts.pory"

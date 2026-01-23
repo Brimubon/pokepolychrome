@@ -4445,7 +4445,7 @@
       "id": "LAYOUT_MULBERRY_WOODS",
       "name": "MulberryWoods_Layout",
       "width": 60,
-      "height": 48,
+      "height": 54,
       "primary_tileset": "gTileset_NewGeneral",
       "secondary_tileset": "gTileset_Honeydew",
       "border_filepath": "data/layouts/MulberryWoods/border.bin",
