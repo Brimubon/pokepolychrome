@@ -173,7 +173,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ZANGOOSE)",
       "x": 42,
-      "y": 20,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
@@ -186,7 +186,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SEVIPER)",
       "x": 44,
-      "y": 20,
+      "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
@@ -333,6 +333,33 @@
       "var": "VAR_MULBERRY_WOODS_STATE",
       "var_value": "0",
       "script": "MulberryWoods_EventScript_GoOtherWay"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_MET_PLYCHRME_STARTERS",
+      "var_value": "2",
+      "script": "MulberryWoods_EventScript_GruntEncounter0"
+    },
+    {
+      "type": "trigger",
+      "x": 52,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_MET_PLYCHRME_STARTERS",
+      "var_value": "2",
+      "script": "MulberryWoods_EventScript_GruntEncounter1"
+    },
+    {
+      "type": "trigger",
+      "x": 53,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_MET_PLYCHRME_STARTERS",
+      "var_value": "2",
+      "script": "MulberryWoods_EventScript_GruntEncounter2"
     }
   ],
   "bg_events": [

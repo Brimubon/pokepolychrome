@@ -325,12 +325,13 @@ HoneydewTown_EventScript_GiveMapText::
 
 HoneydewTown_EventScript_LittleGirlText::
 # 139 "data/maps/HoneydewTown/scripts.pory"
-	.string "I wanna get a Pokémon and go on an\n"
-	.string "adventure too, but my dad says I'm not\l"
-	.string "old enough yet.$"
+	.string "Um... I like your running shoes!\n"
+	.string "I have a pair like that, too.\p"
+	.string "Uh... you can press B to start running,\n"
+	.string "but you probably already knew that...$"
 
 HoneydewTown_EventScript_GardenText::
-# 145 "data/maps/HoneydewTown/scripts.pory"
+# 146 "data/maps/HoneydewTown/scripts.pory"
 	.string "Tending to this garden isn't easy,\n"
 	.string "but to me, it's worth it.\p"
 	.string "With all the people coming to Myset for\n"
@@ -338,20 +339,20 @@ HoneydewTown_EventScript_GardenText::
 	.string "this town as pretty as it can be.$"
 
 HoneydewTown_EventScript_MainSignText::
-# 153 "data/maps/HoneydewTown/scripts.pory"
+# 154 "data/maps/HoneydewTown/scripts.pory"
 	.string "Honeydew Town- \n"
 	.string "“Facilitating new beginnings.”$"
 
 HoneydewTown_EventScript_ProfSignText::
-# 158 "data/maps/HoneydewTown/scripts.pory"
+# 159 "data/maps/HoneydewTown/scripts.pory"
 	.string "Prof. Hawthorne's Lab$"
 
 HoneydewTown_EventScript_ProfHouseSignText::
-# 162 "data/maps/HoneydewTown/scripts.pory"
+# 163 "data/maps/HoneydewTown/scripts.pory"
 	.string "Prof. Hawthorne's House$"
 
 HoneydewTown_EventScript_MeetHawthFirstText::
-# 166 "data/maps/HoneydewTown/scripts.pory"
+# 167 "data/maps/HoneydewTown/scripts.pory"
 	.string "(You should probably meet with Prof.\n"
 	.string "Hawthorne first.)\p"
 	.string "(His lab should be somewhere around\n"

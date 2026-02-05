@@ -137,9 +137,10 @@ text HoneydewTown_EventScript_GiveMapText {
 }
 
 text HoneydewTown_EventScript_LittleGirlText {
-    "I wanna get a Pokémon and go on an\n"
-    "adventure too, but my dad says I'm not\l"
-    "old enough yet."
+    "Um... I like your running shoes!\n"
+    "I have a pair like that, too.\p"
+    "Uh... you can press B to start running,\n"
+    "but you probably already knew that..."
 }
 
 text HoneydewTown_EventScript_GardenText {

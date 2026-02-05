@@ -120,7 +120,7 @@ script MulberryWoods_EventScript_SeviperEncounter {
     playse(SE_PIN)
     applymovement(12, moves(face_player, emote_exclamation_mark))
     waitmovement(0)
-    delay(72)
+    delay(106)
     playse(SE_PIN)
     applymovement(12, moves(emote_heart))
     waitmovement(0)
@@ -131,17 +131,95 @@ script MulberryWoods_EventScript_SeviperEncounter {
     waitmovement(0)
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     waitmovement(LOCALID_PLAYER)
-    delay(120)
+    delay(90)
     playmoncry(SPECIES_SEVIPER, CRY_MODE_NORMAL)
-    applymovement(12, moves(emote_heart))
-    waitmovement(0)
+    waitmoncry
     delay(60)
-    applymovement(12, moves(walk_up, walk_right * 6))
+    applymovement(12, moves(walk_up * 2, walk_right * 6))
     waitmovement(0)
     removeobject(12)
     setvar(VAR_MET_PLYCHRME_STARTERS, 2)
     setflag(FLAG_HIDE_SEVIPER)
     delay(90)
+    releaseall
+}
+
+script MulberryWoods_EventScript_GruntEncounter0 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(MulberryWoods_EventScript_GruntEncounter)
+    end
+}
+
+script MulberryWoods_EventScript_GruntEncounter1 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(MulberryWoods_EventScript_GruntEncounter)
+    end
+}
+
+script MulberryWoods_EventScript_GruntEncounter2 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(MulberryWoods_EventScript_GruntEncounter)
+    end
+}
+
+script MulberryWoods_EventScript_GruntEncounter {
+    setvar(VAR_MET_PLYCHRME_STARTERS, 3)
+    playmoncry(SPECIES_ZANGOOSE, CRY_MODE_NORMAL)
+    waitmoncry
+    playmoncry(SPECIES_SEVIPER, CRY_MODE_NORMAL)
+    waitmoncry
+    applymovement(14, moves(walk_in_place_left))
+    waitmovement(0)
+    delay(48)
+    playse(SE_PIN)
+    applymovement(LOCALID_PLAYER, moves(emote_exclamation_mark))
+    waitmovement(LOCALID_PLAYER)
+    if(var(VAR_0x8008) == 0) {
+        applymovement(LOCALID_PLAYER, moves(walk_up * 4, walk_left * 4))
+        waitmovement(LOCALID_PLAYER)
+    } elif (var(VAR_0x8008) == 1) {
+        applymovement(LOCALID_PLAYER, moves(walk_up * 3, walk_left * 3, walk_up, walk_left * 2))
+        waitmovement(LOCALID_PLAYER)
+    } elif (var(VAR_0x8008) == 2) {
+        applymovement(LOCALID_PLAYER, moves(walk_up * 3, walk_left * 4, walk_up, walk_left * 2))
+        waitmovement(LOCALID_PLAYER)
+    }
+    delay(90)
+    applymovement(13, moves(lock_facing_direction, walk_left, unlock_facing_direction))
+    waitmovement(0)
+    delay(60)
+    playse(SE_WALL_HIT)
+    applymovement(13, moves(walk_faster_right * 2))
+    applymovement(14, moves(delay_16, lock_facing_direction, walk_right, unlock_facing_direction))
+    waitmovement(0)
+    delay(72)
+    playse(SE_WALL_HIT)
+    applymovement(14, moves(walk_fast_left))
+    applymovement(13, moves(delay_16, lock_facing_direction, walk_left, unlock_facing_direction))
+    waitmovement(0)
+    delay(60)
+    playmoncry(SPECIES_SEVIPER, CRY_MODE_NORMAL)
+    waitmoncry
+    playmoncry(SPECIES_ZANGOOSE, CRY_MODE_NORMAL)
+    waitmoncry
+    applymovement(LOCALID_PLAYER, moves(walk_slow_left))
+    waitmovement(LOCALID_PLAYER)
+    playse(SE_PIN)
+    applymovement(13, moves(emote_double_exclamation_mark))
+    applymovement(14, moves(face_right, emote_double_exclamation_mark))
+    waitmovement(0)
+    delay(90)
+    playse(SE_PIN)
+    applymovement(14, moves(emote_heart))
+    applymovement(13, moves(emote_heart, walk_fast_right, walk_fast_down, walk_fast_right * 3, face_up))
+    waitmovement(0)
+    delay(60)
+    applymovement(LOCALID_PLAYER, moves(face_down, delay_16 * 2, face_left))
+    waitmovement(LOCALID_PLAYER)
+    msgbox("... ... ...Hm?\p" "That's odd...\n" "These Pokémon are carrying Poké Balls...")
     releaseall
 }
 
