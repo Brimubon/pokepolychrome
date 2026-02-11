@@ -663,8 +663,8 @@
 #define FLAG_HIDE_MULBERRY_GRUNT     0x268 // previously unused flag
 #define FLAG_HIDE_SCARLETT_MULWOODS1 0x269 // previously unused flag, hides Scarlett after first Mulberry Woods cutscene
 #define FLAG_HIDE_SEVIPER            0x26A // previously unused flag, hides Seviper after Plychrme cutscene
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
+#define FLAG_HIDE_GRUNT_MULWOODS     0x26B // previously unused flag
+#define FLAG_HIDE_STARTERS_MULWOODS  0x26C // previously unused flag, hides Zangoose and Seviper once you get them as starters
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
