@@ -128,6 +128,7 @@ static void Task_FrontierLogoWave(u8);
 static void Task_FrontierSquares(u8);
 static void Task_FrontierSquaresScroll(u8);
 static void Task_FrontierSquaresSpiral(u8);
+static void Task_Alpha(u8);
 static void VBlankCB_BattleTransition(void);
 static void VBlankCB_Swirl(void);
 static void HBlankCB_Swirl(void);
@@ -286,6 +287,8 @@ static bool8 MugshotTrainerPic_Slide(struct Sprite *);
 static bool8 MugshotTrainerPic_SlideSlow(struct Sprite *);
 static bool8 MugshotTrainerPic_SlidePartner(struct Sprite *);
 static bool8 MugshotTrainerPic_SlideOffscreen(struct Sprite *);
+static bool8 Alpha_Init(struct Task *);
+static bool8 Alpha_SetGfx(struct Task *);
 
 static s16 sDebug_RectangularSpiralData;
 static u8 sTestingTransitionId;
@@ -334,6 +337,9 @@ static const u32 sFrontierSquares_EmptyBg_Tileset[] = INCBIN_U32("graphics/battl
 static const u32 sFrontierSquares_Shrink1_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_3.4bpp.smol");
 static const u32 sFrontierSquares_Shrink2_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_4.4bpp.smol");
 static const u32 sFrontierSquares_Tilemap[] = INCBIN_U32("graphics/battle_transitions/frontier_squares.bin");
+static const u16 sTeamAlpha_Palette[] = INCBIN_U16("graphics/battle_transitions/team_alpha.gbapal");
+static const u32 sTeamAlpha_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_alpha.4bpp.smol");
+static const u32 sTeamAlpha_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_alpha.bin.smolTM");
 
 // All battle transitions use the same intro
 static const TaskFunc sTasks_Intro[B_TRANSITION_COUNT] =
@@ -383,6 +389,7 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_FRONTIER_CIRCLES_CROSS_IN_SEQ] = Task_FrontierCirclesCrossInSeq,
     [B_TRANSITION_FRONTIER_CIRCLES_ASYMMETRIC_SPIRAL_IN_SEQ] = Task_FrontierCirclesAsymmetricSpiralInSeq,
     [B_TRANSITION_FRONTIER_CIRCLES_SYMMETRIC_SPIRAL_IN_SEQ] = Task_FrontierCirclesSymmetricSpiralInSeq,
+    [B_TRANSITION_ALPHA] = Task_Alpha,
 };
 
 static const TransitionStateFunc sTaskHandlers[] =
@@ -410,6 +417,17 @@ static const TransitionStateFunc sShuffle_Funcs[] =
 {
     Shuffle_Init,
     Shuffle_End,
+};
+
+static const TransitionStateFunc sAlpha_Funcs[] =
+{
+    Alpha_Init,
+    Alpha_SetGfx,
+    PatternWeave_Blend1,
+    PatternWeave_Blend2,
+    PatternWeave_FinishAppear,
+    FramesCountdown,
+    PatternWeave_CircularMask
 };
 
 static const TransitionStateFunc sAqua_Funcs[] =
@@ -1298,7 +1316,7 @@ static void HBlankCB_Shuffle(void)
 #undef tAmplitude
 
 //------------------------------------------------------------------------
-// B_TRANSITION_BIG_POKEBALL, B_TRANSITION_AQUA, B_TRANSITION_MAGMA,
+// B_TRANSITION_BIG_POKEBALL, B_TRANSITION_ALPHA, B_TRANSITION_AQUA, B_TRANSITION_MAGMA,
 // B_TRANSITION_REGICE, B_TRANSITION_REGISTEEL, B_TRANSITION_REGIROCK
 // and B_TRANSITION_KYOGRE.
 //
@@ -1323,6 +1341,11 @@ static void HBlankCB_Shuffle(void)
 static void Task_BigPokeball(u8 taskId)
 {
     while (sBigPokeball_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
+}
+
+static void Task_Alpha(u8 taskId)
+{
+    while (sAlpha_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
 }
 
 static void Task_Aqua(u8 taskId)
@@ -1378,6 +1401,21 @@ static void InitPatternWeaveTransition(struct Task *task)
         gScanlineEffectRegBuffers[1][i] = DISPLAY_WIDTH;
 
     SetVBlankCallback(VBlankCB_PatternWeave);
+}
+
+static bool8 Alpha_Init(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    task->tEndDelay = 60;
+    InitPatternWeaveTransition(task);
+    GetBg0TilesDst(&tilemap, &tileset);
+    CpuFill16(0, tilemap, BG_SCREEN_SIZE);
+    DecompressDataWithHeaderVram(sTeamAlpha_Tileset, tileset);
+    LoadPalette(sTeamAlpha_Palette, BG_PLTT_ID(15), sizeof(sTeamAlpha_Palette));
+
+    task->tState++;
+    return FALSE;
 }
 
 static bool8 Aqua_Init(struct Task *task)
@@ -1456,6 +1494,18 @@ static bool8 BigPokeball_SetGfx(struct Task *task)
 
     task->tState++;
     return TRUE;
+}
+
+static bool8 Alpha_SetGfx(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    GetBg0TilesDst(&tilemap, &tileset);
+    DecompressDataWithHeaderVram(sTeamAlpha_Tilemap, tilemap);
+    SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
+
+    task->tState++;
+    return FALSE;
 }
 
 static bool8 Aqua_SetGfx(struct Task *task)

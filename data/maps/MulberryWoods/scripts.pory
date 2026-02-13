@@ -299,6 +299,73 @@ script MulberryWoods_EventScript_GruntEncounter {
     applymovement(LOCALID_PLAYER, moves(walk_in_place_right))
     waitmovement(0)
     msgbox(MulberryWoods_EventScript_GruntPreBattle6, MSGBOX_AUTOCLOSE)
+    setflag(FLAG_NO_WHITEOUT)
+    trainerbattle_no_intro(TRAINER_GRUNT_MULBERRY_WOODS, MulberryWoods_Text_NoWay)
+    goto(MulberryWoods_EventScript_GruntPostBattle)
+    end
+}
+
+script MulberryWoods_EventScript_GruntPostBattle {
+    applymovement(18, moves(lock_facing_direction, walk_slow_right, unlock_facing_direction))
+    waitmovement(0)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if(var(VAR_RESULT) == B_OUTCOME_LOST) {
+        msgbox(MulberryWoods_EventScript_GruntPostBattleLost, MSGBOX_AUTOCLOSE)
+    } else {
+        msgbox(MulberryWoods_EventScript_GruntPostBattleText1, MSGBOX_AUTOCLOSE)
+    }
+    clearflag(FLAG_NO_WHITEOUT)
+    delay(60)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleScarlett1, MSGBOX_AUTOCLOSE)
+    playse(SE_PIN)
+    applymovement(18, moves(emote_exclamation_mark, walk_in_place_right))
+    waitmovement(0)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleText2, MSGBOX_AUTOCLOSE)
+    applymovement(18, moves(walk_in_place_fast_left))
+    waitmovement(0)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleText3, MSGBOX_AUTOCLOSE)
+    applymovement(18, moves(walk_left * 2))
+    waitmovement(0)
+    //give player hawthorne's parcel item here once I make it
+    delay(60)
+    applymovement(18, moves(lock_facing_direction, walk_right, unlock_facing_direction))
+    waitmovement(0)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleText4, MSGBOX_AUTOCLOSE)
+    applymovement(18, moves(walk_fast_right * 4, walk_fast_down * 7))
+    waitmovement(0)
+    removeobject(18)
+    delay(90)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleScarlett2, MSGBOX_AUTOCLOSE)
+    delay(90)
+    setobjectxyperm(9, 52, 27)
+    clearflag(FLAG_HIDE_SCARLETT_MULWOODS1)
+    addobject(9)
+    applymovement(9, moves(walk_up * 5, walk_in_place_left, delay_16 * 3, walk_fast_left * 3, walk_fast_up, walk_fast_left * 2))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleScarlett3, MSGBOX_AUTOCLOSE)
+    applymovement(9, moves(walk_left))
+    waitmovement(0)
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    special(HealPlayerParty)
+    playfanfare(MUS_HEAL)
+    waitfanfare
+    delay(48)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    applymovement(9, moves(lock_facing_direction, walk_right, unlock_facing_direction))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(MulberryWoods_EventScript_GruntPostBattleScarlett4, MSGBOX_AUTOCLOSE)
+    applymovement(9, moves(walk_right * 4, walk_down * 7))
+    waitmovement(0)
+    removeobject(9)
+    delay(90)
+    //clear flag for no wild battles here
+    msgbox(MulberryWoods_EventScript_GruntPostBattleTagBreaks, MSGBOX_AUTOCLOSE)
+    setvar(VAR_MULBERRY_TOWN_STATE, 2)
+    setvar(VAR_HAWTH_LAB_STATE, 2)
     releaseall
 }
 
@@ -430,6 +497,89 @@ text MulberryWoods_EventScript_GruntPreBattle6 {
     "I've had enough!\p"
     "I'll show you what happens to people\n"
     "who mess with Team Alpha!"
+}
+
+text MulberryWoods_Text_NoWay {
+    "N-no way! I lost?!\n"
+    "Why, you little..."
+}
+
+text MulberryWoods_EventScript_GruntPostBattleLost {
+    "Heh... heheh...\n"
+    "I... I actually won?!\p"
+    "Ha! Well, you can keep those Pokémon!\n"
+    "They're clearly not worth my time!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleText1 {
+    "You've gotta be kidding me...\p"
+    "Fine, keep those Pokémon!\n"
+    "I didn't even like them anyway!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleScarlett1 {
+    "{PLAYER}! Are you okay?\n"
+    "I heard a lot of noise coming from\l"
+    "over here.\p"
+    "Don't worry, I'm on my way!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleText2 {
+    "Oh no!\n"
+    "I can't deal with another person\l"
+    "right now!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleText3 {
+    "Urgh, stealing this package has been\n"
+    "way too stressful!\p"
+    "Whatever, just take it!\n"
+    "I'm outta here!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleText4 {
+    "A{PAUSE 60}-Anyway, don't get cocky!\p"
+    "You may have won this time, but mark\n"
+    "my words...\p"
+    "You'll regret meddling with Team Alpha!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleScarlett2 {
+    "Oof!{PAUSE 90} Hey!\n"
+    "Where do you think you're going?!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleScarlett3 {
+    "{PLAYER}! What happened?!\p"
+    "That... that was the thief, wasn't it?\n"
+    "What did they do? Are you hurt?\p"
+    "... ... ... ... ... ... ... ... ... ... ... ...{PAUSE 72}\n"
+    "Hold on, you got the package!\p"
+    "And those Poké Balls at your side...\n"
+    "When did you...?\p"
+    "Er, let me heal your Pokémon first.\n"
+    "Then you can explain everything."
+}
+
+text MulberryWoods_EventScript_GruntPostBattleScarlett4 {
+    "Huh... so that's what happened.\p"
+    "I'm sorry I wasn't there to help, but\n"
+    "you handled things really well on\l"
+    "your own!\p"
+    "... ... ... ...{PAUSE 72}Ah, right!\n"
+    "We need to get that package back\l"
+    "to the professor.\p"
+    "I bet he's worried sick about us by now.\n"
+    "I'll meet you back at the lab, okay?\p"
+    "Now that you have Pokémon, you won't\n"
+    "have much trouble making it back.\p"
+    "Alright, see you there!"
+}
+
+text MulberryWoods_EventScript_GruntPostBattleTagBreaks {
+    "(... ... ... ... ... ...{PAUSE 72}!)\p"
+    "(The tag Prof. Hawthorne gave you must\n"
+    "have fallen off during the battle...)"
 }
 
 text MulberryWoods_EventScript_NormalGirlText {
