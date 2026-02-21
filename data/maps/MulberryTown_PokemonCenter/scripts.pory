@@ -42,7 +42,8 @@ script MulberryTown_PokemonCenter_EventScript_Scarlett {
     applymovement(7, moves(walk_down))
     waitmovement(0)
     setspeaker(SP_NAME_UNKNOWN)
-    msgbox("E{PAUSE 48}-excuse me!\n" "I'm kinda in a hurry right now!", MSGBOX_AUTOCLOSE)
+    msgbox("E{PAUSE 48}-excuse me!
+            I'm kinda in a hurry right now!", MSGBOX_AUTOCLOSE)
     delay(60)
     setspeaker(SP_NAME_UNKNOWN)
     msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText6, MSGBOX_AUTOCLOSE)
@@ -155,104 +156,121 @@ script MulberryTown_PokemonCenter_EventScript_Stufful {
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText1 {
-    "My apologies, ma'am. I've triple checked\n"
-    "all the deliveries we've made today,\l"
-    "but...\p"
-    "It seems the package you're looking for\n"
-    "has already been picked up."
+    "My apologies, ma'am. I've triple checked
+     all the deliveries we've made today,
+     but...
+     
+     It seems the package you're looking for
+     has already been picked up."
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText2 {
-    "Really? Oh no...\p"
-    "Do you at least remember what the\n"
-    "person who took it looked like?"
+    "Really? Oh no...
+     
+     Do you at least remember what the
+     person who took it looked like?"
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText3 {
-    "....Hmm...\p"
-    "Oh! I think they were wearing some kind\n"
-    "of weird, all-black outfit.\p"
-    "It made it pretty hard to see what\n"
-    "their face looked like..."
+    "....Hmm...
+     
+     Oh! I think they were wearing some kind
+     of weird, all-black outfit.
+     
+     It made it pretty hard to see what
+     their face looked like..."
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText4 {
-    "Hey! I think I saw someone like that\n"
-    "take off towards Mulberry Woods!"
+    "Hey! I think I saw someone like that
+     take off towards Mulberry Woods!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText5 {
-    "Mulberry Woods?! I've gotta catch up to\n"
-    "them before they get too far!\p"
-    "Thanks for the help!"
+    "Mulberry Woods?! I've gotta catch up to
+     them before they get too far!
+     
+     Thanks for the help!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText6 {
-    "...Hey, wait.\n"
-    "Haven't I seen you somewhere before?\p"
-    "...{PAUSE 72}Oh, you're {PLAYER}, aren't you?\n"
-    "I guess my uncle must've sent you here.\p"
-    "{SPEAKER NAME_SCARLETT}My name's Scarlett.\n"
-    "It's nice to finally meet you!\p"
-    "... ... {PAUSE 72} ... ... ....\p"
-    "Ah, right!{PAUSE 60} Listen! {PLAYER}!\n"
-    "I'm gonna need your help!\p"
-    "Someone ran off with the Pokémon we\n"
-    "were going to give away.\p"
-    "You've gotta help me catch them before\n"
-    "it's too late!"
+    "...Hey, wait.
+     Haven't I seen you somewhere before?
+     
+     ...{PAUSE 72}Oh, you're {PLAYER}, aren't you?
+     I guess my uncle must've sent you here.
+     
+     {SPEAKER NAME_SCARLETT}My name's Scarlett.
+     It's nice to finally meet you!
+     
+     ... ... {PAUSE 72} ... ... ....
+     
+     Ah, right!{PAUSE 60} Listen! {PLAYER}!
+     I'm gonna need your help!
+     
+     Someone ran off with the Pokémon we
+     were going to give away.
+     
+     You've gotta help me catch them before
+     it's too late!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_ScarlettText7 {
-    "Meet me in Mulberry Woods, alright?\n"
-    "We'll talk more there!"
+    "Meet me in Mulberry Woods, alright?
+     We'll talk more there!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_NoPokemonText {
-    "Hello, and welcome to... oh?\p"
-    "It doesn't seem like you have any\n"
-    "Pokémon.\p"
-    "Make sure to come back once you do so\n"
-    "we can restore them to full health!"
+    "Hello, and welcome to... oh?
+     
+     It doesn't seem like you have any
+     Pokémon.
+     
+     Make sure to come back once you do so
+     we can restore them to full health!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_UnpackingText {
-    "Apologies, we're still busy unpacking\n"
-    "some of our supplies.\p"
-    "Come back later and we should have\n"
-    "some goods available to sell to you!"
+    "Apologies, we're still busy unpacking
+     some of our supplies.
+     
+     Come back later and we should have
+     some goods available to sell to you!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_Girl1Text {
-    "My Pokémon got poisoned while I was\n"
-    "training it in the woods.\p"
-    "I forgot to buy antidotes, but my\n"
-    "Pokémon was able to recover on its own\l"
-    "before it fainted."
+    "My Pokémon got poisoned while I was
+     training it in the woods.
+     
+     I forgot to buy antidotes, but my
+     Pokémon was able to recover on its own
+     before it fainted."
 }
 
 text MulberryTown_PokemonCenter_EventScript_Boy1Text {
-    "Pokémon Centers are amazing!\p"
-    "Not only do they heal your Pokémon for\n"
-    "free, they have beds you can rest in if\l"
-    "you want to pass the time."
+    "Pokémon Centers are amazing!
+     
+     Not only do they heal your Pokémon for
+     free, they have beds you can rest in if
+     you want to pass the time."
 }
 
 text MulberryTown_PokemonCenter_EventScript_Girl2Text1 {
-    "Isn't my Stufful just the cutest?\n"
-    "You won't find a cuter Pokémon in all of\l"
-    "Myset, I assure you.\p"
-    "Oh, and it's really smart and can do all\n"
-    "kinds of neat tricks, too! Watch!"
+    "Isn't my Stufful just the cutest?
+     You won't find a cuter Pokémon in all of
+     Myset, I assure you.
+     
+     Oh, and it's really smart and can do all
+     kinds of neat tricks, too! Watch!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_Girl2Text2 {
-    "C'mon, Stufful!\n"
-    "Do the Baby-Doll Eyes and Brutal Swing\l"
-    "combo, like we practiced!"
+    "C'mon, Stufful!
+     Do the Baby-Doll Eyes and Brutal Swing
+     combo, like we practiced!"
 }
 
 text MulberryTown_PokemonCenter_EventScript_Girl2Text3 {
-    "(The Stufful tripped on its feet and\n"
-    "flailed around wildly...)"
+    "(The Stufful tripped on its feet and
+     flailed around wildly...)"
 }

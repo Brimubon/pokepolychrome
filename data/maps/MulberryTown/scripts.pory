@@ -80,7 +80,9 @@ script MulberryTown_EventScript_OldLady {
     dotimebasedevents
     gettimeofday
     if(var(VAR_0x8000) == TIME_EVENING || var(VAR_0x8000) == TIME_NIGHT) {
-        msgbox("Zzzz...\p" "(Looks like she fell asleep...)")
+        msgbox("Zzzz...
+                
+                (Looks like she fell asleep...)")
         release
         end
     } else {
@@ -113,47 +115,55 @@ script MulberryTown_EventScript_GoBack {
 }
 
 text MulberryTown_EventScript_SuspiciousGruntText1 {
-    "Huh?{PAUSE 72} H-hey!\n"
-    "You can't go in there right now!\p"
-    "....What? D{PAUSE 48}-don't ask me why!\n"
-    "I don't need to explain myself to you!"
+    "Huh?{PAUSE 72} H-hey!
+     You can't go in there right now!
+     
+     ....What? D{PAUSE 48}-don't ask me why!
+     I don't need to explain myself to you!"
 }
 
 text MulberryTown_EventScript_GruntText {
-    "...Those little pests must've gone in\n"
-    "here... there's nowhere else they could\l"
-    "possibly be...\p"
-    "I swear, once I get my hands on those..."
+    "...Those little pests must've gone in
+     here... there's nowhere else they could
+     possibly be...
+     
+     I swear, once I get my hands on those..."
 }
 
 text MulberryTown_EventScript_Artist1Text {
-    "Every now and then, I go into Mulberry\n"
-    "Woods in search of the perfect muse.\p"
-    "I hear rumors of a truly elegant\n"
-    "Pokémon that resides there, but...\p"
-    "I fear my own Pokémon aren't strong\n"
-    "enough to go looking for it on my own.\p"
-    "Maybe if... oh, never you mind."
+    "Every now and then, I go into Mulberry
+     Woods in search of the perfect muse.
+     
+     I hear rumors of a truly elegant
+     Pokémon that resides there, but...
+     
+     I fear my own Pokémon aren't strong
+     enough to go looking for it on my own.
+     
+     Maybe if... oh, never you mind."
 }
 
 text MulberryTown_EventScript_BoyWithDogText {
-    "A strange Pokémon just ran through\n"
-    "town and into the woods over there.\p"
-    "It moved so fast, it spooked my\n"
-    "Growlithe.\p"
-    "Be careful if you're going in there, ok?"
+    "A strange Pokémon just ran through
+     town and into the woods over there.
+     
+     It moved so fast, it spooked my
+     Growlithe.
+     
+     Be careful if you're going in there, ok?"
 }
 
 text MulberryTown_EventScript_OldLadyAwakeText {
-    "This town's atmosphere is always so\n"
-    "quiet and peaceful.\p"
-    "Sometimes I worry I'll fall asleep\n"
-    "sitting out here like this, ohoho..."
+    "This town's atmosphere is always so
+     quiet and peaceful.
+     
+     Sometimes I worry I'll fall asleep
+     sitting out here like this, ohoho..."
 }
 
 text MulberryTown_EventScript_MainSignText {
-    "Mulberry Town- \n"
-    "“The elegant seaside town.”"
+    "Mulberry Town- 
+     “The elegant seaside town.”"
 }
 
 text MulberryTown_EventScript_ForestSignText {
@@ -161,7 +171,7 @@ text MulberryTown_EventScript_ForestSignText {
 }
 
 text MulberryTown_EventScript_GoBackText {
-    "(Too late to go back now...\n"
-    "You've got to catch that Pokemon thief\l"
-    "before it's too late!)"
+    "(Too late to go back now...
+     You've got to catch that Pokemon thief
+     before it's too late!)"
 }

@@ -122,38 +122,42 @@ script HoneydewTown_EventScript_MeetHawthFirst {
 }
 
 text HoneydewTown_EventScript_WelcomeText {
-    "We've made it to Honeydew!\n"
-    "Hope the ride wasn't too rough, hahaha.\p"
-    "If you're lookin' for the professor,\n"
-    "he's probably in his lab, in the\l"
-    "northwest part of town. Hard to miss."
+    "We've made it to Honeydew!
+     Hope the ride wasn't too rough, hahaha.
+     
+     If you're lookin' for the professor,
+     he's probably in his lab, in the
+     northwest part of town. Hard to miss."
 }
 
 text HoneydewTown_EventScript_GiveMapText {
-    "I saw you get off that boat...\n"
-    "Are you new to the Myset region?\p"
-    "Here, take this.\n"
-    "Consider it a welcome present."
+    "I saw you get off that boat...
+     Are you new to the Myset region?
+     
+     Here, take this.
+     Consider it a welcome present."
 }
 
 text HoneydewTown_EventScript_LittleGirlText {
-    "Um... I like your running shoes!\n"
-    "I have a pair like that, too.\p"
-    "Uh... you can press B to start running,\n"
-    "but you probably already knew that..."
+    "Um... I like your running shoes!
+     I have a pair like that, too.
+     
+     Uh... you can press B to start running,
+     but you probably already knew that..."
 }
 
 text HoneydewTown_EventScript_GardenText {
-    "Tending to this garden isn't easy,\n"
-    "but to me, it's worth it.\p"
-    "With all the people coming to Myset for\n"
-    "the League Challenge, I want to make\l"
-    "this town as pretty as it can be."
+    "Tending to this garden isn't easy,
+     but to me, it's worth it.
+     
+     With all the people coming to Myset for
+     the League Challenge, I want to make
+     this town as pretty as it can be."
 }
 
 text HoneydewTown_EventScript_MainSignText {
-    "Honeydew Town- \n"
-    "“Facilitating new beginnings.”"
+    "Honeydew Town- 
+     “Facilitating new beginnings.”"
 }
 
 text HoneydewTown_EventScript_ProfSignText {
@@ -165,8 +169,9 @@ text HoneydewTown_EventScript_ProfHouseSignText {
 }
 
 text HoneydewTown_EventScript_MeetHawthFirstText {
-    "(You should probably meet with Prof.\n"
-    "Hawthorne first.)\p"
-    "(His lab should be somewhere around\n"
-    "here...)"
+    "(You should probably meet with Prof.
+     Hawthorne first.)
+     
+     (His lab should be somewhere around
+     here...)"
 }

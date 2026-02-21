@@ -15,16 +15,18 @@ script HoneydewTown_House2_EventScript_Man {
 }
 
 text HoneydewTown_House2_EventScript_GirlText {
-    "Have you been to Painter's Peak?\n"
-    "It's just west of here.\p"
-    "Sometimes, at night, I like to sit on the\n"
-    "docks there, close my eyes, and listen\l"
-    "to the sound of the waves crashing."
+    "Have you been to Painter's Peak?
+     It's just west of here.
+     
+     Sometimes, at night, I like to sit on the
+     docks there, close my eyes, and listen
+     to the sound of the waves crashing."
 }
 
 text HoneydewTown_House2_EventScript_ManText {
-    "We moved to Honeydew from the big city\n"
-    "not too long ago.\p"
-    "The clean air here does wonders for my\n"
-    "health."
+    "We moved to Honeydew from the big city
+     not too long ago.
+     
+     The clean air here does wonders for my
+     health."
 }

@@ -2,10 +2,10 @@ mapscripts HoneydewTown_ProfsLab_MapScripts {
 
     MAP_SCRIPT_ON_FRAME_TABLE [
         VAR_HAWTH_LAB_STATE, 0: HoneydewTown_ProfsLab_EventScript_HawthIntro
+        VAR_HAWTH_LAB_STATE, 2: HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt
     ]
 
 }
-
 
 script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     lockall
@@ -19,7 +19,8 @@ script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     applymovement(2, moves(face_left))
     waitmovement(0)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox("(W{PAUSE 48}-was that really supposed to be\n" "today...?)", MSGBOX_AUTOCLOSE)
+    msgbox("(W{PAUSE 48}-was that really supposed to be
+            today...?)", MSGBOX_AUTOCLOSE)
     applymovement(2, moves(face_down))
     waitmovement(0)
     setspeaker(SP_NAME_HAWTHORNE)
@@ -28,7 +29,8 @@ script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     waitmovement(0)
     delay(60)
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox("... ... ...{PAUSE 72} ... ... ... ... ... ... ...{PAUSE 84}\n" "... ... ... ... ... ... ... ... ... ...", MSGBOX_AUTOCLOSE)
+    msgbox("... ... ...{PAUSE 72} ... ... ... ... ... ... ...{PAUSE 84}
+            ... ... ... ... ... ... ... ... ... ...", MSGBOX_AUTOCLOSE)
     playse(SE_PIN)
     applymovement(2, moves(emote_exclamation_mark, jump_in_place_up))
     waitmovement(0)
@@ -49,7 +51,8 @@ script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     applymovement(2, moves(walk_left, face_down))
     waitmovement(0)
     playfanfare(MUS_LEVEL_UP)
-    msgbox("(A small piece of paper was attached to\n" "your bag.)", MSGBOX_AUTOCLOSE)
+    msgbox("(A small piece of paper was attached to
+            your bag.)", MSGBOX_AUTOCLOSE)
     waitfanfare
     setspeaker(SP_NAME_HAWTHORNE)
     msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText6)
@@ -57,11 +60,84 @@ script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     releaseall
 }
 
+script HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt {
+    lockall
+    clearflag(FLAG_HIDE_SCARLETT_LAB)
+    addobject(5)
+    applymovement(LOCALID_PLAYER, moves(walk_up * 6))
+    waitmovement(LOCALID_PLAYER)
+    delay(48)
+    applymovement(5, moves(walk_in_place_down))
+    waitmovement(0)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett1, MSGBOX_AUTOCLOSE)
+    applymovement(5, moves(walk_left, walk_up, walk_in_place_down))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, moves(walk_up))
+    waitmovement(LOCALID_PLAYER)
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt1, MSGBOX_AUTOCLOSE)
+    applymovement(2, moves(walk_in_place_down))
+    waitmovement(0)
+    delay(60)
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt2, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
+    waitmovement(LOCALID_PLAYER)
+    delay(60)
+    applymovement(2, moves(walk_up * 2, walk_left * 3, walk_in_place_up))
+    waitmovement(0)
+    applymovement(5, moves(walk_in_place_up))
+    waitmovement(0)
+    delay(72)
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt3, MSGBOX_AUTOCLOSE)
+    applymovement(2, moves(walk_right * 3, walk_down * 2))
+    waitmovement(0)
+    applymovement(5, moves(walk_in_place_down))
+    waitmovement(0)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message("{PLAYER} received the Pok\edex!")
+    waitfanfare
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(SetUnlockedPokedexFlags)
+    closemessage
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4, MSGBOX_AUTOCLOSE)
+    applymovement(5, moves(walk_down, walk_in_place_right))
+    waitmovement(0)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
+    waitmovement(LOCALID_PLAYER)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett2, MSGBOX_AUTOCLOSE)
+    giveitem(ITEM_POKE_BALL, 10)
+    setspeaker(SP_NAME_SCARLETT)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett3, MSGBOX_AUTOCLOSE)
+    applymovement(5, moves(walk_fast_down * 7))
+    applymovement(2, moves(delay_16 * 2, walk_in_place_down))
+    waitmovement(0)
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox("Oh, wait! Scarlett!", MSGBOX_AUTOCLOSE)
+    removeobject(5)
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
+    setspeaker(SP_NAME_HAWTHORNE)
+    msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5, MSGBOX_AUTOCLOSE)
+    setvar(VAR_MULBERRY_WOODS_STATE, 1)
+    setvar(VAR_HAWTH_LAB_STATE, 3)
+    releaseall
+}
+
 script HoneydewTown_ProfsLab_EventScript_Hawth {
     lock
     faceplayer
     setspeaker(SP_NAME_HAWTHORNE)
-    msgbox(HoneydewTown_ProfsLab_EventScript_HawthRegText1)
+    if(var(VAR_HAWTH_LAB_STATE) == 1) {
+        msgbox(HoneydewTown_ProfsLab_EventScript_HawthRegText1)
+    } elif (var(VAR_HAWTH_LAB_STATE) == 3) {
+        msgbox(HoneydewTown_ProfsLab_EventScript_HawthRegText2)
+    } elif (var(VAR_HAWTH_LAB_STATE) == 4) {
+        msgbox(HoneydewTown_ProfsLab_EventScript_HawthRegText3)
+    }
     release
 }
 
@@ -84,13 +160,15 @@ script HoneydewTown_ProfsLab_EventScript_Hoothoot {
     playmoncry(SPECIES_HOOTHOOT, CRY_MODE_NORMAL)
     msgbox("Hoo!")
     waitmoncry
-    msgbox("(It's carrying a bunch of papers in its\n" "beak.)")
+    msgbox("(It's carrying a bunch of papers in its
+            beak.)")
     release
 }
 
 script HoneydewTown_ProfsLab_EventScript_Bookshelf {
     lock
-    msgbox("(It's crammed with notes on Pokémon.\n" "...They're a little hard to read...)")
+    msgbox("(It's crammed with notes on Pokémon.
+            ...They're a little hard to read...)")
     release
 }
 
@@ -107,95 +185,226 @@ script HoneydewTown_ProfsLab_EventScript_PC {
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText1 {
-    "....Hm?{PAUSE 84} Ah, hello there!\n"
-    "Welcome to my lab!\p"
-    "What can I do for you?"
+    "....Hm?{PAUSE 84} Ah, hello there!
+     Welcome to my lab!
+     
+     What can I do for you?"
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText2 {
-    "...........Oh?\p"
-    "So you say your name is {PLAYER} and\n"
-    "you're here to receive your Pokémon?\p"
-    "...I{PAUSE 48}-I see."
+    "... ... ...Oh?
+     
+     So you say your name is {PLAYER} and
+     you're here to receive your Pokémon?
+     
+     ...I{PAUSE 48}-I see."
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText3 {
-    "R-right! {PLAYER}!\n"
-    "So good to finally see you in person!\p"
-    "I apologize, my schedule's been rather\n"
-    "hectic lately...\p"
-    "About your Pokémon, well... there's a\n"
-    "small problem with that.\p"
-    "You see, I had a package of Poké Balls\n"
-    "with Pokémon in them set to be\l"
-    "delivered to Mulberry Town's Pokémon\l"
-    "Center.\p"
-    "I asked my niece, Scarlett, to pick it up\n"
-    "for me, but...\p"
-    "Well, it's been some time and she has\n"
-    "yet to return, so I'm quite worried..."
+    "R-right! {PLAYER}!
+     So good to finally see you in person!
+     
+     I apologize, my schedule's been rather
+     hectic lately...
+     
+     About your Pokémon, well... there's a
+     small problem with that.
+     
+     You see, I had a package of Poké Balls
+     with Pokémon in them set to be
+     delivered to Mulberry Town's Pokémon
+     Center.
+     
+     I asked my niece, Scarlett, to pick it up
+     for me, but...
+     
+     Well, it's been some time and she has
+     yet to return, so I'm quite worried..."
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText4 {
-    "Oh, I know!{PAUSE 72} {PLAYER}!\p"
-    "Could you stop by Mulberry Town for me\n"
-    "and make sure everything's alright?\p"
-    "If there are any major problems, I want\n"
-    "you and Scarlett to return here right\l"
-    "away."
+    "Oh, I know!{PAUSE 72} {PLAYER}!
+     
+     Could you stop by Mulberry Town for me
+     and make sure everything's alright?
+     
+     If there are any major problems, I want
+     you and Scarlett to return here right
+     away."
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText5 {
-    "Now, Mulberry Town is just east of\n"
-    "Honeydew, but you'll have to pass\l"
-    "through some tall grass to get there.\p"
-    "However, with this little tool right\n"
-    "here, that won't be an issue!"
+    "Now, Mulberry Town is just east of
+     Honeydew, but you'll have to pass
+     through some tall grass to get there.
+     
+     However, with this little tool right
+     here, that won't be an issue!"
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText6 {
-    "There! With that extra-strength\n"
-    "Cleanse Tag, no wild Pokémon will\l"
-    "approach you, no matter how strong.\p"
-    "It's, uh, still quite fragile, though...\n"
-    "so be careful!\p"
-    "Well, off you go, then!"
+    "There! With that extra-strength
+     Cleanse Tag, no wild Pokémon will
+     approach you, no matter how strong.
+     
+     It's, uh, still quite fragile, though...
+     so be careful!
+     
+     Well, off you go, then!"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett1 {
+    "Oh, {PLAYER}! You made it!
+     How was the trip back?"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt1 {
+    "{PLAYER}! Scarlett told me everything
+     that happened.
+     
+     I'm glad things turned out well,
+     though I wish you had come over here
+     to tell me right away.
+     
+     ...Well, I suppose it doesn't matter now.
+     {PLAYER}, may I see those Pokémon
+     you found?"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt2 {
+    "... ... ...Hm, how interesting!
+     
+     These Pokémon aren't very common
+     in this region.
+     
+     And though you've only just met them,
+     they're already starting to trust you.
+     
+     The person who stole these Pokémon,
+     they said they were from Team Alpha,
+     correct?
+     
+     That name doesn't ring any bells, but if
+     they're going around nabbing Pokemon,
+     we should keep an eye on them.
+     
+     Ah, right. {PLAYER}, would you mind
+     giving me that package?"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt3 {
+    "... ... ...Good, it doesn't seem like there's
+     anything missing!
+     
+     Are you ready, {PLAYER}?
+     
+     I know this has been quite the hectic
+     delay so far, but it's finally time
+     for you to start your Pok\emon journey!"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4 {
+    "That little device I just gave you is
+    called a Pok\edex.
+    
+    It's a high-tech encyclopedia that
+    records any Pok\emon you meet or catch.
+    
+    Not only that, but it contains detailed
+    information on what moves a Pok\emon 
+    can learn, and how they evolve.
+    
+    It's an essential tool for any
+    Pok\emon trainer."
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett2 {
+    "So, you've got a Pok\edex now!
+    Congrats, {PLAYER}!
+    
+    But to make full use of it,
+    you're gonna need some of these."
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett3 {
+    "You'll want to catch a bunch of
+    different Pok\emon if you want to
+    take on the League Challenge.
+    
+    Speaking of which, your first stop will
+    be the Pok\emon Gym in Bisque City.
+    It's past Mulberry Woods.
+    
+    Anyway, I need to get back to surveying
+    the Pok\emon on Route 304.
+    
+    Good luck, {PLAYER}!
+    And see you later, professor!"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5 {
+    "Well, there she goes. 
+    Never staying in one place for too long.
+    I suppose I'll have to talk to her later.
+    
+    And as for you, {PLAYER}, I believe
+    you're on your way to becoming a 
+    truly exceptional Pok\emon trainer.
+    
+    Good luck on your travels!"
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthRegText1 {
-    "Remember, Mulberry Town is just east\n"
-    "of here.\p"
-    "With that special Cleanse Tag I gave\n"
-    "you, it should be easy to reach."
+    "Remember, Mulberry Town is just east
+     of here.
+     
+     With that special Cleanse Tag I gave
+     you, it should be easy to reach."
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthRegText2 {
+    "The cloest Pok\emon Gym from here is
+     the one in Bisque City.
+     
+     I wish you good luck in your travels!"
+}
+
+text HoneydewTown_ProfsLab_EventScript_HawthRegText3 {
+    "Keep collecting gym badges."
 }
 
 text HoneydewTown_ProfsLab_EventScript_Aide1Text {
-    "...Scyther....{PAUSE 72} Seadra....{PAUSE 84}\n"
-    "...Sealeo...{PAUSE 72} Seedot......\p"
-    "Ugh, why can't I find our notes on\n"
-    "Seaking?"
+    "...Scyther....{PAUSE 72} Seadra....{PAUSE 84}
+     ...Sealeo...{PAUSE 72} Seedot......
+     
+     Ugh, why can't I find our notes on
+     Seaking?"
 }
 
 text HoneydewTown_ProfsLab_EventScript_Aide2Text {
-    "Prof. Hawthorne studies the relations\n"
-    "between different species of Pokémon.\p"
-    "He used to go out a lot on fieldwork,\n"
-    "but he's gotten too old for that\l"
-    "nowadays.\p"
-    "Now he leaves most of the fieldwork to\n"
-    "his niece, Scarlett."
+    "Prof. Hawthorne studies the relations
+     between different species of Pokémon.
+     
+     He used to go out a lot on fieldwork,
+     but he's gotten too old for that
+     nowadays.
+     
+     Now he leaves most of the fieldwork to
+     his niece, Scarlett."
 }
 
 text HoneydewTown_ProfsLab_EventScript_MachineText {
-    "(It's a weird looking machine.)\p"
-    "(There are tons of buttons and\n" 
-    "flashing lights on it... best to leave it\l"
-    "alone.)"
+    "(It's a weird looking machine.)
+     
+     (There are tons of buttons and
+     flashing lights on it... best to leave it
+     alone.)"
 }
 
 text HoneydewTown_ProfsLab_EventScript_PCText {
-    "(It's the Prof's PC.)\p"
-    "(There's a picture of the Prof. and\n"
-    "another person holding a Pokémon\l"
-    "and smiling.)"
+    "(It's the Prof's PC.)
+     
+     (There's a picture of the Prof. and
+     another person holding a Pokémon
+     and smiling.)"
 }

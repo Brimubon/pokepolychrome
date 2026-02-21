@@ -85,7 +85,8 @@ script MulberryWoods_EventScript_SeviperEncounter {
     playse(SE_PIN)
     applymovement(LOCALID_PLAYER, moves(emote_question_mark))
     waitmovement(LOCALID_PLAYER)
-    msgbox("...Huh?\n" "That sounded like a Pokémon!", MSGBOX_AUTOCLOSE)
+    msgbox("...Huh?
+            That sounded like a Pokémon!", MSGBOX_AUTOCLOSE)
     if(var(VAR_0x8008) == 0) {
         applymovement(LOCALID_PLAYER, moves(walk_right * 2, walk_up * 2))
         waitmovement(LOCALID_PLAYER)
@@ -103,7 +104,8 @@ script MulberryWoods_EventScript_SeviperEncounter {
     applymovement(12, moves(face_player, emote_exclamation_mark))
     waitmovement(0)
     delay(72)
-    msgbox("(There's that black tag from before.\n" "This time it's wrapped around its tail.)", MSGBOX_AUTOCLOSE)
+    msgbox("(There's that black tag from before.
+            This time it's wrapped around its tail.)", MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
     waitmovement(LOCALID_PLAYER)
     delay(72)
@@ -217,7 +219,10 @@ script MulberryWoods_EventScript_GruntEncounter {
     delay(60)
     applymovement(LOCALID_PLAYER, moves(face_down, delay_16 * 2, face_left))
     waitmovement(LOCALID_PLAYER)
-    msgbox("(... ... ...Hm?)\p" "(These Pokémon are carrying\n" "Poké Balls...)", MSGBOX_AUTOCLOSE)
+    msgbox("(... ... ...Hm?)
+            
+            (These Pokémon are carrying
+            Poké Balls...)", MSGBOX_AUTOCLOSE)
     delay(90)
     addobject(18)
     clearflag(FLAG_HIDE_GRUNT_MULWOODS)
@@ -229,7 +234,8 @@ script MulberryWoods_EventScript_GruntEncounter {
     playse(SE_PIN)
     applymovement(18, moves(emote_question_mark))
     waitmovement(0)
-    msgbox("Hm?\n" "...Wait a minute.", MSGBOX_AUTOCLOSE)
+    msgbox("Hm?
+            ...Wait a minute.", MSGBOX_AUTOCLOSE)
     playse(SE_PIN)
     applymovement(LOCALID_PLAYER, moves(emote_exclamation_mark, walk_in_place_right))
     applymovement(13, moves(emote_exclamation_mark, walk_in_place_right))
@@ -270,7 +276,10 @@ script MulberryWoods_EventScript_GruntEncounter {
     applymovement(LOCALID_PLAYER, moves(walk_in_place_down, emote_question_mark, delay_16, walk_in_place_left))
     waitmovement(LOCALID_PLAYER)
     delay(60)
-    msgbox("(... ... ... ...Oh!)\p" "(These Pokemon...\n" "They want to join your side!)", MSGBOX_AUTOCLOSE)
+    msgbox("(... ... ... ...Oh!)
+            
+            (These Pokemon...
+            They want to join your side!)", MSGBOX_AUTOCLOSE)
     delay(90)
     playse(SE_BALL_OPEN)
     applymovement(14, moves(enter_pokeball))
@@ -282,7 +291,8 @@ script MulberryWoods_EventScript_GruntEncounter {
     setflag(FLAG_SYS_POKEMON_GET)
     givemon(SPECIES_ZANGOOSE, 5, nature=NATURE_JOLLY, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
     givemon(SPECIES_SEVIPER, 5, nature=NATURE_IMPISH, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
-    message("Zangoose and Seviper have joined\n" "your party!")
+    message("Zangoose and Seviper have joined
+             your party!")
     waitmessage
     playfanfare(MUS_HG_EVOLVED)
     waitfanfare
@@ -397,212 +407,254 @@ script MulberryWoods_EventScript_GoOtherWay {
 }
 
 text MulberryWoods_EventScript_ScarlettText1 {
-    "Oh, {PLAYER}. There you are!\n"
-    "Took you long enough!"
+    "Oh, {PLAYER}. There you are!
+     Took you long enough!"
 }
 
 text MulberryWoods_EventScript_ScarlettText2 {
-    "Alright, so. Here's the plan.\p"
-    "Whoever stole those Pokémon couldn't\n"
-    "have gotten very far."
+    "Alright, so. Here's the plan.
+     
+     Whoever stole those Pokémon couldn't
+     have gotten very far."
 }
 
 text MulberryWoods_EventScript_ScarlettText3 {
-    "I'll check this side of the woods, and\n"
-    "ask the trainers here if they saw\l"
-    "anyone suspicious run by."
+    "I'll check this side of the woods, and
+     ask the trainers here if they saw
+     anyone suspicious run by."
 }
 
 text MulberryWoods_EventScript_ScarlettText4 {
-    "Meanwhile, you'll cover this side of the\n"
-    "woods.\p"
-    "If you run into the thief, then...{PAUSE 80}\n"
-    "... um...\p"
-    "Right, you, uh, don't have any Pokémon\n"
-    "yet, do you...\p"
-    "Then...{PAUSE 60} uh....{PAUSE 72} try distracting them!\n"
-    "Make a loud noise or something!\p"
-    "I promise, I'll come running to help as\n"
-    "soon as I hear it!\p"
-    "... ... ... ... ... ... ...\p"
-    "Don't give me that look, alright?!\n"
-    "We don't have time to come up with\l"
-    "a better plan!\p"
-    "Listen, I know you'll be fine.\n"
-    "I know we've only just met, but...\p"
-    "You seem like the kind of person who\n"
-    "can handle themselves in any situation.\p"
-    "So... I know that things will turn out\n"
-    "just fine.\p"
-    "...Okay?{PAUSE 72} Okay!\p"
-    "Let's go thief hunting!"
+    "Meanwhile, you'll cover this side of the
+     woods.
+     
+     If you run into the thief, then...{PAUSE 80}
+     ... um...
+     
+     Right, you, uh, don't have any Pokémon
+     yet, do you...
+     
+     Then...{PAUSE 60} uh....{PAUSE 72} try distracting them!
+     Make a loud noise or something!
+     
+     I promise, I'll come running to help as
+     soon as I hear it!
+     
+     ... ... ... ... ... ... ...
+     
+     Don't give me that look, alright?!
+     We don't have time to come up with
+     a better plan!
+     
+     Listen, I know you'll be fine.
+     I know we've only just met, but...
+     
+     You seem like the kind of person who
+     can handle themselves in any situation.
+     
+     So... I know that things will turn out
+     just fine.
+     
+     ...Okay?{PAUSE 72} Okay!
+     
+     Let's go thief hunting!"
 }
 
 text MulberryWoods_EventScript_GruntPreBattle1 {
-    "Whew, alright!\n"
-    "I think I shook those people off.\p"
-    "Man, hiding in those bushes is such a\n"
-    "pain.\p"
-    "Now to find those Pokémon and get this\n"
-    "package to the boss fast..."
+    "Whew, alright!
+     I think I shook those people off.
+     
+     Man, hiding in those bushes is such a
+     pain.
+     
+     Now to find those Pokémon and get this
+     package to the boss fast..."
 }
 
 text MulberryWoods_EventScript_GruntPreBattle2 {
-    "You there!\n"
-    "Those Pokémon belong to me!\l"
-    "I stole them fair and square.\p"
-    "Now, get out of the way so I can take\n"
-    "them back!"
+    "You there!
+     Those Pokémon belong to me!
+     I stole them fair and square.
+     
+     Now, get out of the way so I can take
+     them back!"
 }
 
 text MulberryWoods_EventScript_GruntPreBattle3 {
-    "Hey, don't try anything funny!\n"
-    "Look around, there's nowhere else\l"
-    "for you to run, you know!"
+    "Hey, don't try anything funny!
+     Look around, there's nowhere else
+     for you to run, you know!"
 }
 
 text MulberryWoods_EventScript_GruntHandPackage {
-    "Oh, you're one of the people looking for\n"
-    "this package, huh?\p"
-    "Well, that's too bad!\p"
-    "The Pokémon in here belong to my\n"
-    "crew now!"
+    "Oh, you're one of the people looking for
+     this package, huh?
+     
+     Well, that's too bad!
+     
+     The Pokémon in here belong to my
+     crew now!"
 }
 
 text MulberryWoods_EventScript_GruntConfused {
-    "... ... ...Huh?\p"
-    "W{PAUSE 60}-What was that supposed to be?\n"
-    "What was that noise you just made?!"
+    "... ... ...Huh?
+     
+     W{PAUSE 60}-What was that supposed to be?
+     What was that noise you just made?!"
 }
 
 text MulberryWoods_EventScript_GruntPreBattle4 {
-    "L{PAUSE 60}-Look, I don't have time for this!\p"
-    "I've gotta get out of here and get this\n"
-    "package over to my boss.\p"
-    "So you'd better move out of the way and\n"
-    "let me get those Pokémon, or else I'll-"
+    "L{PAUSE 60}-Look, I don't have time for this!
+     
+     I've gotta get out of here and get this
+     package over to my boss.
+     
+     So you'd better move out of the way and
+     let me get those Pokémon, or else I'll-"
 }
 
 text MulberryWoods_EventScript_GruntPreBattle5  {
-    "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...\p"
-    "... ... ... ...{PAUSE 90}What?\p"
-    "Did you-\n"
-    "Did you just..."
+    "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...
+     
+     ... ... ... ...{PAUSE 90}What?
+     
+     Did you-
+     Did you just..."
 }
 
 text MulberryWoods_EventScript_GruntPreBattle6 {
-    "Did you just take those Pokémon\n"
-    "WHILE I WAS TALKING TO YOU?!\p"
-    "Oh, that's it!\n"
-    "I've had enough!\p"
-    "I'll show you what happens to people\n"
-    "who mess with Team Alpha!"
+    "Did you just take those Pokémon
+     WHILE I WAS TALKING TO YOU?!
+     
+     Oh, that's it!
+     I've had enough!
+     
+     I'll show you what happens to people
+     who mess with Team Alpha!"
 }
 
 text MulberryWoods_Text_NoWay {
-    "N-no way! I lost?!\n"
-    "Why, you little..."
+    "N-no way! I lost?!
+     Why, you little..."
 }
 
 text MulberryWoods_EventScript_GruntPostBattleLost {
-    "Heh... heheh...\n"
-    "I... I actually won?!\p"
-    "Ha! Well, you can keep those Pokémon!\n"
-    "They're clearly not worth my time!"
+    "Heh... heheh...
+     I... I actually won?!
+     
+     Ha! Well, you can keep those Pokémon!
+     They're clearly not worth my time!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleText1 {
-    "You've gotta be kidding me...\p"
-    "Fine, keep those Pokémon!\n"
-    "I didn't even like them anyway!"
+    "You've gotta be kidding me...
+     
+     Fine, keep those Pokémon!
+     I didn't even like them anyway!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleScarlett1 {
-    "{PLAYER}! Are you okay?\n"
-    "I heard a lot of noise coming from\l"
-    "over here.\p"
-    "Don't worry, I'm on my way!"
+    "{PLAYER}! Are you okay?
+     I heard a lot of noise coming from
+     over here.
+     
+     Don't worry, I'm on my way!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleText2 {
-    "Oh no!\n"
-    "I can't deal with another person\l"
-    "right now!"
+    "Oh no!
+     I can't deal with another person
+     right now!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleText3 {
-    "Urgh, stealing this package has been\n"
-    "way too stressful!\p"
-    "Whatever, just take it!\n"
-    "I'm outta here!"
+    "Urgh, stealing this package has been
+     way too stressful!
+     
+     Whatever, just take it!
+     I'm outta here!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleText4 {
-    "A{PAUSE 60}-Anyway, don't get cocky!\p"
-    "You may have won this time, but mark\n"
-    "my words...\p"
-    "You'll regret meddling with Team Alpha!"
+    "A{PAUSE 60}-Anyway, don't get cocky!
+     
+     You may have won this time, but mark
+     my words...
+     
+     You'll regret meddling with Team Alpha!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleScarlett2 {
-    "Oof!{PAUSE 90} Hey!\n"
-    "Where do you think you're going?!"
+    "Oof!{PAUSE 90} Hey!
+     Where do you think you're going?!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleScarlett3 {
-    "{PLAYER}! What happened?!\p"
-    "That... that was the thief, wasn't it?\n"
-    "What did they do? Are you hurt?\p"
-    "... ... ... ... ... ... ... ... ... ... ... ...{PAUSE 72}\n"
-    "Hold on, you got the package!\p"
-    "And those Poké Balls at your side...\n"
-    "When did you...?\p"
-    "Er, let me heal your Pokémon first.\n"
-    "Then you can explain everything."
+    "{PLAYER}! What happened?!
+     
+     That... that was the thief, wasn't it?
+     What did they do? Are you hurt?
+     
+     ... ... ... ... ... ... ... ... ... ... ... ...{PAUSE 72}
+     Hold on, you got the package!
+     
+     And those Poké Balls at your side...
+     When did you...?
+     
+     Er, let me heal your Pokémon first.
+     Then you can explain everything."
 }
 
 text MulberryWoods_EventScript_GruntPostBattleScarlett4 {
-    "Huh... so that's what happened.\p"
-    "I'm sorry I wasn't there to help, but\n"
-    "you handled things really well on\l"
-    "your own!\p"
-    "... ... ... ...{PAUSE 72}Ah, right!\n"
-    "We need to get that package back\l"
-    "to the professor.\p"
-    "I bet he's worried sick about us by now.\n"
-    "I'll meet you back at the lab, okay?\p"
-    "Now that you have Pokémon, you won't\n"
-    "have much trouble making it back.\p"
-    "Alright, see you there!"
+    "Huh... so that's what happened.
+     
+     I'm sorry I wasn't there to help, but
+     you handled things really well on
+     your own!
+     
+     ... ... ... ...{PAUSE 72}Ah, right!
+     We need to get that package back
+     to the professor.
+     
+     I bet he's worried sick about us by now.
+     I'll meet you back at the lab, okay?
+     
+     Now that you have Pokémon, you won't
+     have much trouble making it back.
+     
+     Alright, see you there!"
 }
 
 text MulberryWoods_EventScript_GruntPostBattleTagBreaks {
-    "(... ... ... ... ... ...{PAUSE 72}!)\p"
-    "(The tag Prof. Hawthorne gave you must\n"
-    "have fallen off during the battle...)"
+    "(... ... ... ... ... ...{PAUSE 72}!)
+     
+     (The tag Prof. Hawthorne gave you must
+     have fallen off during the battle...)"
 }
 
 text MulberryWoods_EventScript_NormalGirlText {
-    "Hm? Oh no, I'm not a trainer.\p"
-    "But there are quite a few of them\n"
-    "between here and Bisque City, so you\l"
-    "should make sure you're stocked up on\l"
-    "supplies."
+    "Hm? Oh no, I'm not a trainer.
+     
+     But there are quite a few of them
+     between here and Bisque City, so you
+     should make sure you're stocked up on
+     supplies."
 }
 
 text MulberryWoods_EventScript_PressBSignText {
-    "Trainer Tips!\p"
-    "When facing a wild Pokémon you don't\n"
-    "feel like fighting, press B to quickly\l"
-    "move your cursor to the “Run” option!"
+    "Trainer Tips!
+     
+     When facing a wild Pokémon you don't
+     feel like fighting, press B to quickly
+     move your cursor to the “Run” option!"
 }
 
 text MulberryWoods_EventScript_ExitSignText {
-    "Leaving Mulberry Woods\n"
-    "Bisque City Ahead"
+    "Leaving Mulberry Woods
+     Bisque City Ahead"
 }
 
 text MulberryWoods_EventScript_GoOtherWayText {
-    "(There are Pokémon trainers past here.\n"
-    "Best to go the other way for now.)"
+    "(There are Pokémon trainers past here.
+     Best to go the other way for now.)"
 }

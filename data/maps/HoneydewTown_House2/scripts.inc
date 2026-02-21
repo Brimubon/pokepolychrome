@@ -35,7 +35,7 @@ HoneydewTown_House2_EventScript_GirlText::
 	.string "to the sound of the waves crashing.$"
 
 HoneydewTown_House2_EventScript_ManText::
-# 25 "data/maps/HoneydewTown_House2/scripts.pory"
+# 26 "data/maps/HoneydewTown_House2/scripts.pory"
 	.string "We moved to Honeydew from the big city\n"
 	.string "not too long ago.\p"
 	.string "The clean air here does wonders for my\n"

@@ -665,7 +665,7 @@
 #define FLAG_HIDE_SEVIPER            0x26A // previously unused flag, hides Seviper after Plychrme cutscene
 #define FLAG_HIDE_GRUNT_MULWOODS     0x26B // previously unused flag
 #define FLAG_HIDE_STARTERS_MULWOODS  0x26C // previously unused flag, hides Zangoose and Seviper once you get them as starters
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
+#define FLAG_HIDE_SCARLETT_LAB       0x26D // previously unused flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag
 #define FLAG_UNUSED_0x26F  0x26F // Unused Flag
 #define FLAG_UNUSED_0x270  0x270 // Unused Flag

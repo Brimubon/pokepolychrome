@@ -84,206 +84,206 @@ MulberryTown_PokemonCenter_EventScript_Scarlett::
 	setspeaker SP_NAME_UNKNOWN
 # 45 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	msgbox MulberryTown_PokemonCenter_EventScript_Scarlett_Text_1, MSGBOX_AUTOCLOSE
-# 46 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	delay 60
 # 47 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setspeaker SP_NAME_UNKNOWN
+	delay 60
 # 48 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_ScarlettText6, MSGBOX_AUTOCLOSE
+	setspeaker SP_NAME_UNKNOWN
 # 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 7, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_8
+	msgbox MulberryTown_PokemonCenter_EventScript_ScarlettText6, MSGBOX_AUTOCLOSE
 # 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement 0
+	applymovement 7, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_8
 # 51 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_9
+	waitmovement 0
 # 52 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement 0
+	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_9
 # 53 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setspeaker SP_NAME_SCARLETT
-# 54 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_ScarlettText7, MSGBOX_AUTOCLOSE
-# 55 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 7, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_7
-# 56 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitmovement 0
+# 54 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	setspeaker SP_NAME_SCARLETT
+# 55 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_ScarlettText7, MSGBOX_AUTOCLOSE
+# 56 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement 7, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_7
 # 57 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	delay 16
+	waitmovement 0
 # 58 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	removeobject 7
+	delay 16
 # 59 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setflag FLAG_HIDE_SCARLETT_MULBERRY
+	removeobject 7
 # 60 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	removeobject 12, MAP_MULBERRY_TOWN
+	setflag FLAG_HIDE_SCARLETT_MULBERRY
 # 61 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setflag FLAG_HIDE_MULBERRY_GRUNT
+	removeobject 12, MAP_MULBERRY_TOWN
 # 62 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setvar VAR_MULBERRY_TOWN_GRUNT, 1
+	setflag FLAG_HIDE_MULBERRY_GRUNT
 # 63 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setvar VAR_MULBERRY_TOWN_STATE, 1
+	setvar VAR_MULBERRY_TOWN_GRUNT, 1
 # 64 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	setvar VAR_MULBERRY_TOWN_STATE, 1
+# 65 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	releaseall
 	return
 
 
 MulberryTown_PokemonCenter_EventScript_Nurse::
-# 68 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 69 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	goto_if_unset FLAG_SYS_POKEMON_GET, MulberryTown_PokemonCenter_EventScript_Nurse_2
-# 75 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	setvar VAR_0x800B, LOCALID_MULBERRY_NURSE
 # 76 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	call Common_EventScript_PkmnCenterNurse
+	setvar VAR_0x800B, LOCALID_MULBERRY_NURSE
 # 77 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmessage
+	call Common_EventScript_PkmnCenterNurse
 # 78 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmessage
+# 79 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitbuttonpress
 MulberryTown_PokemonCenter_EventScript_Nurse_1:
-# 81 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 82 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	release
 	return
 
 MulberryTown_PokemonCenter_EventScript_Nurse_2:
-# 69 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	lock
 # 70 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_NoPokemonText
+	lock
 # 71 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Nurse_Movement_0
+	msgbox MulberryTown_PokemonCenter_EventScript_NoPokemonText
 # 72 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Nurse_Movement_0
+# 73 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitmovement 0
 	goto MulberryTown_PokemonCenter_EventScript_Nurse_1
 
 
 MulberryTown_PokemonCenter_EventScript_Clerk::
-# 85 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	lock
 # 86 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	faceplayer
+	lock
 # 87 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	faceplayer
+# 88 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	goto_if_unset FLAG_SYS_POKEMON_GET, MulberryTown_PokemonCenter_EventScript_Clerk_2
-# 92 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	message gText_HowMayIServeYou
 # 93 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmessage
+	message gText_HowMayIServeYou
 # 94 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	pokemart MulberryTown_PokemonCenter_Pokemart
+	waitmessage
 # 95 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	pokemart MulberryTown_PokemonCenter_Pokemart
+# 96 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	msgbox gText_PleaseComeAgain
 MulberryTown_PokemonCenter_EventScript_Clerk_1:
-# 97 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 98 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	release
 	return
 
 MulberryTown_PokemonCenter_EventScript_Clerk_2:
-# 88 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_UnpackingText
 # 89 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Nurse_Movement_0
+	msgbox MulberryTown_PokemonCenter_EventScript_UnpackingText
 # 90 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Nurse_Movement_0
+# 91 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitmovement 0
 	goto MulberryTown_PokemonCenter_EventScript_Clerk_1
 
 
 	.align 2
-# 100 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-MulberryTown_PokemonCenter_Pokemart:
 # 101 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.2byte ITEM_POKE_BALL
+MulberryTown_PokemonCenter_Pokemart:
 # 102 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.2byte ITEM_POTION
+	.2byte ITEM_POKE_BALL
 # 103 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_POTION
 # 104 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_ANTIDOTE
 # 105 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	.2byte ITEM_PARALYZE_HEAL
+# 106 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_NONE
 
 MulberryTown_PokemonCenter_EventScript_Girl1::
-# 109 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	lock
 # 110 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	faceplayer
+	lock
 # 111 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl1Text
+	faceplayer
 # 112 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl1Text
+# 113 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	release
 	return
 
 
 MulberryTown_PokemonCenter_EventScript_Boy1::
-# 116 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	lock
 # 117 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	faceplayer
+	lock
 # 118 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Boy1Text
+	faceplayer
 # 119 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Boy1Text
+# 120 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	release
 	return
 
 
 MulberryTown_PokemonCenter_EventScript_Girl2::
-# 123 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	lock
 # 124 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	faceplayer
+	lock
 # 125 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl2Text1
+	faceplayer
 # 126 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 5, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_0
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl2Text1
 # 127 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement 5
-# 128 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl2Text2
-# 129 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
-# 130 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl2_Text_0
-# 131 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmoncry
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 6, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_1
-# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement 6
-# 134 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl2Text3
-# 135 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 5, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_2
-# 136 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement 5
-# 137 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl2_Text_1
-# 138 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 5, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_2
-# 139 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement 5
-# 140 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Girl2_Text_2
-# 141 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	applymovement 5, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_0
-# 142 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 128 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitmovement 5
+# 129 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl2Text2
+# 130 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
+# 131 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl2_Text_0
+# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmoncry
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement 6, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_1
+# 134 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmovement 6
+# 135 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl2Text3
+# 136 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement 5, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_2
+# 137 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmovement 5
+# 138 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl2_Text_1
+# 139 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement 5, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_2
+# 140 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmovement 5
+# 141 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	msgbox MulberryTown_PokemonCenter_EventScript_Girl2_Text_2
+# 142 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	applymovement 5, MulberryTown_PokemonCenter_EventScript_Girl2_Movement_0
 # 143 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmovement 5
+# 144 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	release
 	return
 
 
 MulberryTown_PokemonCenter_EventScript_Stufful::
-# 147 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	lock
 # 148 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	faceplayer
+	lock
 # 149 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
+	faceplayer
 # 150 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	msgbox MulberryTown_PokemonCenter_EventScript_Stufful_Text_0, MSGBOX_AUTOCLOSE
+	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
 # 151 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmoncry
+	msgbox MulberryTown_PokemonCenter_EventScript_Stufful_Text_0, MSGBOX_AUTOCLOSE
 # 152 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement 6, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_1
+	waitmoncry
 # 153 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	waitmovement
+	applymovement 6, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_1
 # 154 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+	waitmovement
+# 155 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	release
 	return
 
@@ -352,59 +352,59 @@ MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_7:
 	walk_down
 	step_end
 
-# 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_8:
-# 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_left
-# 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_left
-# 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_down
-# 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_down
-# 49 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 51 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 52 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_9:
-# 51 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 52 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 71 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 72 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 MulberryTown_PokemonCenter_EventScript_Nurse_Movement_0:
-# 71 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 72 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	face_down
 	step_end
 
-# 126 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 127 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 MulberryTown_PokemonCenter_EventScript_Girl2_Movement_0:
-# 126 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 127 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	face_up
 	step_end
 
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 MulberryTown_PokemonCenter_EventScript_Girl2_Movement_1:
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_up
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	delay_16
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_down
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	delay_16
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_left
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_right
-# 132 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 133 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 138 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 139 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 MulberryTown_PokemonCenter_EventScript_Girl2_Movement_2:
-# 138 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 139 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	face_player
 	step_end
 
@@ -418,23 +418,23 @@ MulberryTown_PokemonCenter_EventScript_Scarlett_Text_1:
 	.string "I'm kinda in a hurry right now!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_0:
-# 130 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 131 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Stufful...?$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_1:
-# 137 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 138 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "... ... ... ...$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_2:
-# 140 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 141 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "...It's having an off day.$"
 
 MulberryTown_PokemonCenter_EventScript_Stufful_Text_0:
-# 150 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 151 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Stufful!$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText1::
-# 157 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 158 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "My apologies, ma'am. I've triple checked\n"
 	.string "all the deliveries we've made today,\l"
 	.string "but...\p"
@@ -442,13 +442,13 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText1::
 	.string "has already been picked up.$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText2::
-# 165 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 167 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Really? Oh no...\p"
 	.string "Do you at least remember what the\n"
 	.string "person who took it looked like?$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText3::
-# 171 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 174 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "....Hmm...\p"
 	.string "Oh! I think they were wearing some kind\n"
 	.string "of weird, all-black outfit.\p"
@@ -456,18 +456,18 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText3::
 	.string "their face looked like...$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText4::
-# 179 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 184 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Hey! I think I saw someone like that\n"
 	.string "take off towards Mulberry Woods!$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText5::
-# 184 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 189 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Mulberry Woods?! I've gotta catch up to\n"
 	.string "them before they get too far!\p"
 	.string "Thanks for the help!$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText6::
-# 190 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 196 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "...Hey, wait.\n"
 	.string "Haven't I seen you somewhere before?\p"
 	.string "...{PAUSE 72}Oh, you're {PLAYER}, aren't you?\n"
@@ -483,12 +483,12 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText6::
 	.string "it's too late!$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText7::
-# 206 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 218 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Meet me in Mulberry Woods, alright?\n"
 	.string "We'll talk more there!$"
 
 MulberryTown_PokemonCenter_EventScript_NoPokemonText::
-# 211 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 223 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Hello, and welcome to... oh?\p"
 	.string "It doesn't seem like you have any\n"
 	.string "Pokémon.\p"
@@ -496,14 +496,14 @@ MulberryTown_PokemonCenter_EventScript_NoPokemonText::
 	.string "we can restore them to full health!$"
 
 MulberryTown_PokemonCenter_EventScript_UnpackingText::
-# 219 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 233 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Apologies, we're still busy unpacking\n"
 	.string "some of our supplies.\p"
 	.string "Come back later and we should have\n"
 	.string "some goods available to sell to you!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl1Text::
-# 226 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 241 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "My Pokémon got poisoned while I was\n"
 	.string "training it in the woods.\p"
 	.string "I forgot to buy antidotes, but my\n"
@@ -511,14 +511,14 @@ MulberryTown_PokemonCenter_EventScript_Girl1Text::
 	.string "before it fainted.$"
 
 MulberryTown_PokemonCenter_EventScript_Boy1Text::
-# 234 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 250 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Pokémon Centers are amazing!\p"
 	.string "Not only do they heal your Pokémon for\n"
 	.string "free, they have beds you can rest in if\l"
 	.string "you want to pass the time.$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2Text1::
-# 241 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 258 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Isn't my Stufful just the cutest?\n"
 	.string "You won't find a cuter Pokémon in all of\l"
 	.string "Myset, I assure you.\p"
@@ -526,12 +526,12 @@ MulberryTown_PokemonCenter_EventScript_Girl2Text1::
 	.string "kinds of neat tricks, too! Watch!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2Text2::
-# 249 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 267 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "C'mon, Stufful!\n"
 	.string "Do the Baby-Doll Eyes and Brutal Swing\l"
 	.string "combo, like we practiced!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2Text3::
-# 255 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 273 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "(The Stufful tripped on its feet and\n"
 	.string "flailed around wildly...)$"
