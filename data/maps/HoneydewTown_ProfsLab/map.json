@@ -96,7 +96,44 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_HONEYDEW_JOURNAL_STATE",
+      "var_value": "1",
+      "script": "HoneydewTown_ProfsLab_EventScript_GiveJournal0"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_HONEYDEW_JOURNAL_STATE",
+      "var_value": "1",
+      "script": "HoneydewTown_ProfsLab_EventScript_GiveJournal1"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_HONEYDEW_JOURNAL_STATE",
+      "var_value": "1",
+      "script": "HoneydewTown_ProfsLab_EventScript_GiveJournal2"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_HONEYDEW_JOURNAL_STATE",
+      "var_value": "1",
+      "script": "HoneydewTown_ProfsLab_EventScript_GiveJournal3"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

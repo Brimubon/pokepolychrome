@@ -122,8 +122,72 @@ script HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt {
     applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
     setspeaker(SP_NAME_HAWTHORNE)
     msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5, MSGBOX_AUTOCLOSE)
+    setvar(VAR_HONEYDEW_JOURNAL_STATE, 1)
     setvar(VAR_MULBERRY_WOODS_STATE, 1)
     setvar(VAR_HAWTH_LAB_STATE, 3)
+    releaseall
+}
+
+script HoneydewTown_ProfsLab_EventScript_GiveJournal0 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(HoneydewTown_ProfsLab_EventScript_GiveJournal)
+    end
+}
+
+script HoneydewTown_ProfsLab_EventScript_GiveJournal1 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(HoneydewTown_ProfsLab_EventScript_GiveJournal)
+    end
+}
+
+script HoneydewTown_ProfsLab_EventScript_GiveJournal2 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(HoneydewTown_ProfsLab_EventScript_GiveJournal)
+    end
+}
+
+script HoneydewTown_ProfsLab_EventScript_GiveJournal3 {
+    lockall
+    setvar(VAR_0x8008, 3)
+    goto(HoneydewTown_ProfsLab_EventScript_GiveJournal)
+    end
+}
+
+script HoneydewTown_ProfsLab_EventScript_GiveJournal {
+    setvar(VAR_HONEYDEW_JOURNAL_STATE, 2)
+    applymovement(1, moves(walk_in_place_right))
+    waitmovement(0)
+    msgbox(HoneydewTown_ProfsLab_EventScript_GiveJournalText1, MSGBOX_AUTOCLOSE)
+    playse(SE_PIN)
+    applymovement(LOCALID_PLAYER, moves(emote_question_mark, walk_in_place_left))
+    delay(60)
+    if(var(VAR_0x8008) == 0) {
+        applymovement(LOCALID_PLAYER, moves(walk_left))
+        waitmovement(LOCALID_PLAYER)
+    } elif (var(VAR_0x8008) == 1) {
+        applymovement(LOCALID_PLAYER, moves(walk_left * 2))
+        waitmovement(LOCALID_PLAYER)
+    } elif (var(VAR_0x8008) == 2) {
+        applymovement(LOCALID_PLAYER, moves(walk_left * 3))
+        waitmovement(LOCALID_PLAYER)
+    } elif (var(VAR_0x8008) == 3) {
+        applymovement(LOCALID_PLAYER, moves(walk_left * 4))
+        waitmovement(LOCALID_PLAYER)
+    }
+    msgbox(HoneydewTown_ProfsLab_EventScript_GiveJournalText2, MSGBOX_AUTOCLOSE)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message("{PLAYER} received the Journal!")
+    waitfanfare
+    setflag(FLAG_SYS_QUEST_MENU_GET)
+    closemessage
+    msgbox(HoneydewTown_ProfsLab_EventScript_GiveJournalText3, MSGBOX_AUTOCLOSE)
+    applymovement(1, moves(walk_in_place_up))
+    waitmovement(0)
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_ALL_BADGES)
+    questmenu(QUEST_MENU_SET_ACTIVE, QUEST_TEAM_ALPHA)
     releaseall
 }
 
@@ -143,7 +207,22 @@ script HoneydewTown_ProfsLab_EventScript_Hawth {
 
 script HoneydewTown_ProfsLab_EventScript_Aide1 {
     lock
-    msgbox(HoneydewTown_ProfsLab_EventScript_Aide1Text)
+    if(flag(FLAG_SYS_QUEST_MENU_GET) == FALSE) {
+        msgbox(HoneydewTown_ProfsLab_EventScript_Aide1Text)
+    } else {
+        faceplayer
+        message(HoneydewTown_ProfsLab_EventScript_Aide1Hub)
+        waitmessage
+        delay(60)
+        dynmultichoice(0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Explain the Journal.", "Nothing.")
+        if(var(VAR_RESULT) == 0) {
+            msgbox(HoneydewTown_ProfsLab_EventScript_Aide1ExplainJournal, MSGBOX_AUTOCLOSE)
+        } else {
+            msgbox(HoneydewTown_ProfsLab_EventScript_Aide1Goodbye, MSGBOX_AUTOCLOSE)
+        }
+        applymovement(1, moves(walk_in_place_up))
+        waitmovement(0)
+    }
     release
 }
 
@@ -311,7 +390,7 @@ text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4 {
     records any Pok\emon you meet or catch.
     
     Not only that, but it contains detailed
-    information on what moves a Pok\emon 
+    information on what moves a Pok\emon
     can learn, and how they evolve.
     
     It's an essential tool for any
@@ -352,6 +431,85 @@ text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5 {
     truly exceptional Pok\emon trainer.
     
     Good luck on your travels!"
+}
+
+text HoneydewTown_ProfsLab_EventScript_GiveJournalText1 {
+    "... ... ... ... ...You there.
+    Come over here for a second."
+}
+
+text HoneydewTown_ProfsLab_EventScript_GiveJournalText2 {
+    "You're, uh, {PLAYER}, correct?
+    I overheard your conversation with
+    the professor.
+    
+    ... ... ...Here, take this."
+}
+
+text HoneydewTown_ProfsLab_EventScript_GiveJournalText3 {
+    "While you're out exploring the region,
+    you'll encounter many different people.
+    
+    Some may ask you to assist them with 
+    something, and it can be hard to keep it
+    all in your head.
+    
+    That journal there should help you
+    remember everything you need to do.
+
+    Look, I've even written some things
+    down for you to get you started.
+
+    It's pretty simple, but let me know if
+    you need help learning how to use it.
+    
+    ...I've tried giving some of these to 
+    the professor to make this place a bit
+    more organized, but he always ends up
+    losing them in the end.
+    
+    So... I hope you get more use out of it
+    than he did.
+    
+    ... ... ...Well, that's all.
+    Good luck out there."
+}
+
+text HoneydewTown_ProfsLab_EventScript_Aide1Hub {
+    "... ... ... ... ...Yes?
+    What is it?"
+}
+
+text HoneydewTown_ProfsLab_EventScript_Aide1ExplainJournal {
+    "It's quite simple, really.
+    
+    Once you've accepted a request from
+    someone, details about it will be
+    recorded in there automatically.
+
+    For more complex requests with several
+    smaller requirements, you can press the
+    A button to view them on their own.
+    
+    Press the R button to filter
+    requests by what state they're in.
+    Or press Start to sort requests
+    alpabetically.
+
+    ... ... ...Oh, and you can also press the
+    Select button on a request to pin it to
+    the top of the journal.
+    
+    ...Yes, I believe that's all.
+    Feel free to talk to me again if you
+    forget any of this.
+    
+    ... ... ...Goodbye for now, then."
+}
+
+text HoneydewTown_ProfsLab_EventScript_Aide1Goodbye {
+    "... ... ... ...Right.
+    Goodbye, then."
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthRegText1 {

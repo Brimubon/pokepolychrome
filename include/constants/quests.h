@@ -15,8 +15,8 @@
 #define QUEST_MENU_BUFFER_QUEST_NAME    10  //buffers a quest name to gStringVar1
 
 // quest number defines
-#define QUEST_1          0
-#define QUEST_2          1
+#define QUEST_ALL_BADGES    0
+#define QUEST_TEAM_ALPHA    1
 #define QUEST_3          2
 #define QUEST_4          3
 #define QUEST_5          4
@@ -55,32 +55,9 @@
 #define SUB_QUEST_6          5
 #define SUB_QUEST_7          6
 #define SUB_QUEST_8          7
-#define SUB_QUEST_9          8
-#define SUB_QUEST_10         9
-#define SUB_QUEST_11        10
-#define SUB_QUEST_12        11
-#define SUB_QUEST_13        12
-#define SUB_QUEST_14        13
-#define SUB_QUEST_15        14
-#define SUB_QUEST_16        15
-#define SUB_QUEST_17        16
-#define SUB_QUEST_18        17
-#define SUB_QUEST_19        18
-#define SUB_QUEST_20        19
-#define SUB_QUEST_21        20
-#define SUB_QUEST_22        21
-#define SUB_QUEST_23        22
-#define SUB_QUEST_24        23
-#define SUB_QUEST_25        24
-#define SUB_QUEST_26        25
-#define SUB_QUEST_27        26
-#define SUB_QUEST_28        27
-#define SUB_QUEST_29        28
-#define SUB_QUEST_30        29
 
-#define QUEST_1_SUB_COUNT 10
-#define QUEST_2_SUB_COUNT 20
-#define SUB_QUEST_COUNT (QUEST_1_SUB_COUNT + QUEST_2_SUB_COUNT)
+#define QUEST_ALL_BADGES_SUB_COUNT 8
+#define SUB_QUEST_COUNT (QUEST_ALL_BADGES_SUB_COUNT)
 
 #define QUEST_ARRAY_COUNT (SUB_QUEST_COUNT > QUEST_COUNT ? SUB_QUEST_COUNT : QUEST_COUNT)
 #endif // GUARD_CONSTANTS_QUESTS_H
