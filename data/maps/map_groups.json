@@ -110,7 +110,10 @@
     "HoneydewTown_ProfHouse"
   ],
   "gMapGroup_IndoorMulberry": [
-    "MulberryTown_PokemonCenter"
+    "MulberryTown_PokemonCenter",
+    "MulberryTown_House1",
+    "MulberryTown_House2",
+    "MulberryTown_House3"
   ],
   "gMapGroup_PlychrmDungeons": [
     "MulberryWoods"

@@ -144,6 +144,8 @@ static const u8 sDoorAnimTiles_HawthsLab[] = INCBIN_U8("graphics/door_anims/hawt
 static const u16 sDoorNullPalette51[16] = {};
 static const u8 sDoorAnimTiles_Honeydew[] = INCBIN_U8("graphics/door_anims/honeydew.4bpp");
 static const u16 sDoorNullPalette52[16] = {};
+static const u8 sDoorAnimTiles_Mulberry[] = INCBIN_U8("graphics/door_anims/mulberry.4bpp");
+static const u16 sDoorNullPalette53[16] = {};
 
 #define CLOSED_DOOR_TILES_OFFSET 0xFFFF
 
@@ -255,6 +257,7 @@ static const u8 sDoorAnimPalettes_TrainerHillRoofElevator[] = {9, 9, 7, 7, 7, 7,
 static const u8 sDoorAnimPalettes_NewPokeCenter[] = {1, 1, 1, 1, 1, 1, 1, 1};
 static const u8 sDoorAnimPalettes_HawthsLab[] = {6, 6, 6, 6, 6, 6, 6, 6};
 static const u8 sDoorAnimPalettes_Honeydew[] = {6, 6, 6, 6, 6, 6, 6, 6};
+static const u8 sDoorAnimPalettes_Mulberry[] = {12, 12, 12, 12, 12, 12, 12, 12};
 
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
@@ -313,6 +316,7 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
     {METATILE_NewGeneral_PlychrmePCDoor,                    DOOR_SOUND_SLIDING, DOOR_SIZE_1x1, sDoorAnimTiles_NewPokeCenter, sDoorAnimPalettes_NewPokeCenter},
     {METATILE_Honeydew_PlychrmeHawthDoor,                   DOOR_SOUND_FRLG,  DOOR_SIZE_1x1, sDoorAnimTiles_HawthsLab, sDoorAnimPalettes_HawthsLab},
     {METATILE_Honeydew_PlychrmeHoneydewDoor,                DOOR_SOUND_FRLG,  DOOR_SIZE_1x1, sDoorAnimTiles_Honeydew, sDoorAnimPalettes_Honeydew},
+    {METATILE_Honeydew_PlychrmeMulberryDoor,                DOOR_SOUND_FRLG,  DOOR_SIZE_1x1, sDoorAnimTiles_Mulberry, sDoorAnimPalettes_Mulberry},
     {},
 };
 
@@ -585,7 +589,7 @@ u32 GetDoorSoundEffect(u32 x, u32 y)
     else if (sound == DOOR_SOUND_ARENA)
         return SE_REPEL;
     else
-        return SE_DOOR;
+        return SE_RG_DOOR;
 }
 
 // Opens the Battle Tower multi partner's door in sync with the player's door

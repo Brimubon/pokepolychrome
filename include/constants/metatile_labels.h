@@ -252,6 +252,7 @@
 // gTileset_Honeydew
 #define METATILE_Honeydew_PlychrmeHawthDoor     0x214
 #define METATILE_Honeydew_PlychrmeHoneydewDoor  0x203
+#define METATILE_Honeydew_PlychrmeMulberryDoor  0x217
 
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D

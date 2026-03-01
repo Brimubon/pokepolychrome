@@ -1182,3 +1182,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/HoneydewTown_House2/scripts.inc"
 
 	.include "data/maps/HoneydewTown_ProfHouse/scripts.inc"
+
+	.include "data/maps/MulberryTown_House1/scripts.inc"
+
+	.include "data/maps/MulberryTown_House2/scripts.inc"
+
+	.include "data/maps/MulberryTown_House3/scripts.inc"
