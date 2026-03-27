@@ -362,7 +362,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_3,
 	      gText_SideQuestDoneDesc_3,
 	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_EXPERT_F,
 	      OBJECT,
 	      NULL,
 	      0
