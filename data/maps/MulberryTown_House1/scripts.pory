@@ -1,0 +1,120 @@
+mapscripts MulberryTown_House1_MapScripts {}
+
+
+script MulberryTown_House1_EventScript_OldWoman {
+    lock
+    faceplayer
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ORAN_BERRY)
+    if(var(VAR_RESULT) == TRUE) {
+        msgbox(MulberryTown_House1_EventScript_OldWomanQuestDone)
+        release
+    } else {
+        if(flag(FLAG_SYS_QUEST_MENU_GET) == FALSE) {
+            msgbox(MulberryTown_House1_EventScript_NoQuestMenu)
+            release
+        } elif (flag(FLAG_SYS_QUEST_MENU_GET) == TRUE) {
+            questmenu(QUEST_MENU_CHECK_ACTIVE, QUEST_ORAN_BERRY)
+            if(var(VAR_RESULT) == FALSE) {
+                msgbox(MulberryTown_House1_EventScript_OldWomanQuestStart, MSGBOX_AUTOCLOSE)
+                startquest(QUEST_ORAN_BERRY)
+                release
+            } else {
+                msgbox(MulberryTown_House1_EventScript_OldWomanAskForBerry)
+                closemessage
+                checkitem(ITEM_ORAN_BERRY, 2)
+                if(var(VAR_RESULT) == TRUE) {
+                    msgbox(MulberryTown_House1_EventScript_OldWomanDeliverBerry)
+                    closemessage
+                    removeitem(ITEM_ORAN_BERRY, 2)
+                    delay(60)
+                    msgbox(MulberryTown_House1_EventScript_OldWomanGiveReward)
+                    closemessage
+                    giveitem(ITEM_SODA_POP)
+                    completequest(QUEST_ORAN_BERRY)
+                    release
+                } else {
+                    msgbox(MulberryTown_House1_EventScript_OldWomanNoBerry)
+                    release
+                }
+            }
+        }
+    }
+}
+
+text MulberryTown_House1_EventScript_NoQuestMenu {
+    "... ...Oh, hello.
+    
+    ...Pardon me, but could I ask you for
+    a favor?
+
+    ...Hm? You're doing something important
+    right now?
+    
+    Yes, I understand. Please come back
+    once you're done."
+}
+
+text MulberryTown_House1_EventScript_OldWomanQuestStart {
+    "... ...Oh, hello.
+    
+    ...Pardon me, but could I ask you for
+    a favor?
+    
+    You see, my Teddiursa's come down with a
+    little fever recently.
+    
+    I've been feeding it Oran Berries to
+    help it recover.
+    
+    But, I sprained my ankle a few days ago
+    and I haven't been able to go out and
+    gather more.
+    
+    Could you get some more Oran Berries
+    for me until my ankle recovers?
+    Two should suffice.
+    
+    ... ... ...You will? 
+    Oh, thank you very much!
+    
+    You can find Oran Berries in Mulberry
+    Woods.
+    
+    Come back once you've gotten two
+    of them."
+}
+
+text MulberryTown_House1_EventScript_OldWomanAskForBerry {
+    "Hello again, dear.
+    Do you have the Oran Berries?"
+}
+
+text MulberryTown_House1_EventScript_OldWomanDeliverBerry {
+    "... ...Ah, you've brought them!
+    Excellent!"
+}
+
+text MulberryTown_House1_EventScript_OldWomanNoBerry {
+    "...Oh, it doesn't seem like you have them.
+    
+    You should be able to find some in 
+    Mulberry Woods.
+    
+    Please, return here once you've gotten
+    them."
+}
+
+text MulberryTown_House1_EventScript_OldWomanGiveReward {
+    "...Yes, this should be enough until my
+    ankle heals.
+    
+    Thank you, dear. Here, take this as a
+    small token of my appreciation."
+}
+
+text MulberryTown_House1_EventScript_OldWomanQuestDone {
+    "No need to fuss over us, dear.
+    Teddiursa and I will be just fine.
+    
+    Thank you for all your help."
+}
