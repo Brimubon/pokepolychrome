@@ -84,8 +84,63 @@ MulberryTown_House1_EventScript_OldWoman_11:
 	return
 
 
+MulberryTown_House1_EventScript_Teddiursa::
+# 45 "data/maps/MulberryTown_House1/scripts.pory"
+	lock
+# 46 "data/maps/MulberryTown_House1/scripts.pory"
+	faceplayer
+# 47 "data/maps/MulberryTown_House1/scripts.pory"
+	questmenu QUEST_MENU_CHECK_COMPLETE, QUEST_ORAN_BERRY
+# 48 "data/maps/MulberryTown_House1/scripts.pory"
+	compare VAR_RESULT, TRUE
+	goto_if_eq MulberryTown_House1_EventScript_Teddiursa_2
+# 53 "data/maps/MulberryTown_House1/scripts.pory"
+	playmoncry SPECIES_TEDDIURSA, CRY_MODE_FAINT
+# 54 "data/maps/MulberryTown_House1/scripts.pory"
+	msgbox MulberryTown_House1_EventScript_Teddiursa_Text_1, MSGBOX_AUTOCLOSE
+# 55 "data/maps/MulberryTown_House1/scripts.pory"
+	waitmoncry
+# 56 "data/maps/MulberryTown_House1/scripts.pory"
+	msgbox MulberryTown_House1_EventScript_Teddiursa_Text_2, MSGBOX_AUTOCLOSE
+MulberryTown_House1_EventScript_Teddiursa_1:
+# 58 "data/maps/MulberryTown_House1/scripts.pory"
+	applymovement 2, MulberryTown_House1_EventScript_Teddiursa_Movement_0
+# 59 "data/maps/MulberryTown_House1/scripts.pory"
+	waitmovement 0
+# 60 "data/maps/MulberryTown_House1/scripts.pory"
+	release
+	return
+
+MulberryTown_House1_EventScript_Teddiursa_2:
+# 49 "data/maps/MulberryTown_House1/scripts.pory"
+	playmoncry SPECIES_TEDDIURSA, CRY_MODE_NORMAL
+# 50 "data/maps/MulberryTown_House1/scripts.pory"
+	msgbox MulberryTown_House1_EventScript_Teddiursa_Text_0, MSGBOX_AUTOCLOSE
+# 51 "data/maps/MulberryTown_House1/scripts.pory"
+	waitmoncry
+	goto MulberryTown_House1_EventScript_Teddiursa_1
+
+
+# 58 "data/maps/MulberryTown_House1/scripts.pory"
+MulberryTown_House1_EventScript_Teddiursa_Movement_0:
+# 58 "data/maps/MulberryTown_House1/scripts.pory"
+	walk_in_place_slow_up
+	step_end
+
+MulberryTown_House1_EventScript_Teddiursa_Text_0:
+# 50 "data/maps/MulberryTown_House1/scripts.pory"
+	.string "Rawr!$"
+
+MulberryTown_House1_EventScript_Teddiursa_Text_1:
+# 54 "data/maps/MulberryTown_House1/scripts.pory"
+	.string "...Rawr...$"
+
+MulberryTown_House1_EventScript_Teddiursa_Text_2:
+# 56 "data/maps/MulberryTown_House1/scripts.pory"
+	.string "(It looks a little sick...)$"
+
 MulberryTown_House1_EventScript_NoQuestMenu::
-# 44 "data/maps/MulberryTown_House1/scripts.pory"
+# 63 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "... ...Oh, hello.\p"
 	.string "...Pardon me, but could I ask you for\n"
 	.string "a favor?\p"
@@ -95,7 +150,7 @@ MulberryTown_House1_EventScript_NoQuestMenu::
 	.string "once you're done.$"
 
 MulberryTown_House1_EventScript_OldWomanQuestStart::
-# 57 "data/maps/MulberryTown_House1/scripts.pory"
+# 76 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "... ...Oh, hello.\p"
 	.string "...Pardon me, but could I ask you for\n"
 	.string "a favor?\p"
@@ -117,17 +172,17 @@ MulberryTown_House1_EventScript_OldWomanQuestStart::
 	.string "of them.$"
 
 MulberryTown_House1_EventScript_OldWomanAskForBerry::
-# 87 "data/maps/MulberryTown_House1/scripts.pory"
+# 106 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "Hello again, dear.\n"
 	.string "Do you have the Oran Berries?$"
 
 MulberryTown_House1_EventScript_OldWomanDeliverBerry::
-# 92 "data/maps/MulberryTown_House1/scripts.pory"
+# 111 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "... ...Ah, you've brought them!\n"
 	.string "Excellent!$"
 
 MulberryTown_House1_EventScript_OldWomanNoBerry::
-# 97 "data/maps/MulberryTown_House1/scripts.pory"
+# 116 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "...Oh, it doesn't seem like you have them.\p"
 	.string "You should be able to find some in \n"
 	.string "Mulberry Woods.\p"
@@ -135,14 +190,14 @@ MulberryTown_House1_EventScript_OldWomanNoBerry::
 	.string "them.$"
 
 MulberryTown_House1_EventScript_OldWomanGiveReward::
-# 107 "data/maps/MulberryTown_House1/scripts.pory"
+# 126 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "...Yes, this should be enough until my\n"
 	.string "ankle heals.\p"
 	.string "Thank you, dear. Here, take this as a\n"
 	.string "small token of my appreciation.$"
 
 MulberryTown_House1_EventScript_OldWomanQuestDone::
-# 115 "data/maps/MulberryTown_House1/scripts.pory"
+# 134 "data/maps/MulberryTown_House1/scripts.pory"
 	.string "No need to fuss over us, dear.\n"
 	.string "Teddiursa and I will be just fine.\p"
 	.string "Thank you for all your help.$"

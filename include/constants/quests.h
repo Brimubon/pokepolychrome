@@ -15,6 +15,7 @@
 #define QUEST_MENU_BUFFER_QUEST_NAME    10  //buffers a quest name to gStringVar1
 
 // quest number defines
+#define QUEST_NONE          0xFFFF
 #define QUEST_ALL_BADGES    0
 #define QUEST_TEAM_ALPHA    1
 #define QUEST_ORAN_BERRY    2

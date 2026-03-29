@@ -41,6 +41,25 @@ script MulberryTown_House1_EventScript_OldWoman {
     }
 }
 
+script MulberryTown_House1_EventScript_Teddiursa {
+    lock
+    faceplayer
+    questmenu(QUEST_MENU_CHECK_COMPLETE, QUEST_ORAN_BERRY)
+    if(var(VAR_RESULT) == TRUE) {
+        playmoncry(SPECIES_TEDDIURSA, CRY_MODE_NORMAL)
+        msgbox("Rawr!", MSGBOX_AUTOCLOSE)
+        waitmoncry
+    } else {
+        playmoncry(SPECIES_TEDDIURSA, CRY_MODE_FAINT)
+        msgbox("...Rawr...", MSGBOX_AUTOCLOSE)
+        waitmoncry
+        msgbox("(It looks a little sick...)", MSGBOX_AUTOCLOSE)
+    }
+    applymovement(2, moves(walk_in_place_slow_up))
+    waitmovement(0)
+    release
+}
+
 text MulberryTown_House1_EventScript_NoQuestMenu {
     "... ...Oh, hello.
     
