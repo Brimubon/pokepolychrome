@@ -16881,10 +16881,10 @@ Pic: Alpha Grunt 1
 Gender: Male
 Music: Alpha
 Double Battle: Yes
-AI: Check Bad Move
+AI: Basic Trainer
 
-Poochyena
+SPECIES_MEOWTH_ALOLA
 Level: 5
 
-Taillow
-Level: 5
+Starly
+Level: 4

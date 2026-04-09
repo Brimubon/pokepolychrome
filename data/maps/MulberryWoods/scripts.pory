@@ -254,7 +254,7 @@ script MulberryWoods_EventScript_GruntEncounter {
     waitmovement(0)
     message(MulberryWoods_EventScript_GruntPreBattle3)
     waitmessage
-    delay(30)
+    delay(60)
     dynmultichoice(0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Hand over that package!", "(Try to imitate a Pokémon's cry, loudly.)")
     if(var(VAR_RESULT) == 0) {
         msgbox(MulberryWoods_EventScript_GruntHandPackage, MSGBOX_AUTOCLOSE)
@@ -372,7 +372,7 @@ script MulberryWoods_EventScript_GruntPostBattle {
     waitmovement(0)
     removeobject(9)
     delay(90)
-    //clear flag for no wild battles here
+    clearflag(FLAG_ENABLE_NO_ENCOUNTER)
     msgbox(MulberryWoods_EventScript_GruntPostBattleTagBreaks, MSGBOX_AUTOCLOSE)
     setvar(VAR_MULBERRY_TOWN_STATE, 2)
     setvar(VAR_HAWTH_LAB_STATE, 2)
@@ -626,7 +626,7 @@ text MulberryWoods_EventScript_GruntPostBattleScarlett4 {
 }
 
 text MulberryWoods_EventScript_GruntPostBattleTagBreaks {
-    "(... ... ... ... ... ...{PAUSE 72}!)
+    "(... ... ... ... ... ...{PAUSE 90}!)
      
      (The tag Prof. Hawthorne gave you must
      have fallen off during the battle...)"

@@ -54,6 +54,7 @@ script HoneydewTown_ProfsLab_EventScript_HawthIntro {
     msgbox("(A small piece of paper was attached to
             your bag.)", MSGBOX_AUTOCLOSE)
     waitfanfare
+    setflag(FLAG_ENABLE_NO_ENCOUNTER)
     setspeaker(SP_NAME_HAWTHORNE)
     msgbox(HoneydewTown_ProfsLab_EventScript_HawthIntroText6)
     setvar(VAR_HAWTH_LAB_STATE, 1)

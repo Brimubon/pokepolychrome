@@ -468,7 +468,7 @@ MulberryWoods_EventScript_GruntEncounter_1:
 # 256 "data/maps/MulberryWoods/scripts.pory"
 	waitmessage
 # 257 "data/maps/MulberryWoods/scripts.pory"
-	delay 30
+	delay 60
 # 258 "data/maps/MulberryWoods/scripts.pory"
 	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, MulberryWoods_EventScript_GruntEncounter_Text_2, MulberryWoods_EventScript_GruntEncounter_Text_3
 # 259 "data/maps/MulberryWoods/scripts.pory"
@@ -707,6 +707,8 @@ MulberryWoods_EventScript_GruntPostBattle_1:
 	removeobject 9
 # 374 "data/maps/MulberryWoods/scripts.pory"
 	delay 90
+# 375 "data/maps/MulberryWoods/scripts.pory"
+	clearflag FLAG_ENABLE_NO_ENCOUNTER
 # 376 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_GruntPostBattleTagBreaks, MSGBOX_AUTOCLOSE
 # 377 "data/maps/MulberryWoods/scripts.pory"
@@ -1659,7 +1661,7 @@ MulberryWoods_EventScript_GruntPostBattleScarlett4::
 
 MulberryWoods_EventScript_GruntPostBattleTagBreaks::
 # 628 "data/maps/MulberryWoods/scripts.pory"
-	.string "(... ... ... ... ... ...{PAUSE 72}!)\p"
+	.string "(... ... ... ... ... ...{PAUSE 90}!)\p"
 	.string "(The tag Prof. Hawthorne gave you must\n"
 	.string "have fallen off during the battle...)$"
 
