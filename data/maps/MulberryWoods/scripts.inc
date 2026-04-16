@@ -528,9 +528,9 @@ MulberryWoods_EventScript_GruntEncounter_8:
 # 291 "data/maps/MulberryWoods/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
 # 292 "data/maps/MulberryWoods/scripts.pory"
-	givemon SPECIES_ZANGOOSE, 5, nature = NATURE_JOLLY, hpIv = 31, atkIv = 31, defIv = 31, speedIv = 31, spAtkIv = 31, spDefIv = 31
+	givemon SPECIES_ZANGOOSE, 5, nature = NATURE_JOLLY, abilityNum = 0, hpIv = 31, atkIv = 31, defIv = 31, speedIv = 31, spAtkIv = 31, spDefIv = 31
 # 293 "data/maps/MulberryWoods/scripts.pory"
-	givemon SPECIES_SEVIPER, 5, nature = NATURE_IMPISH, hpIv = 31, atkIv = 31, defIv = 31, speedIv = 31, spAtkIv = 31, spDefIv = 31
+	givemon SPECIES_SEVIPER, 5, nature = NATURE_IMPISH, abilityNum = 0, hpIv = 31, atkIv = 31, defIv = 31, speedIv = 31, spAtkIv = 31, spDefIv = 31
 # 294 "data/maps/MulberryWoods/scripts.pory"
 	message MulberryWoods_EventScript_GruntEncounter_Text_5
 # 296 "data/maps/MulberryWoods/scripts.pory"

@@ -289,8 +289,8 @@ script MulberryWoods_EventScript_GruntEncounter {
     removeobject(14)
     delay(90)
     setflag(FLAG_SYS_POKEMON_GET)
-    givemon(SPECIES_ZANGOOSE, 5, nature=NATURE_JOLLY, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
-    givemon(SPECIES_SEVIPER, 5, nature=NATURE_IMPISH, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
+    givemon(SPECIES_ZANGOOSE, 5, nature=NATURE_JOLLY, abilityNum=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
+    givemon(SPECIES_SEVIPER, 5, nature=NATURE_IMPISH, abilityNum=0, hpIv=31, atkIv=31, defIv=31, speedIv=31, spAtkIv=31, spDefIv=31)
     message("Zangoose and Seviper have joined
              your party!")
     waitmessage

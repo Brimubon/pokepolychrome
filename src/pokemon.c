@@ -5294,6 +5294,7 @@ u8 CalculateFriendshipBonuses(struct Pokemon *mon, u32 modifier, enum HoldEffect
     return bonus;
 }
 
+/*
 void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
 {
     u8 evs[NUM_STATS];
@@ -5403,6 +5404,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
         SetMonData(mon, MON_DATA_HP_EV + i, &evs[i]);
     }
 }
+*/
 
 u16 GetMonEVCount(struct Pokemon *mon)
 {
