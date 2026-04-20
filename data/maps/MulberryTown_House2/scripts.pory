@@ -1,0 +1,34 @@
+mapscripts MulberryTown_House2_MapScripts {}
+
+script MulberryTown_House2_EventScript_LittleBoy {
+    lock
+    faceplayer
+    message("Hey! Hey! Hey! You! I'm bored!
+            Play with me!")
+    waitmessage
+    delay(60)
+    dynmultichoice(0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Sure!", "No way!")
+    if(var(VAR_RESULT) == 0) {
+        msgbox("Yay!", MSGBOX_AUTOCLOSE)
+    } else {
+        msgbox("Booo!
+        You're no fun!", MSGBOX_AUTOCLOSE)
+    }
+    release
+}
+
+script MulberryTown_House2_EventScript_Man {
+    lock
+    faceplayer 
+    msgbox(MulberryTown_House2_EventScript_ManText1)
+    release
+}
+
+text MulberryTown_House2_EventScript_ManText1 {
+    "The quiet atmosphere of this town
+    makes it a popular spot for older folks
+    looking to settle down.
+    
+    Unfortunately, that means there's not
+    a lot of kids around here."
+}
