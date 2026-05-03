@@ -19,7 +19,7 @@ MulberryTown_House2_EventScript_LittleBoy::
 	compare VAR_RESULT, 0
 	goto_if_eq MulberryTown_House2_EventScript_LittleBoy_2
 # 14 "data/maps/MulberryTown_House2/scripts.pory"
-	msgbox MulberryTown_House2_EventScript_LittleBoy_Text_4, MSGBOX_AUTOCLOSE
+	msgbox MulberryTown_House2_EventScript_LittleBoy_Text_3, MSGBOX_AUTOCLOSE
 MulberryTown_House2_EventScript_LittleBoy_1:
 # 17 "data/maps/MulberryTown_House2/scripts.pory"
 	release
@@ -27,7 +27,7 @@ MulberryTown_House2_EventScript_LittleBoy_1:
 
 MulberryTown_House2_EventScript_LittleBoy_2:
 # 12 "data/maps/MulberryTown_House2/scripts.pory"
-	msgbox MulberryTown_House2_EventScript_LittleBoy_Text_3, MSGBOX_AUTOCLOSE
+	msgbox MulberryTown_House2_EventScript_LittleBoyText1, MSGBOX_AUTOCLOSE
 	goto MulberryTown_House2_EventScript_LittleBoy_1
 
 
@@ -57,10 +57,6 @@ MulberryTown_House2_EventScript_LittleBoy_Text_2:
 	.string "No way!$"
 
 MulberryTown_House2_EventScript_LittleBoy_Text_3:
-# 12 "data/maps/MulberryTown_House2/scripts.pory"
-	.string "Yay!$"
-
-MulberryTown_House2_EventScript_LittleBoy_Text_4:
 # 14 "data/maps/MulberryTown_House2/scripts.pory"
 	.string "Booo!\n"
 	.string "You're no fun!$"
@@ -72,3 +68,8 @@ MulberryTown_House2_EventScript_ManText1::
 	.string "looking to settle down.\p"
 	.string "Unfortunately, that means there's not\n"
 	.string "a lot of kids around here.$"
+
+MulberryTown_House2_EventScript_LittleBoyText1::
+# 36 "data/maps/MulberryTown_House2/scripts.pory"
+	.string "Really? You'll really play with me?\n"
+	.string "Finally!$"

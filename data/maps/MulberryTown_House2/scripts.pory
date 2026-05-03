@@ -9,7 +9,7 @@ script MulberryTown_House2_EventScript_LittleBoy {
     delay(60)
     dynmultichoice(0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, "Sure!", "No way!")
     if(var(VAR_RESULT) == 0) {
-        msgbox("Yay!", MSGBOX_AUTOCLOSE)
+        msgbox(MulberryTown_House2_EventScript_LittleBoyText1, MSGBOX_AUTOCLOSE)
     } else {
         msgbox("Booo!
         You're no fun!", MSGBOX_AUTOCLOSE)
@@ -31,4 +31,9 @@ text MulberryTown_House2_EventScript_ManText1 {
     
     Unfortunately, that means there's not
     a lot of kids around here."
+}
+
+text MulberryTown_House2_EventScript_LittleBoyText1 {
+    "Really? You'll really play with me?
+    Finally!"
 }

@@ -95,7 +95,7 @@ MulberryTown_PokemonCenter_EventScript_Scarlett::
 # 51 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitmovement 0
 # 52 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_9
+	applymovement LOCALID_PLAYER, MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_1
 # 53 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	waitmovement 0
 # 54 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
@@ -363,13 +363,7 @@ MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_8:
 # 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	walk_down
 # 50 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	walk_in_place_right
-	step_end
-
-# 52 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-MulberryTown_PokemonCenter_EventScript_Scarlett_Movement_9:
-# 52 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	walk_in_place_left
+	walk_in_place_up
 	step_end
 
 # 72 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
@@ -419,7 +413,7 @@ MulberryTown_PokemonCenter_EventScript_Scarlett_Text_1:
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_0:
 # 131 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.string "Stufful...?$"
+	.string "Fuff...?$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2_Text_1:
 # 138 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
@@ -431,7 +425,7 @@ MulberryTown_PokemonCenter_EventScript_Girl2_Text_2:
 
 MulberryTown_PokemonCenter_EventScript_Stufful_Text_0:
 # 151 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
-	.string "Stufful!$"
+	.string "Fuff!$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText1::
 # 158 "data/maps/MulberryTown_PokemonCenter/scripts.pory"

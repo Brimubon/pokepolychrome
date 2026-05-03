@@ -47,9 +47,9 @@ script MulberryTown_PokemonCenter_EventScript_Scarlett {
     delay(60)
     setspeaker(SP_NAME_UNKNOWN)
     msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText6, MSGBOX_AUTOCLOSE)
-    applymovement(7, moves(walk_left * 2, walk_down * 2, walk_in_place_right))
+    applymovement(7, moves(walk_left * 2, walk_down * 2, walk_in_place_up))
     waitmovement(0)
-    applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
+    applymovement(LOCALID_PLAYER, moves(walk_in_place_down))
     waitmovement(0)
     setspeaker(SP_NAME_SCARLETT)
     msgbox(MulberryTown_PokemonCenter_EventScript_ScarlettText7, MSGBOX_AUTOCLOSE)
@@ -128,7 +128,7 @@ script MulberryTown_PokemonCenter_EventScript_Girl2 {
     waitmovement(5)
     msgbox(MulberryTown_PokemonCenter_EventScript_Girl2Text2)
     playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
-    msgbox("Stufful...?")
+    msgbox("Fuff...?")
     waitmoncry
     applymovement(6, moves(walk_in_place_up, delay_16, walk_in_place_down, delay_16, walk_in_place_left, walk_in_place_right, walk_in_place_down))
     waitmovement(6)
@@ -148,7 +148,7 @@ script MulberryTown_PokemonCenter_EventScript_Stufful {
     lock
     faceplayer
     playmoncry(SPECIES_STUFFUL, CRY_MODE_NORMAL)
-    msgbox("Stufful!", MSGBOX_AUTOCLOSE)
+    msgbox("Fuff!", MSGBOX_AUTOCLOSE)
     waitmoncry
     applymovement(6, moves(walk_in_place_down))
     waitmovement

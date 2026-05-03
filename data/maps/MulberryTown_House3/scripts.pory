@@ -1,1 +1,35 @@
 mapscripts MulberryTown_House3_MapScripts {}
+
+script MulberryTown_House3_EventScript_Woman1 {
+    lock
+    faceplayer
+    msgbox(MulberryTown_House3_EventScript_Woman1Text)
+    release
+}
+
+script MulberryTown_House3_EventScript_Woman2 {
+    lock
+    faceplayer
+    msgbox(MulberryTown_House3_EventScript_Woman2Text)
+    release
+    
+}
+
+text MulberryTown_House3_EventScript_Woman1Text {
+    "Sniffle...
+    
+    I opened the windows to let some fresh
+    air in... but I got a bunch of pollen
+    instead.
+    
+    Ah...{PAUSE 48} Aah... ... ...{PAUSE 90} ACHOO!"
+}
+
+text MulberryTown_House3_EventScript_Woman2Text {
+    "I hear there's some rare Pok\emon you
+    can find deep inside Mulberry Woods.
+    
+    But to get there, you'd either have to
+    find a way to cut those small trees near
+    the entrance, or go around."
+}
