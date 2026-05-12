@@ -406,6 +406,29 @@ script MulberryWoods_EventScript_GoOtherWay {
     release
 }
 
+script MulberryWoods_EventScript_Corbin {
+    trainerbattle_single(TRAINER_CORBIN, MulberryWoods_EventScript_CorbinIntro, MulberryWoods_EventScript_CorbinDefeated)
+    msgbox(MulberryWoods_EventScript_CorbinPostBattle)
+    release
+}
+
+text MulberryWoods_EventScript_CorbinIntro {
+    "Hey, you look pretty weak!
+    
+    I'll start my journey as a Pok\emon 
+    Trainer by beating you!"
+}
+
+text MulberryWoods_EventScript_CorbinDefeated {
+    "Aw, no fair!
+    You're way stronger than me!"
+}
+
+text MulberryWoods_EventScript_CorbinPostBattle {
+    "Looks like I'm the one who kickstarted
+    your journey instead..."
+}
+
 text MulberryWoods_EventScript_ScarlettText1 {
     "Oh, {PLAYER}. There you are!
      Took you long enough!"
