@@ -4454,7 +4454,7 @@
     {
       "id": "LAYOUT_NEW_POKEMON_CENTER",
       "name": "MulberryTown_PokemonCenter_Layout",
-      "width": 15,
+      "width": 19,
       "height": 18,
       "primary_tileset": "gTileset_Building",
       "secondary_tileset": "gTileset_NewPokemonCenter",
