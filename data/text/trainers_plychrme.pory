@@ -1,0 +1,44 @@
+text MulberryWoods_EventScript_CorbinIntro {
+    "Hey, you look pretty weak!
+    
+    I'll start my journey as a Pok\emon 
+    Trainer by beating you!"
+}
+
+text MulberryWoods_EventScript_CorbinDefeated {
+    "Aw, no fair!
+    You're way stronger than me!"
+}
+
+text MulberryWoods_EventScript_CorbinPostBattle {
+    "Looks like I'm the one who started
+    your journey instead..."
+}
+
+text MulberryWoods_EventScript_JesseIntro {
+    "Another one for my collection!
+    
+    Go, my Bug Pok\emon!"
+}
+
+text MulberryWoods_EventScript_JesseDefeated {
+    "...Huh? Hey!
+    You're just a trainer!"
+}
+
+text MulberryWoods_EventScript_JessePostBattle {
+    "Um, sorry for hitting you with my net.
+    I thought you were a Bug Pok\emon..."
+}
+
+text MulberryWoods_EventScript_LiraIntro {
+    "This is a placeholder intro."
+}
+
+text MulberryWoods_EventScript_LiraDefeated {
+    "This is placeholder defeat text."
+}
+
+text MulberryWoods_EventScript_LiraPostBattle {
+    "This is placeholder post-battle text."
+}

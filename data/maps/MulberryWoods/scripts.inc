@@ -791,6 +791,16 @@ MulberryWoods_EventScript_Jesse::
 	return
 
 
+MulberryWoods_EventScript_Lira::
+# 422 "data/maps/MulberryWoods/scripts.pory"
+	trainerbattle_single TRAINER_LIRA, MulberryWoods_EventScript_LiraIntro, MulberryWoods_EventScript_LiraDefeated
+# 423 "data/maps/MulberryWoods/scripts.pory"
+	msgbox MulberryWoods_EventScript_LiraPostBattle
+# 424 "data/maps/MulberryWoods/scripts.pory"
+	release
+	return
+
+
 # 20 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_Scarlett_Movement_0:
 # 20 "data/maps/MulberryWoods/scripts.pory"
@@ -1499,56 +1509,25 @@ MulberryWoods_EventScript_GruntEncounter_Text_5:
 	.string "Zangoose and Seviper have joined\n"
 	.string "your party!$"
 
-MulberryWoods_EventScript_CorbinIntro::
-# 421 "data/maps/MulberryWoods/scripts.pory"
-	.string "Hey, you look pretty weak!\p"
-	.string "I'll start my journey as a Pokémon \n"
-	.string "Trainer by beating you!$"
-
-MulberryWoods_EventScript_CorbinDefeated::
-# 428 "data/maps/MulberryWoods/scripts.pory"
-	.string "Aw, no fair!\n"
-	.string "You're way stronger than me!$"
-
-MulberryWoods_EventScript_JesseIntro::
-# 433 "data/maps/MulberryWoods/scripts.pory"
-	.string "Another one for my collection!\p"
-	.string "Go, my Bug Pokémon!$"
-
-MulberryWoods_EventScript_JesseDefeated::
-# 439 "data/maps/MulberryWoods/scripts.pory"
-	.string "...Huh? Hey!\n"
-	.string "You're just a trainer!$"
-
-MulberryWoods_EventScript_JessePostBattle::
-# 444 "data/maps/MulberryWoods/scripts.pory"
-	.string "Um, sorry for hitting you with my net.\n"
-	.string "I thought you were a Bug Pokémon...$"
-
-MulberryWoods_EventScript_CorbinPostBattle::
-# 449 "data/maps/MulberryWoods/scripts.pory"
-	.string "Looks like I'm the one who kickstarted\n"
-	.string "your journey instead...$"
-
 MulberryWoods_EventScript_ScarlettText1::
-# 454 "data/maps/MulberryWoods/scripts.pory"
+# 427 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oh, {PLAYER}. There you are!\n"
 	.string "Took you long enough!$"
 
 MulberryWoods_EventScript_ScarlettText2::
-# 459 "data/maps/MulberryWoods/scripts.pory"
+# 432 "data/maps/MulberryWoods/scripts.pory"
 	.string "Alright, so. Here's the plan.\p"
 	.string "Whoever stole those Pokémon couldn't\n"
 	.string "have gotten very far.$"
 
 MulberryWoods_EventScript_ScarlettText3::
-# 466 "data/maps/MulberryWoods/scripts.pory"
+# 439 "data/maps/MulberryWoods/scripts.pory"
 	.string "I'll check this side of the woods, and\n"
 	.string "ask the trainers here if they saw\l"
 	.string "anyone suspicious run by.$"
 
 MulberryWoods_EventScript_ScarlettText4::
-# 472 "data/maps/MulberryWoods/scripts.pory"
+# 445 "data/maps/MulberryWoods/scripts.pory"
 	.string "Meanwhile, you'll cover this side of the\n"
 	.string "woods.\p"
 	.string "If you run into the thief, then...{PAUSE 80}\n"
@@ -1573,7 +1552,7 @@ MulberryWoods_EventScript_ScarlettText4::
 	.string "Let's go thief hunting!$"
 
 MulberryWoods_EventScript_GruntPreBattle1::
-# 508 "data/maps/MulberryWoods/scripts.pory"
+# 481 "data/maps/MulberryWoods/scripts.pory"
 	.string "Whew, alright!\n"
 	.string "I think I shook those people off.\p"
 	.string "Man, hiding in those bushes is such a\n"
@@ -1582,7 +1561,7 @@ MulberryWoods_EventScript_GruntPreBattle1::
 	.string "package to the boss fast...$"
 
 MulberryWoods_EventScript_GruntPreBattle2::
-# 519 "data/maps/MulberryWoods/scripts.pory"
+# 492 "data/maps/MulberryWoods/scripts.pory"
 	.string "You there!\n"
 	.string "Those Pokémon belong to me!\l"
 	.string "I stole them fair and square.\p"
@@ -1590,13 +1569,13 @@ MulberryWoods_EventScript_GruntPreBattle2::
 	.string "them back!$"
 
 MulberryWoods_EventScript_GruntPreBattle3::
-# 528 "data/maps/MulberryWoods/scripts.pory"
+# 501 "data/maps/MulberryWoods/scripts.pory"
 	.string "Hey, don't try anything funny!\n"
 	.string "Look around, there's nowhere else\l"
 	.string "for you to run, you know!$"
 
 MulberryWoods_EventScript_GruntHandPackage::
-# 534 "data/maps/MulberryWoods/scripts.pory"
+# 507 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oh, you're one of the people looking for\n"
 	.string "this package, huh?\p"
 	.string "Well, that's too bad!\p"
@@ -1604,13 +1583,13 @@ MulberryWoods_EventScript_GruntHandPackage::
 	.string "crew now!$"
 
 MulberryWoods_EventScript_GruntConfused::
-# 544 "data/maps/MulberryWoods/scripts.pory"
+# 517 "data/maps/MulberryWoods/scripts.pory"
 	.string "... ... ...Huh?\p"
 	.string "W{PAUSE 60}-What was that supposed to be?\n"
 	.string "What was that noise you just made?!$"
 
 MulberryWoods_EventScript_GruntPreBattle4::
-# 551 "data/maps/MulberryWoods/scripts.pory"
+# 524 "data/maps/MulberryWoods/scripts.pory"
 	.string "L{PAUSE 60}-Look, I don't have time for this!\p"
 	.string "I've gotta get out of here and get this\n"
 	.string "package over to my boss.\p"
@@ -1618,14 +1597,14 @@ MulberryWoods_EventScript_GruntPreBattle4::
 	.string "let me get those Pokémon, or else I'll-$"
 
 MulberryWoods_EventScript_GruntPreBattle5::
-# 561 "data/maps/MulberryWoods/scripts.pory"
+# 534 "data/maps/MulberryWoods/scripts.pory"
 	.string "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...\p"
 	.string "... ... ... ...{PAUSE 90}What?\p"
 	.string "Did you-\n"
 	.string "Did you just...$"
 
 MulberryWoods_EventScript_GruntPreBattle6::
-# 570 "data/maps/MulberryWoods/scripts.pory"
+# 543 "data/maps/MulberryWoods/scripts.pory"
 	.string "Did you just take those Pokémon\n"
 	.string "WHILE I WAS TALKING TO YOU?!\p"
 	.string "Oh, that's it!\n"
@@ -1634,57 +1613,57 @@ MulberryWoods_EventScript_GruntPreBattle6::
 	.string "who mess with Team Alpha!$"
 
 MulberryWoods_Text_NoWay::
-# 581 "data/maps/MulberryWoods/scripts.pory"
+# 554 "data/maps/MulberryWoods/scripts.pory"
 	.string "N-no way! I lost?!\n"
 	.string "Why, you little...$"
 
 MulberryWoods_EventScript_GruntPostBattleLost::
-# 586 "data/maps/MulberryWoods/scripts.pory"
+# 559 "data/maps/MulberryWoods/scripts.pory"
 	.string "Heh... heheh...\n"
 	.string "I... I actually won?!\p"
 	.string "Ha! Well, you can keep those Pokémon!\n"
 	.string "They're clearly not worth my time!$"
 
 MulberryWoods_EventScript_GruntPostBattleText1::
-# 594 "data/maps/MulberryWoods/scripts.pory"
+# 567 "data/maps/MulberryWoods/scripts.pory"
 	.string "You've gotta be kidding me...\p"
 	.string "Fine, keep those Pokémon!\n"
 	.string "I didn't even like them anyway!$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett1::
-# 601 "data/maps/MulberryWoods/scripts.pory"
+# 574 "data/maps/MulberryWoods/scripts.pory"
 	.string "{PLAYER}! Are you okay?\n"
 	.string "I heard a lot of noise coming from\l"
 	.string "over here.\p"
 	.string "Don't worry, I'm on my way!$"
 
 MulberryWoods_EventScript_GruntPostBattleText2::
-# 609 "data/maps/MulberryWoods/scripts.pory"
+# 582 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oh no!\n"
 	.string "I can't deal with another person\l"
 	.string "right now!$"
 
 MulberryWoods_EventScript_GruntPostBattleText3::
-# 615 "data/maps/MulberryWoods/scripts.pory"
+# 588 "data/maps/MulberryWoods/scripts.pory"
 	.string "Urgh, stealing this package has been\n"
 	.string "way too stressful!\p"
 	.string "Whatever, just take it!\n"
 	.string "I'm outta here!$"
 
 MulberryWoods_EventScript_GruntPostBattleText4::
-# 623 "data/maps/MulberryWoods/scripts.pory"
+# 596 "data/maps/MulberryWoods/scripts.pory"
 	.string "A{PAUSE 60}-Anyway, don't get cocky!\p"
 	.string "You may have won this time, but mark\n"
 	.string "my words...\p"
 	.string "You'll regret meddling with Team Alpha!$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett2::
-# 632 "data/maps/MulberryWoods/scripts.pory"
+# 605 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oof!{PAUSE 90} Hey!\n"
 	.string "Where do you think you're going?!$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett3::
-# 637 "data/maps/MulberryWoods/scripts.pory"
+# 610 "data/maps/MulberryWoods/scripts.pory"
 	.string "{PLAYER}! What happened?!\p"
 	.string "That... that was the thief, wasn't it?\n"
 	.string "What did they do? Are you hurt?\p"
@@ -1696,7 +1675,7 @@ MulberryWoods_EventScript_GruntPostBattleScarlett3::
 	.string "Then you can explain everything.$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett4::
-# 653 "data/maps/MulberryWoods/scripts.pory"
+# 626 "data/maps/MulberryWoods/scripts.pory"
 	.string "Huh... so that's what happened.\p"
 	.string "I'm sorry I wasn't there to help, but\n"
 	.string "you handled things really well on\l"
@@ -1711,13 +1690,13 @@ MulberryWoods_EventScript_GruntPostBattleScarlett4::
 	.string "Alright, see you there!$"
 
 MulberryWoods_EventScript_GruntPostBattleTagBreaks::
-# 673 "data/maps/MulberryWoods/scripts.pory"
+# 646 "data/maps/MulberryWoods/scripts.pory"
 	.string "(... ... ... ... ... ...{PAUSE 90}!)\p"
 	.string "(The tag Prof. Hawthorne gave you must\n"
 	.string "have fallen off during the battle...)$"
 
 MulberryWoods_EventScript_NormalGirlText::
-# 680 "data/maps/MulberryWoods/scripts.pory"
+# 653 "data/maps/MulberryWoods/scripts.pory"
 	.string "Hm? Oh no, I'm not a trainer.\p"
 	.string "But there are quite a few of them\n"
 	.string "between here and Bisque City, so you\l"
@@ -1725,18 +1704,18 @@ MulberryWoods_EventScript_NormalGirlText::
 	.string "supplies.$"
 
 MulberryWoods_EventScript_PressBSignText::
-# 689 "data/maps/MulberryWoods/scripts.pory"
+# 662 "data/maps/MulberryWoods/scripts.pory"
 	.string "Trainer Tips!\p"
 	.string "When facing a wild Pokémon you don't\n"
 	.string "feel like fighting, press B to quickly\l"
 	.string "move your cursor to the “Run” option!$"
 
 MulberryWoods_EventScript_ExitSignText::
-# 697 "data/maps/MulberryWoods/scripts.pory"
+# 670 "data/maps/MulberryWoods/scripts.pory"
 	.string "Leaving Mulberry Woods\n"
 	.string "Bisque City Ahead$"
 
 MulberryWoods_EventScript_GoOtherWayText::
-# 702 "data/maps/MulberryWoods/scripts.pory"
+# 675 "data/maps/MulberryWoods/scripts.pory"
 	.string "(There are Pokémon trainers past here.\n"
 	.string "Best to go the other way for now.)$"
