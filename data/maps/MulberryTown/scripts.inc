@@ -13,135 +13,134 @@ MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD:
 # 6 "data/maps/MulberryTown/scripts.pory"
 	setflag FLAG_TEMP_8
 # 8 "data/maps/MulberryTown/scripts.pory"
-	random 4
+	random 3
 # 9 "data/maps/MulberryTown/scripts.pory"
 	switch VAR_RESULT
 # 10 "data/maps/MulberryTown/scripts.pory"
 	case 0, MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_2
-# 13 "data/maps/MulberryTown/scripts.pory"
+# 19 "data/maps/MulberryTown/scripts.pory"
 	case 1, MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_3
-# 16 "data/maps/MulberryTown/scripts.pory"
+# 26 "data/maps/MulberryTown/scripts.pory"
 	case 2, MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_4
-# 20 "data/maps/MulberryTown/scripts.pory"
-	case 3, MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_5
 	return
 
 MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_2:
 # 11 "data/maps/MulberryTown/scripts.pory"
-	clearflag FLAG_TEMP_7
+	gettimeofday
 # 12 "data/maps/MulberryTown/scripts.pory"
+	compare VAR_0x8000, TIME_NIGHT
+	goto_if_eq MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_5
+# 16 "data/maps/MulberryTown/scripts.pory"
+	clearflag FLAG_TEMP_5
+# 17 "data/maps/MulberryTown/scripts.pory"
 	clearflag FLAG_TEMP_8
 	return
 
 MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_3:
-# 14 "data/maps/MulberryTown/scripts.pory"
+# 20 "data/maps/MulberryTown/scripts.pory"
+	gettimeofday
+# 21 "data/maps/MulberryTown/scripts.pory"
+	compare VAR_0x8000, TIME_NIGHT
+	goto_if_eq MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_8
+# 24 "data/maps/MulberryTown/scripts.pory"
 	clearflag FLAG_TEMP_5
-# 15 "data/maps/MulberryTown/scripts.pory"
-	clearflag FLAG_TEMP_6
 	return
 
 MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_4:
-# 17 "data/maps/MulberryTown/scripts.pory"
-	clearflag FLAG_TEMP_6
-# 18 "data/maps/MulberryTown/scripts.pory"
-	clearflag FLAG_TEMP_7
-# 19 "data/maps/MulberryTown/scripts.pory"
+# 27 "data/maps/MulberryTown/scripts.pory"
+	gettimeofday
+# 28 "data/maps/MulberryTown/scripts.pory"
+	compare VAR_0x8000, TIME_NIGHT
+	goto_if_eq MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_11
+# 31 "data/maps/MulberryTown/scripts.pory"
 	clearflag FLAG_TEMP_8
 	return
 
 MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_5:
-# 21 "data/maps/MulberryTown/scripts.pory"
-	clearflag FLAG_TEMP_5
+# 13 "data/maps/MulberryTown/scripts.pory"
+	clearflag FLAG_TEMP_6
+# 14 "data/maps/MulberryTown/scripts.pory"
+	clearflag FLAG_TEMP_7
+	return
+
+MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_8:
+# 22 "data/maps/MulberryTown/scripts.pory"
+	clearflag FLAG_TEMP_7
+	return
+
+MulberryTown_MapScripts_MAP_SCRIPT_ON_LOAD_11:
+# 29 "data/maps/MulberryTown/scripts.pory"
+	clearflag FLAG_TEMP_6
 	return
 
 
 MulberryTown_EventScript_SuspiciousGrunt::
-# 27 "data/maps/MulberryTown/scripts.pory"
-	lockall
-# 28 "data/maps/MulberryTown/scripts.pory"
-	playse SE_PIN
-# 29 "data/maps/MulberryTown/scripts.pory"
-	applymovement 12, MulberryTown_EventScript_SuspiciousGrunt_Movement_0
-# 30 "data/maps/MulberryTown/scripts.pory"
-	waitmovement 0
-# 31 "data/maps/MulberryTown/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryTown_EventScript_SuspiciousGrunt_Movement_1
-# 32 "data/maps/MulberryTown/scripts.pory"
-	waitmovement 0
-# 33 "data/maps/MulberryTown/scripts.pory"
-	delay 16
-# 34 "data/maps/MulberryTown/scripts.pory"
-	msgbox MulberryTown_EventScript_SuspiciousGruntText1, MSGBOX_AUTOCLOSE
-# 35 "data/maps/MulberryTown/scripts.pory"
-	playse SE_LEDGE
-# 36 "data/maps/MulberryTown/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryTown_EventScript_SuspiciousGrunt_Movement_2
-# 37 "data/maps/MulberryTown/scripts.pory"
-	applymovement 12, MulberryTown_EventScript_SuspiciousGrunt_Movement_3
 # 38 "data/maps/MulberryTown/scripts.pory"
-	waitmovement 0
+	lockall
 # 39 "data/maps/MulberryTown/scripts.pory"
-	msgbox MulberryTown_EventScript_SuspiciousGrunt_Text_0, MSGBOX_AUTOCLOSE
+	playse SE_PIN
 # 40 "data/maps/MulberryTown/scripts.pory"
-	applymovement 12, MulberryTown_EventScript_SuspiciousGrunt_Movement_4
+	applymovement 11, MulberryTown_EventScript_SuspiciousGrunt_Movement_0
 # 41 "data/maps/MulberryTown/scripts.pory"
 	waitmovement 0
 # 42 "data/maps/MulberryTown/scripts.pory"
+	applymovement LOCALID_PLAYER, MulberryTown_EventScript_SuspiciousGrunt_Movement_1
+# 43 "data/maps/MulberryTown/scripts.pory"
+	waitmovement 0
+# 44 "data/maps/MulberryTown/scripts.pory"
+	delay 16
+# 45 "data/maps/MulberryTown/scripts.pory"
+	msgbox MulberryTown_EventScript_SuspiciousGruntText1, MSGBOX_AUTOCLOSE
+# 46 "data/maps/MulberryTown/scripts.pory"
+	playse SE_LEDGE
+# 47 "data/maps/MulberryTown/scripts.pory"
+	applymovement LOCALID_PLAYER, MulberryTown_EventScript_SuspiciousGrunt_Movement_2
+# 48 "data/maps/MulberryTown/scripts.pory"
+	applymovement 11, MulberryTown_EventScript_SuspiciousGrunt_Movement_3
+# 49 "data/maps/MulberryTown/scripts.pory"
+	waitmovement 0
+# 50 "data/maps/MulberryTown/scripts.pory"
+	msgbox MulberryTown_EventScript_SuspiciousGrunt_Text_0, MSGBOX_AUTOCLOSE
+# 51 "data/maps/MulberryTown/scripts.pory"
+	applymovement 11, MulberryTown_EventScript_SuspiciousGrunt_Movement_4
+# 52 "data/maps/MulberryTown/scripts.pory"
+	waitmovement 0
+# 53 "data/maps/MulberryTown/scripts.pory"
 	releaseall
 	return
 
 
 MulberryTown_EventScript_Grunt::
-# 46 "data/maps/MulberryTown/scripts.pory"
+# 57 "data/maps/MulberryTown/scripts.pory"
 	lock
-# 47 "data/maps/MulberryTown/scripts.pory"
+# 58 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_GruntText
-# 48 "data/maps/MulberryTown/scripts.pory"
+# 59 "data/maps/MulberryTown/scripts.pory"
 	release
 	return
 
 
 MulberryTown_EventScript_Artist1::
-# 52 "data/maps/MulberryTown/scripts.pory"
+# 63 "data/maps/MulberryTown/scripts.pory"
 	lock
-# 53 "data/maps/MulberryTown/scripts.pory"
+# 64 "data/maps/MulberryTown/scripts.pory"
 	faceplayer
-# 54 "data/maps/MulberryTown/scripts.pory"
+# 65 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_Artist1Text
-# 55 "data/maps/MulberryTown/scripts.pory"
+# 66 "data/maps/MulberryTown/scripts.pory"
 	release
 	return
 
 
 MulberryTown_EventScript_BoyWithDog::
-# 59 "data/maps/MulberryTown/scripts.pory"
-	lock
-# 60 "data/maps/MulberryTown/scripts.pory"
-	faceplayer
-# 61 "data/maps/MulberryTown/scripts.pory"
-	msgbox MulberryTown_EventScript_BoyWithDogText
-# 62 "data/maps/MulberryTown/scripts.pory"
-	applymovement 5, MulberryTown_EventScript_BoyWithDog_Movement_0
-# 63 "data/maps/MulberryTown/scripts.pory"
-	waitmovement
-# 64 "data/maps/MulberryTown/scripts.pory"
-	release
-	return
-
-
-MulberryTown_EventScript_Growlithe::
-# 68 "data/maps/MulberryTown/scripts.pory"
-	lock
-# 69 "data/maps/MulberryTown/scripts.pory"
-	faceplayer
 # 70 "data/maps/MulberryTown/scripts.pory"
-	playmoncry SPECIES_GROWLITHE, CRY_MODE_NORMAL
+	lock
 # 71 "data/maps/MulberryTown/scripts.pory"
-	msgbox MulberryTown_EventScript_Growlithe_Text_0
+	faceplayer
 # 72 "data/maps/MulberryTown/scripts.pory"
-	waitmoncry
+	msgbox MulberryTown_EventScript_BoyWithDogText
 # 73 "data/maps/MulberryTown/scripts.pory"
-	applymovement 6, MulberryTown_EventScript_Growlithe_Movement_0
+	applymovement 5, MulberryTown_EventScript_BoyWithDog_Movement_0
 # 74 "data/maps/MulberryTown/scripts.pory"
 	waitmovement
 # 75 "data/maps/MulberryTown/scripts.pory"
@@ -149,158 +148,176 @@ MulberryTown_EventScript_Growlithe::
 	return
 
 
-MulberryTown_EventScript_OldLady::
+MulberryTown_EventScript_Growlithe::
 # 79 "data/maps/MulberryTown/scripts.pory"
 	lock
 # 80 "data/maps/MulberryTown/scripts.pory"
-	dotimebasedevents
+	faceplayer
 # 81 "data/maps/MulberryTown/scripts.pory"
-	gettimeofday
+	playmoncry SPECIES_GROWLITHE, CRY_MODE_NORMAL
 # 82 "data/maps/MulberryTown/scripts.pory"
+	msgbox MulberryTown_EventScript_Growlithe_Text_0
+# 83 "data/maps/MulberryTown/scripts.pory"
+	waitmoncry
+# 84 "data/maps/MulberryTown/scripts.pory"
+	applymovement 6, MulberryTown_EventScript_Growlithe_Movement_0
+# 85 "data/maps/MulberryTown/scripts.pory"
+	waitmovement
+# 86 "data/maps/MulberryTown/scripts.pory"
+	release
+	return
+
+
+MulberryTown_EventScript_OldLady::
+# 90 "data/maps/MulberryTown/scripts.pory"
+	lock
+# 91 "data/maps/MulberryTown/scripts.pory"
+	gettimeofday
+# 92 "data/maps/MulberryTown/scripts.pory"
 	compare VAR_0x8000, TIME_EVENING
 	goto_if_eq MulberryTown_EventScript_OldLady_1
-# 82 "data/maps/MulberryTown/scripts.pory"
+# 92 "data/maps/MulberryTown/scripts.pory"
 	compare VAR_0x8000, TIME_NIGHT
 	goto_if_eq MulberryTown_EventScript_OldLady_1
-# 89 "data/maps/MulberryTown/scripts.pory"
+# 99 "data/maps/MulberryTown/scripts.pory"
 	faceplayer
-# 90 "data/maps/MulberryTown/scripts.pory"
+# 100 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_OldLadyAwakeText
-# 91 "data/maps/MulberryTown/scripts.pory"
+# 101 "data/maps/MulberryTown/scripts.pory"
 	release
 	end
 
 MulberryTown_EventScript_OldLady_1:
-# 83 "data/maps/MulberryTown/scripts.pory"
+# 93 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_OldLady_Text_0
-# 86 "data/maps/MulberryTown/scripts.pory"
+# 96 "data/maps/MulberryTown/scripts.pory"
 	release
 	end
 
 
 MulberryTown_EventScript_MainSign::
-# 98 "data/maps/MulberryTown/scripts.pory"
+# 108 "data/maps/MulberryTown/scripts.pory"
 	lock
-# 99 "data/maps/MulberryTown/scripts.pory"
+# 109 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_MainSignText
-# 100 "data/maps/MulberryTown/scripts.pory"
+# 110 "data/maps/MulberryTown/scripts.pory"
 	release
 	return
 
 
 MulberryTown_EventScript_ForestSign::
-# 104 "data/maps/MulberryTown/scripts.pory"
+# 114 "data/maps/MulberryTown/scripts.pory"
 	lock
-# 105 "data/maps/MulberryTown/scripts.pory"
+# 115 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_ForestSignText
-# 106 "data/maps/MulberryTown/scripts.pory"
+# 116 "data/maps/MulberryTown/scripts.pory"
 	release
 	return
 
 
 MulberryTown_EventScript_GoBack::
-# 110 "data/maps/MulberryTown/scripts.pory"
+# 120 "data/maps/MulberryTown/scripts.pory"
 	lock
-# 111 "data/maps/MulberryTown/scripts.pory"
+# 121 "data/maps/MulberryTown/scripts.pory"
 	msgbox MulberryTown_EventScript_GoBackText, MSGBOX_AUTOCLOSE
-# 112 "data/maps/MulberryTown/scripts.pory"
+# 122 "data/maps/MulberryTown/scripts.pory"
 	applymovement LOCALID_PLAYER, MulberryTown_EventScript_GoBack_Movement_0
-# 113 "data/maps/MulberryTown/scripts.pory"
+# 123 "data/maps/MulberryTown/scripts.pory"
 	waitmovement LOCALID_PLAYER
-# 114 "data/maps/MulberryTown/scripts.pory"
+# 124 "data/maps/MulberryTown/scripts.pory"
 	release
 	return
 
 
-# 29 "data/maps/MulberryTown/scripts.pory"
+# 40 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_SuspiciousGrunt_Movement_0:
-# 29 "data/maps/MulberryTown/scripts.pory"
+# 40 "data/maps/MulberryTown/scripts.pory"
 	walk_in_place_fast_right
-# 29 "data/maps/MulberryTown/scripts.pory"
+# 40 "data/maps/MulberryTown/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 31 "data/maps/MulberryTown/scripts.pory"
+# 42 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_SuspiciousGrunt_Movement_1:
-# 31 "data/maps/MulberryTown/scripts.pory"
+# 42 "data/maps/MulberryTown/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 36 "data/maps/MulberryTown/scripts.pory"
+# 47 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_SuspiciousGrunt_Movement_2:
-# 36 "data/maps/MulberryTown/scripts.pory"
+# 47 "data/maps/MulberryTown/scripts.pory"
 	face_up
-# 36 "data/maps/MulberryTown/scripts.pory"
+# 47 "data/maps/MulberryTown/scripts.pory"
 	lock_facing_direction
-# 36 "data/maps/MulberryTown/scripts.pory"
+# 47 "data/maps/MulberryTown/scripts.pory"
 	jump_down
-# 36 "data/maps/MulberryTown/scripts.pory"
+# 47 "data/maps/MulberryTown/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 37 "data/maps/MulberryTown/scripts.pory"
+# 48 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_SuspiciousGrunt_Movement_3:
-# 37 "data/maps/MulberryTown/scripts.pory"
+# 48 "data/maps/MulberryTown/scripts.pory"
 	walk_right
-# 37 "data/maps/MulberryTown/scripts.pory"
+# 48 "data/maps/MulberryTown/scripts.pory"
 	face_down
 	step_end
 
-# 40 "data/maps/MulberryTown/scripts.pory"
+# 51 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_SuspiciousGrunt_Movement_4:
-# 40 "data/maps/MulberryTown/scripts.pory"
+# 51 "data/maps/MulberryTown/scripts.pory"
 	walk_left
-# 40 "data/maps/MulberryTown/scripts.pory"
+# 51 "data/maps/MulberryTown/scripts.pory"
 	face_up
 	step_end
 
-# 62 "data/maps/MulberryTown/scripts.pory"
+# 73 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_BoyWithDog_Movement_0:
-# 62 "data/maps/MulberryTown/scripts.pory"
+# 73 "data/maps/MulberryTown/scripts.pory"
 	face_left
 	step_end
 
-# 73 "data/maps/MulberryTown/scripts.pory"
+# 84 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_Growlithe_Movement_0:
-# 73 "data/maps/MulberryTown/scripts.pory"
+# 84 "data/maps/MulberryTown/scripts.pory"
 	face_right
 	step_end
 
-# 112 "data/maps/MulberryTown/scripts.pory"
+# 122 "data/maps/MulberryTown/scripts.pory"
 MulberryTown_EventScript_GoBack_Movement_0:
-# 112 "data/maps/MulberryTown/scripts.pory"
+# 122 "data/maps/MulberryTown/scripts.pory"
 	walk_right
 	step_end
 
 MulberryTown_EventScript_SuspiciousGrunt_Text_0:
-# 39 "data/maps/MulberryTown/scripts.pory"
+# 50 "data/maps/MulberryTown/scripts.pory"
 	.string "Now SCRAM!$"
 
 MulberryTown_EventScript_Growlithe_Text_0:
-# 71 "data/maps/MulberryTown/scripts.pory"
+# 82 "data/maps/MulberryTown/scripts.pory"
 	.string "Grr-woof!$"
 
 MulberryTown_EventScript_OldLady_Text_0:
-# 83 "data/maps/MulberryTown/scripts.pory"
+# 93 "data/maps/MulberryTown/scripts.pory"
 	.string "Zzzz...\p"
 	.string "(Looks like she fell asleep...)$"
 
 MulberryTown_EventScript_SuspiciousGruntText1::
-# 117 "data/maps/MulberryTown/scripts.pory"
+# 127 "data/maps/MulberryTown/scripts.pory"
 	.string "Huh?{PAUSE 72} H-hey!\n"
 	.string "You can't go in there right now!\p"
 	.string "....What? D{PAUSE 48}-don't ask me why!\n"
 	.string "I don't need to explain myself to you!$"
 
 MulberryTown_EventScript_GruntText::
-# 125 "data/maps/MulberryTown/scripts.pory"
+# 135 "data/maps/MulberryTown/scripts.pory"
 	.string "...Those little pests must've gone in\n"
 	.string "here... there's nowhere else they could\l"
 	.string "possibly be...\p"
 	.string "I swear, once I get my hands on those...$"
 
 MulberryTown_EventScript_Artist1Text::
-# 133 "data/maps/MulberryTown/scripts.pory"
+# 143 "data/maps/MulberryTown/scripts.pory"
 	.string "Every now and then, I go into Mulberry\n"
 	.string "Woods in search of the perfect muse.\p"
 	.string "I hear rumors of a truly elegant\n"
@@ -310,7 +327,7 @@ MulberryTown_EventScript_Artist1Text::
 	.string "Maybe if... oh, never you mind.$"
 
 MulberryTown_EventScript_BoyWithDogText::
-# 146 "data/maps/MulberryTown/scripts.pory"
+# 156 "data/maps/MulberryTown/scripts.pory"
 	.string "A strange Pokémon just ran through\n"
 	.string "town and into the woods over there.\p"
 	.string "It moved so fast, it spooked my\n"
@@ -318,23 +335,23 @@ MulberryTown_EventScript_BoyWithDogText::
 	.string "Be careful if you're going in there, ok?$"
 
 MulberryTown_EventScript_OldLadyAwakeText::
-# 156 "data/maps/MulberryTown/scripts.pory"
+# 166 "data/maps/MulberryTown/scripts.pory"
 	.string "This town's atmosphere is always so\n"
 	.string "quiet and peaceful.\p"
 	.string "Sometimes I worry I'll fall asleep\n"
 	.string "sitting out here like this, ohoho...$"
 
 MulberryTown_EventScript_MainSignText::
-# 164 "data/maps/MulberryTown/scripts.pory"
+# 174 "data/maps/MulberryTown/scripts.pory"
 	.string "Mulberry Town- \n"
 	.string "“The elegant seaside town.”$"
 
 MulberryTown_EventScript_ForestSignText::
-# 169 "data/maps/MulberryTown/scripts.pory"
+# 179 "data/maps/MulberryTown/scripts.pory"
 	.string "Entering Mulberry Woods$"
 
 MulberryTown_EventScript_GoBackText::
-# 173 "data/maps/MulberryTown/scripts.pory"
+# 183 "data/maps/MulberryTown/scripts.pory"
 	.string "(Too late to go back now...\n"
 	.string "You've got to catch that Pokemon thief\l"
 	.string "before it's too late!)$"

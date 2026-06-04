@@ -112,9 +112,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARLY)",
-      "x": 18,
-      "y": 18,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIKIPEK)",
+      "x": 11,
+      "y": 13,
       "elevation": 4,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 4,
@@ -125,12 +125,12 @@
       "flag": "FLAG_TEMP_5"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUTTERFREE)",
-      "x": 26,
-      "y": 7,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOOTHOOT)",
+      "x": 18,
+      "y": 18,
       "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
-      "movement_range_x": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 4,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
@@ -138,30 +138,17 @@
       "flag": "FLAG_TEMP_6"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIKIPEK)",
-      "x": 33,
-      "y": 14,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(JOLTIK)",
+      "x": 26,
+      "y": 7,
       "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 4,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_TEMP_7"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FLETCHLING)",
-      "x": 12,
-      "y": 13,
-      "elevation": 4,
-      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
-      "movement_range_x": 4,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_TEMP_8"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
@@ -175,6 +162,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MulberryTown_EventScript_Grunt",
       "flag": "FLAG_HIDE_MULBERRY_GRUNT"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HOPPIP)",
+      "x": 32,
+      "y": 14,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 4,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_8"
     }
   ],
   "warp_events": [

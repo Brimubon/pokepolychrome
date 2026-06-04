@@ -5,20 +5,31 @@ mapscripts MulberryTown_MapScripts {
         setflag(FLAG_TEMP_7)
         setflag(FLAG_TEMP_8)
 
-        random(4)
+        random(3)
         switch(var(VAR_RESULT)) {
             case 0:
-                clearflag(FLAG_TEMP_7)
-                clearflag(FLAG_TEMP_8)
+                gettimeofday
+                if(var(VAR_0x8000) == TIME_NIGHT) {
+                    clearflag(FLAG_TEMP_6)
+                    clearflag(FLAG_TEMP_7)
+                } else {
+                    clearflag(FLAG_TEMP_5)
+                    clearflag(FLAG_TEMP_8)
+                }
             case 1:
-                clearflag(FLAG_TEMP_5)
-                clearflag(FLAG_TEMP_6)
+                gettimeofday
+                if(var(VAR_0x8000) == TIME_NIGHT) {
+                    clearflag(FLAG_TEMP_7)
+                } else {
+                    clearflag(FLAG_TEMP_5)
+                }
             case 2:
-                clearflag(FLAG_TEMP_6)
-                clearflag(FLAG_TEMP_7)
-                clearflag(FLAG_TEMP_8)
-            case 3:
-                clearflag(FLAG_TEMP_5)
+                gettimeofday
+                if(var(VAR_0x8000) == TIME_NIGHT) {
+                    clearflag(FLAG_TEMP_6)
+                } else {
+                    clearflag(FLAG_TEMP_8)
+                }
         }
     }
 }
@@ -26,7 +37,7 @@ mapscripts MulberryTown_MapScripts {
 script MulberryTown_EventScript_SuspiciousGrunt {
     lockall
     playse(SE_PIN)
-    applymovement(12, moves(walk_in_place_fast_right, emote_exclamation_mark))
+    applymovement(11, moves(walk_in_place_fast_right, emote_exclamation_mark))
     waitmovement(0)
     applymovement(LOCALID_PLAYER, moves(walk_in_place_left))
     waitmovement(0)
@@ -34,10 +45,10 @@ script MulberryTown_EventScript_SuspiciousGrunt {
     msgbox(MulberryTown_EventScript_SuspiciousGruntText1, MSGBOX_AUTOCLOSE)
     playse(SE_LEDGE)
     applymovement(LOCALID_PLAYER, moves(face_up, lock_facing_direction, jump_down, unlock_facing_direction))
-    applymovement(12, moves(walk_right, face_down))
+    applymovement(11, moves(walk_right, face_down))
     waitmovement(0)
     msgbox("Now SCRAM!", MSGBOX_AUTOCLOSE)
-    applymovement(12, moves(walk_left, face_up))
+    applymovement(11, moves(walk_left, face_up))
     waitmovement(0)
     releaseall
 }
@@ -77,7 +88,6 @@ script MulberryTown_EventScript_Growlithe {
 
 script MulberryTown_EventScript_OldLady {
     lock
-    dotimebasedevents
     gettimeofday
     if(var(VAR_0x8000) == TIME_EVENING || var(VAR_0x8000) == TIME_NIGHT) {
         msgbox("Zzzz...

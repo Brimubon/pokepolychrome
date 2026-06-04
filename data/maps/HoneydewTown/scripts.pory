@@ -3,20 +3,26 @@ mapscripts HoneydewTown_MapScripts {
         setflag(FLAG_TEMP_5)
         setflag(FLAG_TEMP_6)
         setflag(FLAG_TEMP_7)
-        setflag(FLAG_TEMP_8)
 
-
-        random(4)
+        random(3)
         switch(var(VAR_RESULT)) {
             case 0:
-                clearflag(FLAG_TEMP_5)
+                gettimeofday
+                if(var(VAR_0x8000) == TIME_NIGHT) {
+                    clearflag(FLAG_TEMP_7)
+                } else {
+                    clearflag(FLAG_TEMP_5)
+                }
             case 1:
                 clearflag(FLAG_TEMP_6)
             case 2:
-                clearflag(FLAG_TEMP_5)
-                clearflag(FLAG_TEMP_7)
-            case 3:
-                clearflag(FLAG_TEMP_8)
+                gettimeofday
+                if(var(VAR_0x8000) == TIME_NIGHT) {
+                    clearflag(FLAG_TEMP_7)
+                } else {
+                    clearflag(FLAG_TEMP_5)
+                }
+                clearflag(FLAG_TEMP_6)
         }
     }
 
@@ -74,10 +80,12 @@ script HoneydewTown_EventScript_Welcome {
     release
 }
 
-script HoneydewTown_EventScript_GiveMap {
+script HoneydewTown_EventScript_Woman {
     lock
     faceplayer 
-    msgbox(HoneydewTown_EventScript_GiveMapText)
+    msgbox(HoneydewTown_EventScript_WomanText, MSGBOX_AUTOCLOSE)
+    applymovement(3, moves(face_up))
+    waitmovement(0)
     release
 }
 
@@ -130,12 +138,12 @@ text HoneydewTown_EventScript_WelcomeText {
      northwest part of town. Hard to miss."
 }
 
-text HoneydewTown_EventScript_GiveMapText {
-    "I saw you get off that boat...
-     Are you new to the Myset region?
-     
-     Here, take this.
-     Consider it a welcome present."
+text HoneydewTown_EventScript_WomanText {
+    "Hm? Oh, are you new to this region?
+    So am I!
+    
+    The Pok\emon here sure are fascinating,
+    aren't they?"
 }
 
 text HoneydewTown_EventScript_LittleGirlText {
