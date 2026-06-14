@@ -424,6 +424,18 @@ script MulberryWoods_EventScript_Lira {
     release
 }
 
+script MulberryWoods_EventScript_Toby {
+    trainerbattle_single(TRAINER_TOBY, MulberryWoods_EventScript_TobyIntro, MulberryWoods_EventScript_TobyDefeated)
+    msgbox(MulberryWoods_EventScript_TobyPostBattle)
+    release
+}
+
+script MulberryWoods_EventScript_Michael {
+    trainerbattle_single(TRAINER_MICHAEL, MulberryWoods_EventScript_MichaelIntro, MulberryWoods_EventScript_MichaelDefeated)
+    msgbox(MulberryWoods_EventScript_MichaelPostBattle)
+    release
+}
+
 text MulberryWoods_EventScript_ScarlettText1 {
     "Oh, {PLAYER}. There you are!
      Took you long enough!"

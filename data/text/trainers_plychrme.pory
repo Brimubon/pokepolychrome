@@ -11,14 +11,14 @@ text MulberryWoods_EventScript_CorbinDefeated {
 }
 
 text MulberryWoods_EventScript_CorbinPostBattle {
-    "Looks like I'm the one who started
+    "I guess I'm the one who started
     your journey instead..."
 }
 
 text MulberryWoods_EventScript_JesseIntro {
-    "Another one for my collection!
+    "Another Pok\emon for my collection!
     
-    Go, my Bug Pok\emon!"
+    Go, go, go, my beautiful Bug team!"
 }
 
 text MulberryWoods_EventScript_JesseDefeated {
@@ -32,13 +32,49 @@ text MulberryWoods_EventScript_JessePostBattle {
 }
 
 text MulberryWoods_EventScript_LiraIntro {
-    "This is a placeholder intro."
+    "I'm doing an ecological survey on the
+    Pok\emon here for a school project.
+    Check this out!"
 }
 
 text MulberryWoods_EventScript_LiraDefeated {
-    "This is placeholder defeat text."
+    "Oh! I lost already?"
 }
 
 text MulberryWoods_EventScript_LiraPostBattle {
-    "This is placeholder post-battle text."
+    "I think there are more Pok\emon 
+    somewhere deeper in these woods,
+    but I don't know how to get there..."
 }
+
+text MulberryWoods_EventScript_TobyIntro {
+    "Eek! H{PAUSE 60}-Hey!
+    Who's there?!"
+}
+
+text MulberryWoods_EventScript_TobyDefeated {
+    "This place gives me the creeps..."
+}
+
+text MulberryWoods_EventScript_TobyPostBattle {
+    "Urgh... I really shouldn't have
+    battled you.
+    
+    Now I'm too scared to walk home
+    without my Pok\emon..."
+}
+ text MulberryWoods_EventScript_MichaelIntro {
+    "You see this item that's next to me?
+    
+    If you want it, you're gonna have to
+    defeat me first!"
+ }
+
+ text MulberryWoods_EventScript_MichaelDefeated {
+    "Fine, I guess you can have it..."
+ }
+
+ text MulberryWoods_EventScript_MichaelPostBattle {
+    "Huh? What's the item?
+    Oh, I have no idea!"
+ }
