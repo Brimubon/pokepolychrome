@@ -37,4 +37,7 @@ void InitTilesetAnim_BattlePyramid(void);
 void InitTilesetAnim_NewGeneral(void);
 
 
+// [Porytiles] Auto-generated declaration. Do not remove.
+void InitTilesetAnim_PorytilesManaged_NewGeneral(void);
+
 #endif // GUARD_TILESET_ANIMS_H

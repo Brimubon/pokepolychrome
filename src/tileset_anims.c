@@ -1241,3 +1241,6 @@ void InitTilesetAnim_NewGeneral(void) {
     sPrimaryTilesetAnimCounterMax = 256;
     sPrimaryTilesetAnimCallback = TilesetAnim_NewGeneral;
 }
+
+// [Porytiles] Auto-generated include. Do not remove.
+#include "porytiles_generated/tilesets/new_general/generated_anim_code.h"

@@ -216,3 +216,6 @@ const u16 gMetatileAttributes_Honeydew[] = INCBIN_U16("data/tilesets/secondary/h
 
 const u16 gMetatiles_NewPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/new_pokemon_center/metatiles.bin");
 const u16 gMetatileAttributes_NewPokemonCenter[] = INCBIN_U16("data/tilesets/secondary/new_pokemon_center/metatile_attributes.bin");
+
+const u16 gMetatiles_PorytilesManaged_NewGeneral[] = INCBIN_U16("data/tilesets/primary/new_general/porytiles_bin/metatiles.bin");
+const u16 gMetatileAttributes_PorytilesManaged_NewGeneral[] = INCBIN_U16("data/tilesets/primary/new_general/porytiles_bin/metatile_attributes.bin");
