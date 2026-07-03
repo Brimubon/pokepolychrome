@@ -174,8 +174,8 @@ text MulberryTown_PokemonCenter_EventScript_ScarlettText2 {
 text MulberryTown_PokemonCenter_EventScript_ScarlettText3 {
     "....Hmm...
      
-     Oh! I think they were wearing some kind
-     of weird, all-black outfit.
+     Oh! I think they were wearing a 
+     weird black and white outfit.
      
      It made it pretty hard to see what
      their face looked like..."
@@ -197,15 +197,18 @@ text MulberryTown_PokemonCenter_EventScript_ScarlettText6 {
     "...Hey, wait.
      Haven't I seen you somewhere before?
      
-     ...{PAUSE 72}Oh, you're {PLAYER}, aren't you?
+     ...{PAUSE 72}Oh, you're {PLAYER}, right?
+     You were coming here to get your
+     Pok\emon today, weren't you?
+
      I guess my uncle must've sent you here.
      
      {SPEAKER NAME_SCARLETT}My name's Scarlett.
      It's nice to finally meet you!
      
-     ... ... {PAUSE 72} ... ... ....
+     ... ... {PAUSE 72}... ... ....
      
-     Ah, right!{PAUSE 60} Listen! {PLAYER}!
+     Oh, yeah!{PAUSE 60} Listen! {PLAYER}!
      I'm gonna need your help!
      
      Someone ran off with the Pokémon we

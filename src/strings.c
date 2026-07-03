@@ -1442,7 +1442,7 @@ const u8 gText_SubQuest1_Name7[] = _("7th Gym Badge");
 const u8 gText_SubQuest1_Name8[] = _("8th Gym Badge");
 
 
-const u8 gText_SubQuest1_Desc1[] = _("Got the Bisque City badge!");
+const u8 gText_SubQuest1_Desc1[] = _("Got the Almond City badge!");
 const u8 gText_SubQuest1_Desc2[] = _("Got the 2nd badge");
 const u8 gText_SubQuest1_Desc3[] = _("Got the 3rd badge");
 const u8 gText_SubQuest1_Desc4[] = _("Got the 4th badge");
@@ -1451,7 +1451,7 @@ const u8 gText_SubQuest1_Desc6[] = _("Got the 6th badge");
 const u8 gText_SubQuest1_Desc7[] = _("Got the 7th badge");
 const u8 gText_SubQuest1_Desc8[] = _("Got the 8th badge");
 
-const u8 gText_SubQuest1_Map1[] = _("Bisque City");
+const u8 gText_SubQuest1_Map1[] = _("Almond City");
 const u8 gText_SubQuest1_Map2[] = _("Place 2");
 const u8 gText_SubQuest1_Map3[] = _("Place 3");
 const u8 gText_SubQuest1_Map4[] = _("Place 4");

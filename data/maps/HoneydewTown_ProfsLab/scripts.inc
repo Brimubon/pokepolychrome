@@ -159,349 +159,351 @@ HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt::
 # 87 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement LOCALID_PLAYER
 # 88 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	delay 60
+	removeitem ITEM_PARCEL
 # 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 2, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_5
+	delay 60
 # 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 2, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_5
 # 91 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
+	waitmovement 0
 # 92 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
 # 93 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	delay 72
+	waitmovement 0
 # 94 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setspeaker SP_NAME_HAWTHORNE
+	delay 72
 # 95 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt3, MSGBOX_AUTOCLOSE
+	setspeaker SP_NAME_HAWTHORNE
 # 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 2, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_6
+	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt3, MSGBOX_AUTOCLOSE
 # 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 2, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_6
 # 98 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_1
+	waitmovement 0
 # 99 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_1
 # 100 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	waitmovement 0
 # 101 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	message HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Text_0
+	playfanfare MUS_OBTAIN_ITEM
 # 102 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitfanfare
+	message HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Text_0
 # 103 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setflag FLAG_SYS_POKEDEX_GET
+	waitfanfare
 # 104 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	special SetUnlockedPokedexFlags
+	setflag FLAG_SYS_POKEDEX_GET
 # 105 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	closemessage
+	special SetUnlockedPokedexFlags
 # 106 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setspeaker SP_NAME_HAWTHORNE
+	closemessage
 # 107 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4, MSGBOX_AUTOCLOSE
+	setspeaker SP_NAME_HAWTHORNE
 # 108 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_7
+	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4, MSGBOX_AUTOCLOSE
 # 109 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_7
 # 110 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_8
-# 111 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement LOCALID_PLAYER
-# 112 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setspeaker SP_NAME_SCARLETT
-# 113 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett2, MSGBOX_AUTOCLOSE
-# 114 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	giveitem ITEM_POKE_BALL, 10
-# 115 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setspeaker SP_NAME_SCARLETT
-# 116 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett3, MSGBOX_AUTOCLOSE
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_9
-# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 2, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_10
-# 119 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement 0
+# 111 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_8
+# 112 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	waitmovement LOCALID_PLAYER
+# 113 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setspeaker SP_NAME_SCARLETT
+# 114 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett2, MSGBOX_AUTOCLOSE
+# 115 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	giveitem ITEM_POKE_BALL, 10
+# 116 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setspeaker SP_NAME_SCARLETT
+# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett3, MSGBOX_AUTOCLOSE
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement 5, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_9
+# 119 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement 2, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_10
 # 120 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setspeaker SP_NAME_HAWTHORNE
+	waitmovement 0
 # 121 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Text_1, MSGBOX_AUTOCLOSE
-# 122 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	removeobject 5
-# 123 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
-# 124 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	setspeaker SP_NAME_HAWTHORNE
+# 122 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Text_1, MSGBOX_AUTOCLOSE
+# 123 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	removeobject 5
+# 124 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
 # 125 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5, MSGBOX_AUTOCLOSE
+	setspeaker SP_NAME_HAWTHORNE
 # 126 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_HONEYDEW_JOURNAL_STATE, 1
+	msgbox HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5, MSGBOX_AUTOCLOSE
 # 127 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_MULBERRY_WOODS_STATE, 1
+	setvar VAR_HONEYDEW_JOURNAL_STATE, 1
 # 128 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_HAWTH_LAB_STATE, 3
+	setvar VAR_MULBERRY_WOODS_STATE, 1
 # 129 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setvar VAR_HAWTH_LAB_STATE, 3
+# 130 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	releaseall
 	return
 
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal0::
-# 133 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lockall
 # 134 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_0x8008, 0
+	lockall
 # 135 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setvar VAR_0x8008, 0
+# 136 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal
 	end
 
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal1::
-# 140 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lockall
 # 141 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_0x8008, 1
+	lockall
 # 142 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setvar VAR_0x8008, 1
+# 143 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal
 	end
 
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal2::
-# 147 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lockall
 # 148 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_0x8008, 2
+	lockall
 # 149 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setvar VAR_0x8008, 2
+# 150 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal
 	end
 
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal3::
-# 154 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lockall
 # 155 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_0x8008, 3
+	lockall
 # 156 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setvar VAR_0x8008, 3
+# 157 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal
 	end
 
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal::
-# 161 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setvar VAR_HONEYDEW_JOURNAL_STATE, 2
 # 162 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 1, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_0
+	setvar VAR_HONEYDEW_JOURNAL_STATE, 2
 # 163 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 1, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_0
 # 164 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_GiveJournalText1, MSGBOX_AUTOCLOSE
+	waitmovement 0
 # 165 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	playse SE_PIN
+	msgbox HoneydewTown_ProfsLab_EventScript_GiveJournalText1, MSGBOX_AUTOCLOSE
 # 166 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_1
+	playse SE_PIN
 # 167 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	delay 60
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_1
 # 168 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	delay 60
+# 169 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_0x8008, 0
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_GiveJournal_2
-# 171 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 172 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_0x8008, 1
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_GiveJournal_3
-# 174 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 175 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_0x8008, 2
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_GiveJournal_4
-# 177 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_0x8008, 3
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_GiveJournal_5
 HoneydewTown_ProfsLab_EventScript_GiveJournal_1:
-# 181 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_GiveJournalText2, MSGBOX_AUTOCLOSE
 # 182 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	msgbox HoneydewTown_ProfsLab_EventScript_GiveJournalText2, MSGBOX_AUTOCLOSE
 # 183 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	message HoneydewTown_ProfsLab_EventScript_GiveJournal_Text_0
+	playfanfare MUS_OBTAIN_ITEM
 # 184 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitfanfare
+	message HoneydewTown_ProfsLab_EventScript_GiveJournal_Text_0
 # 185 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setflag FLAG_SYS_QUEST_MENU_GET
+	waitfanfare
 # 186 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	closemessage
+	setflag FLAG_SYS_QUEST_MENU_GET
 # 187 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_GiveJournalText3, MSGBOX_AUTOCLOSE
+	closemessage
 # 188 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 1, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
+	msgbox HoneydewTown_ProfsLab_EventScript_GiveJournalText3, MSGBOX_AUTOCLOSE
 # 189 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmovement 0
+	applymovement 1, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
 # 190 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_ALL_BADGES
+	waitmovement 0
 # 191 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	questmenu QUEST_MENU_SET_ACTIVE, QUEST_TEAM_ALPHA
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_ALL_BADGES
 # 192 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	questmenu QUEST_MENU_SET_ACTIVE, QUEST_TEAM_ALPHA
+# 193 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	releaseall
 	return
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal_2:
-# 169 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_2
 # 170 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_2
+# 171 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement LOCALID_PLAYER
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal_1
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal_3:
-# 172 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_3
 # 173 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_3
+# 174 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement LOCALID_PLAYER
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal_1
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal_4:
-# 175 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_4
 # 176 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_4
+# 177 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement LOCALID_PLAYER
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal_1
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal_5:
-# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_5
 # 179 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement LOCALID_PLAYER, HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_5
+# 180 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement LOCALID_PLAYER
 	goto HoneydewTown_ProfsLab_EventScript_GiveJournal_1
 
 
 HoneydewTown_ProfsLab_EventScript_Hawth::
-# 196 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 197 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	faceplayer
+	lock
 # 198 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	setspeaker SP_NAME_HAWTHORNE
+	faceplayer
 # 199 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	setspeaker SP_NAME_HAWTHORNE
+# 200 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_HAWTH_LAB_STATE, 1
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_Hawth_2
-# 201 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 202 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_HAWTH_LAB_STATE, 3
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_Hawth_3
-# 203 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 204 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_HAWTH_LAB_STATE, 4
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_Hawth_4
 HoneydewTown_ProfsLab_EventScript_Hawth_1:
-# 206 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 207 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
 HoneydewTown_ProfsLab_EventScript_Hawth_2:
-# 200 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 201 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_HawthRegText1
 	goto HoneydewTown_ProfsLab_EventScript_Hawth_1
 
 HoneydewTown_ProfsLab_EventScript_Hawth_3:
-# 202 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 203 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_HawthRegText2
 	goto HoneydewTown_ProfsLab_EventScript_Hawth_1
 
 HoneydewTown_ProfsLab_EventScript_Hawth_4:
-# 204 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 205 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_HawthRegText3
 	goto HoneydewTown_ProfsLab_EventScript_Hawth_1
 
 
 HoneydewTown_ProfsLab_EventScript_Aide1::
-# 210 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 211 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	lock
+# 212 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	goto_if_unset FLAG_SYS_QUEST_MENU_GET, HoneydewTown_ProfsLab_EventScript_Aide1_2
-# 214 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	faceplayer
 # 215 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	message HoneydewTown_ProfsLab_EventScript_Aide1Hub
+	faceplayer
 # 216 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmessage
+	message HoneydewTown_ProfsLab_EventScript_Aide1Hub
 # 217 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	delay 60
+	waitmessage
 # 218 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, HoneydewTown_ProfsLab_EventScript_Aide1_Text_0, HoneydewTown_ProfsLab_EventScript_Aide1_Text_1
+	delay 60
 # 219 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	dynmultichoice 0, 0, TRUE, 6, 0, DYN_MULTICHOICE_CB_NONE, HoneydewTown_ProfsLab_EventScript_Aide1_Text_0, HoneydewTown_ProfsLab_EventScript_Aide1_Text_1
+# 220 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	compare VAR_RESULT, 0
 	goto_if_eq HoneydewTown_ProfsLab_EventScript_Aide1_6
-# 222 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 223 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_Aide1Goodbye, MSGBOX_AUTOCLOSE
 HoneydewTown_ProfsLab_EventScript_Aide1_5:
-# 224 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	applymovement 1, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
 # 225 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	applymovement 1, HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4
+# 226 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	waitmovement 0
 HoneydewTown_ProfsLab_EventScript_Aide1_1:
-# 227 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 228 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
 HoneydewTown_ProfsLab_EventScript_Aide1_2:
-# 212 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 213 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_Aide1Text
 	goto HoneydewTown_ProfsLab_EventScript_Aide1_1
 
 HoneydewTown_ProfsLab_EventScript_Aide1_6:
-# 220 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 221 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_Aide1ExplainJournal, MSGBOX_AUTOCLOSE
 	goto HoneydewTown_ProfsLab_EventScript_Aide1_5
 
 
 HoneydewTown_ProfsLab_EventScript_Aide2::
-# 231 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 232 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	faceplayer
+	lock
 # 233 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_Aide2Text
+	faceplayer
 # 234 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	msgbox HoneydewTown_ProfsLab_EventScript_Aide2Text
+# 235 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_ProfsLab_EventScript_Hoothoot::
-# 238 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 239 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	faceplayer
+	lock
 # 240 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	playmoncry SPECIES_HOOTHOOT, CRY_MODE_NORMAL
+	faceplayer
 # 241 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_Hoothoot_Text_0
+	playmoncry SPECIES_HOOTHOOT, CRY_MODE_NORMAL
 # 242 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	waitmoncry
+	msgbox HoneydewTown_ProfsLab_EventScript_Hoothoot_Text_0
 # 243 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	waitmoncry
+# 244 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_Hoothoot_Text_1
-# 245 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 246 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_ProfsLab_EventScript_Bookshelf::
-# 249 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 250 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	lock
+# 251 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	msgbox HoneydewTown_ProfsLab_EventScript_Bookshelf_Text_0
-# 252 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 253 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_ProfsLab_EventScript_Machine::
-# 256 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 257 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_MachineText
+	lock
 # 258 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	msgbox HoneydewTown_ProfsLab_EventScript_MachineText
+# 259 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
 
 HoneydewTown_ProfsLab_EventScript_PC::
-# 262 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	lock
 # 263 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	msgbox HoneydewTown_ProfsLab_EventScript_PCText
+	lock
 # 264 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	msgbox HoneydewTown_ProfsLab_EventScript_PCText
+# 265 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	release
 	return
 
@@ -618,125 +620,125 @@ HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_4:
 	walk_in_place_up
 	step_end
 
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_5:
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_up
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_up
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 89 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 90 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_6:
-# 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_right
-# 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_right
-# 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_right
-# 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_down
-# 96 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 97 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_down
 	step_end
 
-# 108 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 109 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_7:
-# 108 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 109 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_down
-# 108 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 109 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 110 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 111 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_8:
-# 110 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 111 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_9:
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
-# 117 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 119 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Movement_10:
-# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 119 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	delay_16
-# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 119 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	delay_16
-# 118 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 119 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 162 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 163 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_0:
-# 162 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 163 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 166 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 167 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_1:
-# 166 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 167 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	emote_question_mark
-# 166 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 167 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 169 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 170 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_2:
-# 169 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 170 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
 	step_end
 
-# 172 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 173 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_3:
-# 172 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 173 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 172 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 173 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
 	step_end
 
-# 175 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 176 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_4:
-# 175 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 176 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 175 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 176 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 175 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 176 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
 	step_end
 
-# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 179 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Movement_5:
-# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 179 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 179 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 179 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
-# 178 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 179 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	walk_left
 	step_end
 
@@ -764,54 +766,54 @@ HoneydewTown_ProfsLab_EventScript_HawthIntro_Text_4:
 	.string "your bag.)$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Text_0:
-# 101 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 102 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "{PLAYER} received the Pokédex!$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt_Text_1:
-# 121 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 122 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Oh, wait! Scarlett!$"
 
 HoneydewTown_ProfsLab_EventScript_GiveJournal_Text_0:
-# 183 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 184 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "{PLAYER} received the Journal!$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1_Text_0:
-# 218 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 219 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Explain the Journal.$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1_Text_1:
-# 218 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 219 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Nothing.$"
 
 HoneydewTown_ProfsLab_EventScript_Hoothoot_Text_0:
-# 241 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 242 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Hoo!$"
 
 HoneydewTown_ProfsLab_EventScript_Hoothoot_Text_1:
-# 243 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 244 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "(It's carrying a bunch of papers in its\n"
 	.string "beak.)$"
 
 HoneydewTown_ProfsLab_EventScript_Bookshelf_Text_0:
-# 250 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 251 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "(It's crammed with notes on Pokémon.\n"
 	.string "...They're a little hard to read...)$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText1::
-# 267 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 268 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "....Hm?{PAUSE 84} Ah, hello there!\n"
-	.string "Welcome to my lab!\p"
+	.string "Welcome to my Pokémon lab!\p"
 	.string "What can I do for you?$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText2::
-# 274 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 275 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "... ... ...Oh?\p"
 	.string "So you say your name is {PLAYER} and\n"
 	.string "you're here to receive your Pokémon?\p"
 	.string "...I{PAUSE 48}-I see.$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText3::
-# 283 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 284 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "R-right! {PLAYER}!\n"
 	.string "So good to finally see you in person!\p"
 	.string "I apologize, my schedule's been rather\n"
@@ -828,7 +830,7 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText3::
 	.string "yet to return, so I'm quite worried...$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText4::
-# 305 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 306 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Oh, I know!{PAUSE 72} {PLAYER}!\p"
 	.string "Could you stop by Mulberry Town for me\n"
 	.string "and make sure everything's alright?\p"
@@ -837,7 +839,7 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText4::
 	.string "away.$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText5::
-# 316 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 317 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Now, Mulberry Town is just east of\n"
 	.string "Honeydew, but you'll have to pass\l"
 	.string "through some tall grass to get there.\p"
@@ -845,7 +847,7 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText5::
 	.string "here, that won't be an issue!$"
 
 HoneydewTown_ProfsLab_EventScript_HawthIntroText6::
-# 325 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 326 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "There! With that extra-strength\n"
 	.string "Cleanse Tag, no wild Pokémon will\l"
 	.string "approach you, no matter how strong.\p"
@@ -854,23 +856,24 @@ HoneydewTown_ProfsLab_EventScript_HawthIntroText6::
 	.string "Well, off you go, then!$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett1::
-# 336 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 337 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Oh, {PLAYER}! You made it!\n"
 	.string "How was the trip back?$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt1::
-# 341 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 342 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "{PLAYER}! Scarlett told me everything\n"
 	.string "that happened.\p"
-	.string "I'm glad things turned out well,\n"
-	.string "though I wish you had come over here\l"
-	.string "to tell me right away.\p"
-	.string "...Well, I suppose it doesn't matter now.\n"
-	.string "{PLAYER}, may I see those Pokémon\l"
+	.string "I'm glad things turned out alright,\n"
+	.string "though I wish you had just\l"
+	.string "come over here to tell me right away.\p"
+	.string "... ...{PAUSE 60}Ahem. Well, I suppose it\n"
+	.string "doesn't matter now.\p"
+	.string "{PLAYER}, may I see those Pokémon\n"
 	.string "you found?$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt2::
-# 354 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 357 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "... ... ...Hm, how interesting!\p"
 	.string "These Pokémon aren't very common\n"
 	.string "in this region.\p"
@@ -886,7 +889,7 @@ HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt2::
 	.string "giving me that package?$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt3::
-# 375 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 378 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "... ... ...Good, it doesn't seem like there's\n"
 	.string "anything missing!\p"
 	.string "Are you ready, {PLAYER}?\p"
@@ -895,7 +898,7 @@ HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt3::
 	.string "for you to start your Pokémon journey!$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4::
-# 386 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 389 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "That little device I just gave you is\n"
 	.string "called a Pokédex.\p"
 	.string "It's a high-tech encyclopedia that\n"
@@ -907,49 +910,61 @@ HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt4::
 	.string "Pokémon trainer.$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett2::
-# 401 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 404 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "So, you've got a Pokédex now!\n"
 	.string "Congrats, {PLAYER}!\p"
 	.string "But to make full use of it,\n"
 	.string "you're gonna need some of these.$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett3::
-# 409 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 412 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "You'll want to catch a bunch of\n"
 	.string "different Pokémon if you want to\l"
 	.string "take on the League Challenge.\p"
 	.string "Speaking of which, your first stop will\n"
-	.string "be the Pokémon Gym in Bisque City.\l"
-	.string "It's past Mulberry Woods.\p"
-	.string "Anyway, I need to get back to surveying\n"
-	.string "the Pokémon on Route 304.\p"
+	.string "be the Pokémon Gym in Almond City.\p"
+	.string "That reminds me, I need to get back\n"
+	.string "to surveying the Pokémon on Route 304.\p"
 	.string "Good luck, {PLAYER}!\n"
 	.string "And see you later, professor!$"
 
 HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5::
-# 425 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
-	.string "Well, there she goes. \n"
+# 427 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+	.string "Well, there she goes.\n"
 	.string "Never staying in one place for too long.\l"
-	.string "I suppose I'll have to talk to her later.\p"
+	.string "I'll have to talk to her later.\p"
 	.string "And as for you, {PLAYER}, I believe\n"
-	.string "you're on your way to becoming a \l"
+	.string "you're on your way to becoming a\l"
 	.string "truly exceptional Pokémon trainer.\p"
+	.string "Almond City is just past Mulberry Woods,\n"
+	.string "so it shouldn't be difficult to reach.\p"
+	.string "That being said, if you find yourself\n"
+	.string "getting lost, I have a spare Town Map\l"
+	.string "at my house that you can use.\p"
+	.string "Almond City's Pokémon Gym is located\n"
+	.string "within its Trainer School, so I suggest\l"
+	.string "you take a look at some of the classes\l"
+	.string "they offer as well.\p"
+	.string "Even if you consider yourself to be an\n"
+	.string "experienced trainer, you might learn\l"
+	.string "something new there.\p"
+	.string "...Well, that's all from me for now.\n"
 	.string "Good luck on your travels!$"
 
 HoneydewTown_ProfsLab_EventScript_GiveJournalText1::
-# 437 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 456 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "... ... ... ... ...You there.\n"
 	.string "Come over here for a second.$"
 
 HoneydewTown_ProfsLab_EventScript_GiveJournalText2::
-# 442 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 461 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "You're, uh, {PLAYER}, correct?\n"
 	.string "I overheard your conversation with\l"
 	.string "the professor.\p"
 	.string "... ... ...Here, take this.$"
 
 HoneydewTown_ProfsLab_EventScript_GiveJournalText3::
-# 450 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 469 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "While you're out exploring the region,\n"
 	.string "you'll encounter many different people.\p"
 	.string "Some may ask you to assist them with \n"
@@ -967,16 +982,16 @@ HoneydewTown_ProfsLab_EventScript_GiveJournalText3::
 	.string "losing them in the end.\p"
 	.string "So... I hope you get more use out of it\n"
 	.string "than he did.\p"
-	.string "... ... ...Well, that's all.\n"
+	.string "... ... ...Um, that's all.\n"
 	.string "Good luck out there.$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1Hub::
-# 479 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 498 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "... ... ... ... ...Yes?\n"
 	.string "What is it?$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1ExplainJournal::
-# 484 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 503 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "It's quite simple, really.\p"
 	.string "Once you've accepted a request from\n"
 	.string "someone, details about it will be\l"
@@ -997,36 +1012,36 @@ HoneydewTown_ProfsLab_EventScript_Aide1ExplainJournal::
 	.string "... ... ...Goodbye for now, then.$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1Goodbye::
-# 511 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 530 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "... ... ... ...Right.\n"
 	.string "Goodbye, then.$"
 
 HoneydewTown_ProfsLab_EventScript_HawthRegText1::
-# 516 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 535 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Remember, Mulberry Town is just east\n"
 	.string "of here.\p"
 	.string "With that special Cleanse Tag I gave\n"
 	.string "you, it should be easy to reach.$"
 
 HoneydewTown_ProfsLab_EventScript_HawthRegText2::
-# 524 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 543 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "The cloest Pokémon Gym from here is\n"
-	.string "the one in Bisque City.\p"
+	.string "the one in Almond City.\p"
 	.string "I wish you good luck in your travels!$"
 
 HoneydewTown_ProfsLab_EventScript_HawthRegText3::
-# 531 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 550 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Keep collecting gym badges.$"
 
 HoneydewTown_ProfsLab_EventScript_Aide1Text::
-# 535 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 554 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "...Scyther....{PAUSE 72} Seadra....{PAUSE 84}\n"
 	.string "...Sealeo...{PAUSE 72} Seedot......\p"
 	.string "Ugh, why can't I find our notes on\n"
 	.string "Seaking?$"
 
 HoneydewTown_ProfsLab_EventScript_Aide2Text::
-# 543 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 562 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "Prof. Hawthorne studies the relations\n"
 	.string "between different species of Pokémon.\p"
 	.string "He used to go out a lot on fieldwork,\n"
@@ -1036,14 +1051,14 @@ HoneydewTown_ProfsLab_EventScript_Aide2Text::
 	.string "his niece, Scarlett.$"
 
 HoneydewTown_ProfsLab_EventScript_MachineText::
-# 555 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 574 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "(It's a weird looking machine.)\p"
 	.string "(There are tons of buttons and\n"
 	.string "flashing lights on it... best to leave it\l"
 	.string "alone.)$"
 
 HoneydewTown_ProfsLab_EventScript_PCText::
-# 563 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
+# 582 "data/maps/HoneydewTown_ProfsLab/scripts.pory"
 	.string "(It's the Prof's PC.)\p"
 	.string "(There's a picture of the Prof. and\n"
 	.string "another person holding a Pokémon\l"

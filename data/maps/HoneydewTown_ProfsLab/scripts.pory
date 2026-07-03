@@ -85,6 +85,7 @@ script HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt {
     msgbox(HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt2, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, moves(walk_in_place_up))
     waitmovement(LOCALID_PLAYER)
+    removeitem(ITEM_PARCEL)
     delay(60)
     applymovement(2, moves(walk_up * 2, walk_left * 3, walk_in_place_up))
     waitmovement(0)
@@ -266,7 +267,7 @@ script HoneydewTown_ProfsLab_EventScript_PC {
 
 text HoneydewTown_ProfsLab_EventScript_HawthIntroText1 {
     "....Hm?{PAUSE 84} Ah, hello there!
-     Welcome to my lab!
+     Welcome to my Pok\emon lab!
      
      What can I do for you?"
 }
@@ -342,11 +343,13 @@ text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt1 {
     "{PLAYER}! Scarlett told me everything
      that happened.
      
-     I'm glad things turned out well,
-     though I wish you had come over here
-     to tell me right away.
+     I'm glad things turned out alright,
+     though I wish you had just
+     come over here to tell me right away.
      
-     ...Well, I suppose it doesn't matter now.
+     ... ...{PAUSE 60}Ahem. Well, I suppose it
+     doesn't matter now.
+     
      {PLAYER}, may I see those Pokémon
      you found?"
 }
@@ -412,25 +415,41 @@ text HoneydewTown_ProfsLab_EventScript_HawthAfterGruntScarlett3 {
     take on the League Challenge.
     
     Speaking of which, your first stop will
-    be the Pok\emon Gym in Bisque City.
-    It's past Mulberry Woods.
+    be the Pok\emon Gym in Almond City.
     
-    Anyway, I need to get back to surveying
-    the Pok\emon on Route 304.
+    That reminds me, I need to get back
+    to surveying the Pok\emon on Route 304.
     
     Good luck, {PLAYER}!
     And see you later, professor!"
 }
 
 text HoneydewTown_ProfsLab_EventScript_HawthAfterGrunt5 {
-    "Well, there she goes. 
+    "Well, there she goes.
     Never staying in one place for too long.
-    I suppose I'll have to talk to her later.
+    I'll have to talk to her later.
     
     And as for you, {PLAYER}, I believe
-    you're on your way to becoming a 
+    you're on your way to becoming a
     truly exceptional Pok\emon trainer.
+
+    Almond City is just past Mulberry Woods,
+    so it shouldn't be difficult to reach.
+
+    That being said, if you find yourself
+    getting lost, I have a spare Town Map
+    at my house that you can use.
+
+    Almond City's Pok\emon Gym is located
+    within its Trainer School, so I suggest
+    you take a look at some of the classes
+    they offer as well.
+
+    Even if you consider yourself to be an
+    experienced trainer, you might learn
+    something new there.
     
+    ...Well, that's all from me for now.
     Good luck on your travels!"
 }
 
@@ -472,7 +491,7 @@ text HoneydewTown_ProfsLab_EventScript_GiveJournalText3 {
     So... I hope you get more use out of it
     than he did.
     
-    ... ... ...Well, that's all.
+    ... ... ...Um, that's all.
     Good luck out there."
 }
 
@@ -523,7 +542,7 @@ text HoneydewTown_ProfsLab_EventScript_HawthRegText1 {
 
 text HoneydewTown_ProfsLab_EventScript_HawthRegText2 {
     "The cloest Pok\emon Gym from here is
-     the one in Bisque City.
+     the one in Almond City.
      
      I wish you good luck in your travels!"
 }

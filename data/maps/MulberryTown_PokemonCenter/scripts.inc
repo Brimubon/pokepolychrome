@@ -444,8 +444,8 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText2::
 MulberryTown_PokemonCenter_EventScript_ScarlettText3::
 # 174 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "....Hmm...\p"
-	.string "Oh! I think they were wearing some kind\n"
-	.string "of weird, all-black outfit.\p"
+	.string "Oh! I think they were wearing a \n"
+	.string "weird black and white outfit.\p"
 	.string "It made it pretty hard to see what\n"
 	.string "their face looked like...$"
 
@@ -464,12 +464,14 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText6::
 # 196 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "...Hey, wait.\n"
 	.string "Haven't I seen you somewhere before?\p"
-	.string "...{PAUSE 72}Oh, you're {PLAYER}, aren't you?\n"
+	.string "...{PAUSE 72}Oh, you're {PLAYER}, right?\n"
+	.string "You were coming here to get your\l"
+	.string "Pokémon today, weren't you?\p"
 	.string "I guess my uncle must've sent you here.\p"
 	.string "{SPEAKER NAME_SCARLETT}My name's Scarlett.\n"
 	.string "It's nice to finally meet you!\p"
-	.string "... ... {PAUSE 72} ... ... ....\p"
-	.string "Ah, right!{PAUSE 60} Listen! {PLAYER}!\n"
+	.string "... ... {PAUSE 72}... ... ....\p"
+	.string "Oh, yeah!{PAUSE 60} Listen! {PLAYER}!\n"
 	.string "I'm gonna need your help!\p"
 	.string "Someone ran off with the Pokémon we\n"
 	.string "were going to give away.\p"
@@ -477,12 +479,12 @@ MulberryTown_PokemonCenter_EventScript_ScarlettText6::
 	.string "it's too late!$"
 
 MulberryTown_PokemonCenter_EventScript_ScarlettText7::
-# 218 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 221 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Meet me in Mulberry Woods, alright?\n"
 	.string "We'll talk more there!$"
 
 MulberryTown_PokemonCenter_EventScript_NoPokemonText::
-# 223 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 226 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Hello, and welcome to... oh?\p"
 	.string "It doesn't seem like you have any\n"
 	.string "Pokémon.\p"
@@ -490,14 +492,14 @@ MulberryTown_PokemonCenter_EventScript_NoPokemonText::
 	.string "we can restore them to full health!$"
 
 MulberryTown_PokemonCenter_EventScript_UnpackingText::
-# 233 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 236 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Apologies, we're still busy unpacking\n"
 	.string "some of our supplies.\p"
 	.string "Come back later and we should have\n"
 	.string "some goods available to sell to you!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl1Text::
-# 241 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 244 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "My Pokémon got poisoned while I was\n"
 	.string "training it in the woods.\p"
 	.string "I forgot to buy antidotes, but my\n"
@@ -505,14 +507,14 @@ MulberryTown_PokemonCenter_EventScript_Girl1Text::
 	.string "before it fainted.$"
 
 MulberryTown_PokemonCenter_EventScript_Boy1Text::
-# 250 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 253 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Pokémon Centers are amazing!\p"
 	.string "Not only do they heal your Pokémon for\n"
 	.string "free, they have beds you can rest in if\l"
 	.string "you want to pass the time.$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2Text1::
-# 258 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 261 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "Isn't my Stufful just the cutest?\n"
 	.string "You won't find a cuter Pokémon in all of\l"
 	.string "Myset, I assure you.\p"
@@ -520,12 +522,12 @@ MulberryTown_PokemonCenter_EventScript_Girl2Text1::
 	.string "kinds of neat tricks, too! Watch!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2Text2::
-# 267 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 270 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "C'mon, Stufful!\n"
 	.string "Do the Baby-Doll Eyes and Brutal Swing\l"
 	.string "combo, like we practiced!$"
 
 MulberryTown_PokemonCenter_EventScript_Girl2Text3::
-# 273 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
+# 276 "data/maps/MulberryTown_PokemonCenter/scripts.pory"
 	.string "(The Stufful tripped on its feet and\n"
 	.string "flailed around wildly...)$"

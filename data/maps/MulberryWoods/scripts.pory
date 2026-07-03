@@ -337,7 +337,8 @@ script MulberryWoods_EventScript_GruntPostBattle {
     msgbox(MulberryWoods_EventScript_GruntPostBattleText3, MSGBOX_AUTOCLOSE)
     applymovement(17, moves(walk_left * 2))
     waitmovement(0)
-    //give player hawthorne's parcel item here once I make it
+    giveitem(ITEM_PARCEL)
+    closemessage
     delay(60)
     applymovement(17, moves(lock_facing_direction, walk_right, unlock_facing_direction))
     waitmovement(0)
@@ -376,6 +377,8 @@ script MulberryWoods_EventScript_GruntPostBattle {
     msgbox(MulberryWoods_EventScript_GruntPostBattleTagBreaks, MSGBOX_AUTOCLOSE)
     setvar(VAR_MULBERRY_TOWN_STATE, 2)
     setvar(VAR_HAWTH_LAB_STATE, 2)
+    setflag(FLAG_HIDE_HONEYDEW_SAILOR)
+    setflag(FLAG_HIDE_HONEYDEW_SHIP)
     releaseall
 }
 
@@ -479,8 +482,9 @@ text MulberryWoods_EventScript_ScarlettText4 {
      Listen, I know you'll be fine.
      I know we've only just met, but...
      
-     You seem like the kind of person who
-     can handle themselves in any situation.
+     I get the feeling you're the kind of
+     person who can handle themselves
+     no matter what.
      
      So... I know that things will turn out
      just fine.
@@ -615,7 +619,7 @@ text MulberryWoods_EventScript_GruntPostBattleText4 {
 }
 
 text MulberryWoods_EventScript_GruntPostBattleScarlett2 {
-    "Oof!{PAUSE 90} Hey!
+    "Oof!{PAUSE 90} Wh-{PAUSE 60}Hey!
      Where do you think you're going?!"
 }
 
@@ -666,7 +670,7 @@ text MulberryWoods_EventScript_NormalGirlText {
     "Hm? Oh no, I'm not a trainer.
      
      But there are quite a few of them
-     between here and Bisque City, so you
+     between here and Almond City, so you
      should make sure you're stocked up on
      supplies."
 }
@@ -681,7 +685,7 @@ text MulberryWoods_EventScript_PressBSignText {
 
 text MulberryWoods_EventScript_ExitSignText {
     "Leaving Mulberry Woods
-     Bisque City Ahead"
+     Almond City Ahead"
 }
 
 text MulberryWoods_EventScript_GoOtherWayText {

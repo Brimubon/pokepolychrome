@@ -639,83 +639,91 @@ MulberryWoods_EventScript_GruntPostBattle_1:
 	applymovement 17, MulberryWoods_EventScript_GruntPostBattle_Movement_2
 # 339 "data/maps/MulberryWoods/scripts.pory"
 	waitmovement 0
+# 340 "data/maps/MulberryWoods/scripts.pory"
+	giveitem ITEM_PARCEL
 # 341 "data/maps/MulberryWoods/scripts.pory"
-	delay 60
+	closemessage
 # 342 "data/maps/MulberryWoods/scripts.pory"
-	applymovement 17, MulberryWoods_EventScript_GruntPostBattle_Movement_3
+	delay 60
 # 343 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement 0
+	applymovement 17, MulberryWoods_EventScript_GruntPostBattle_Movement_3
 # 344 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_GruntPostBattleText4, MSGBOX_AUTOCLOSE
+	waitmovement 0
 # 345 "data/maps/MulberryWoods/scripts.pory"
-	applymovement 17, MulberryWoods_EventScript_GruntPostBattle_Movement_4
+	msgbox MulberryWoods_EventScript_GruntPostBattleText4, MSGBOX_AUTOCLOSE
 # 346 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement 0
+	applymovement 17, MulberryWoods_EventScript_GruntPostBattle_Movement_4
 # 347 "data/maps/MulberryWoods/scripts.pory"
-	removeobject 17
+	waitmovement 0
 # 348 "data/maps/MulberryWoods/scripts.pory"
-	delay 90
+	removeobject 17
 # 349 "data/maps/MulberryWoods/scripts.pory"
-	setspeaker SP_NAME_SCARLETT
+	delay 90
 # 350 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_GruntPostBattleScarlett2, MSGBOX_AUTOCLOSE
+	setspeaker SP_NAME_SCARLETT
 # 351 "data/maps/MulberryWoods/scripts.pory"
-	delay 90
+	msgbox MulberryWoods_EventScript_GruntPostBattleScarlett2, MSGBOX_AUTOCLOSE
 # 352 "data/maps/MulberryWoods/scripts.pory"
-	setobjectxyperm 8, 52, 27
-# 353 "data/maps/MulberryWoods/scripts.pory"
-	clearflag FLAG_HIDE_SCARLETT_MULWOODS1
-# 354 "data/maps/MulberryWoods/scripts.pory"
-	addobject 8
-# 355 "data/maps/MulberryWoods/scripts.pory"
-	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_5
-# 356 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement 0
-# 357 "data/maps/MulberryWoods/scripts.pory"
-	setspeaker SP_NAME_SCARLETT
-# 358 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_GruntPostBattleScarlett3, MSGBOX_AUTOCLOSE
-# 359 "data/maps/MulberryWoods/scripts.pory"
-	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_6
-# 360 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement 0
-# 361 "data/maps/MulberryWoods/scripts.pory"
-	fadescreenswapbuffers FADE_TO_BLACK
-# 362 "data/maps/MulberryWoods/scripts.pory"
-	special HealPlayerParty
-# 363 "data/maps/MulberryWoods/scripts.pory"
-	playfanfare MUS_HEAL
-# 364 "data/maps/MulberryWoods/scripts.pory"
-	waitfanfare
-# 365 "data/maps/MulberryWoods/scripts.pory"
-	delay 48
-# 366 "data/maps/MulberryWoods/scripts.pory"
-	fadescreenswapbuffers FADE_FROM_BLACK
-# 367 "data/maps/MulberryWoods/scripts.pory"
-	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_3
-# 368 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement 0
-# 369 "data/maps/MulberryWoods/scripts.pory"
-	setspeaker SP_NAME_SCARLETT
-# 370 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_GruntPostBattleScarlett4, MSGBOX_AUTOCLOSE
-# 371 "data/maps/MulberryWoods/scripts.pory"
-	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_7
-# 372 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement 0
-# 373 "data/maps/MulberryWoods/scripts.pory"
-	removeobject 8
-# 374 "data/maps/MulberryWoods/scripts.pory"
 	delay 90
+# 353 "data/maps/MulberryWoods/scripts.pory"
+	setobjectxyperm 8, 52, 27
+# 354 "data/maps/MulberryWoods/scripts.pory"
+	clearflag FLAG_HIDE_SCARLETT_MULWOODS1
+# 355 "data/maps/MulberryWoods/scripts.pory"
+	addobject 8
+# 356 "data/maps/MulberryWoods/scripts.pory"
+	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_5
+# 357 "data/maps/MulberryWoods/scripts.pory"
+	waitmovement 0
+# 358 "data/maps/MulberryWoods/scripts.pory"
+	setspeaker SP_NAME_SCARLETT
+# 359 "data/maps/MulberryWoods/scripts.pory"
+	msgbox MulberryWoods_EventScript_GruntPostBattleScarlett3, MSGBOX_AUTOCLOSE
+# 360 "data/maps/MulberryWoods/scripts.pory"
+	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_6
+# 361 "data/maps/MulberryWoods/scripts.pory"
+	waitmovement 0
+# 362 "data/maps/MulberryWoods/scripts.pory"
+	fadescreenswapbuffers FADE_TO_BLACK
+# 363 "data/maps/MulberryWoods/scripts.pory"
+	special HealPlayerParty
+# 364 "data/maps/MulberryWoods/scripts.pory"
+	playfanfare MUS_HEAL
+# 365 "data/maps/MulberryWoods/scripts.pory"
+	waitfanfare
+# 366 "data/maps/MulberryWoods/scripts.pory"
+	delay 48
+# 367 "data/maps/MulberryWoods/scripts.pory"
+	fadescreenswapbuffers FADE_FROM_BLACK
+# 368 "data/maps/MulberryWoods/scripts.pory"
+	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_3
+# 369 "data/maps/MulberryWoods/scripts.pory"
+	waitmovement 0
+# 370 "data/maps/MulberryWoods/scripts.pory"
+	setspeaker SP_NAME_SCARLETT
+# 371 "data/maps/MulberryWoods/scripts.pory"
+	msgbox MulberryWoods_EventScript_GruntPostBattleScarlett4, MSGBOX_AUTOCLOSE
+# 372 "data/maps/MulberryWoods/scripts.pory"
+	applymovement 8, MulberryWoods_EventScript_GruntPostBattle_Movement_7
+# 373 "data/maps/MulberryWoods/scripts.pory"
+	waitmovement 0
+# 374 "data/maps/MulberryWoods/scripts.pory"
+	removeobject 8
 # 375 "data/maps/MulberryWoods/scripts.pory"
-	clearflag FLAG_ENABLE_NO_ENCOUNTER
+	delay 90
 # 376 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_GruntPostBattleTagBreaks, MSGBOX_AUTOCLOSE
+	clearflag FLAG_ENABLE_NO_ENCOUNTER
 # 377 "data/maps/MulberryWoods/scripts.pory"
-	setvar VAR_MULBERRY_TOWN_STATE, 2
+	msgbox MulberryWoods_EventScript_GruntPostBattleTagBreaks, MSGBOX_AUTOCLOSE
 # 378 "data/maps/MulberryWoods/scripts.pory"
-	setvar VAR_HAWTH_LAB_STATE, 2
+	setvar VAR_MULBERRY_TOWN_STATE, 2
 # 379 "data/maps/MulberryWoods/scripts.pory"
+	setvar VAR_HAWTH_LAB_STATE, 2
+# 380 "data/maps/MulberryWoods/scripts.pory"
+	setflag FLAG_HIDE_HONEYDEW_SAILOR
+# 381 "data/maps/MulberryWoods/scripts.pory"
+	setflag FLAG_HIDE_HONEYDEW_SHIP
+# 382 "data/maps/MulberryWoods/scripts.pory"
 	releaseall
 	return
 
@@ -726,97 +734,97 @@ MulberryWoods_EventScript_GruntPostBattle_2:
 
 
 MulberryWoods_EventScript_NormalGirl::
-# 383 "data/maps/MulberryWoods/scripts.pory"
-	lock
-# 384 "data/maps/MulberryWoods/scripts.pory"
-	faceplayer
-# 385 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_NormalGirlText
 # 386 "data/maps/MulberryWoods/scripts.pory"
+	lock
+# 387 "data/maps/MulberryWoods/scripts.pory"
+	faceplayer
+# 388 "data/maps/MulberryWoods/scripts.pory"
+	msgbox MulberryWoods_EventScript_NormalGirlText
+# 389 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_PressBSign::
-# 390 "data/maps/MulberryWoods/scripts.pory"
+# 393 "data/maps/MulberryWoods/scripts.pory"
 	lock
-# 391 "data/maps/MulberryWoods/scripts.pory"
+# 394 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_PressBSignText
-# 392 "data/maps/MulberryWoods/scripts.pory"
+# 395 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_ExitSign::
-# 396 "data/maps/MulberryWoods/scripts.pory"
+# 399 "data/maps/MulberryWoods/scripts.pory"
 	lock
-# 397 "data/maps/MulberryWoods/scripts.pory"
+# 400 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_ExitSignText
-# 398 "data/maps/MulberryWoods/scripts.pory"
+# 401 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_GoOtherWay::
-# 402 "data/maps/MulberryWoods/scripts.pory"
-	lock
-# 403 "data/maps/MulberryWoods/scripts.pory"
-	msgbox MulberryWoods_EventScript_GoOtherWayText, MSGBOX_AUTOCLOSE
-# 404 "data/maps/MulberryWoods/scripts.pory"
-	applymovement LOCALID_PLAYER, MulberryWoods_EventScript_GoOtherWay_Movement_0
 # 405 "data/maps/MulberryWoods/scripts.pory"
-	waitmovement LOCALID_PLAYER
+	lock
 # 406 "data/maps/MulberryWoods/scripts.pory"
+	msgbox MulberryWoods_EventScript_GoOtherWayText, MSGBOX_AUTOCLOSE
+# 407 "data/maps/MulberryWoods/scripts.pory"
+	applymovement LOCALID_PLAYER, MulberryWoods_EventScript_GoOtherWay_Movement_0
+# 408 "data/maps/MulberryWoods/scripts.pory"
+	waitmovement LOCALID_PLAYER
+# 409 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_Corbin::
-# 410 "data/maps/MulberryWoods/scripts.pory"
+# 413 "data/maps/MulberryWoods/scripts.pory"
 	trainerbattle_single TRAINER_CORBIN, MulberryWoods_EventScript_CorbinIntro, MulberryWoods_EventScript_CorbinDefeated
-# 411 "data/maps/MulberryWoods/scripts.pory"
+# 414 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_CorbinPostBattle
-# 412 "data/maps/MulberryWoods/scripts.pory"
+# 415 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_Jesse::
-# 416 "data/maps/MulberryWoods/scripts.pory"
+# 419 "data/maps/MulberryWoods/scripts.pory"
 	trainerbattle_single TRAINER_JESSE, MulberryWoods_EventScript_JesseIntro, MulberryWoods_EventScript_JesseDefeated
-# 417 "data/maps/MulberryWoods/scripts.pory"
+# 420 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_JessePostBattle
-# 418 "data/maps/MulberryWoods/scripts.pory"
+# 421 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_Lira::
-# 422 "data/maps/MulberryWoods/scripts.pory"
+# 425 "data/maps/MulberryWoods/scripts.pory"
 	trainerbattle_single TRAINER_LIRA, MulberryWoods_EventScript_LiraIntro, MulberryWoods_EventScript_LiraDefeated
-# 423 "data/maps/MulberryWoods/scripts.pory"
+# 426 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_LiraPostBattle
-# 424 "data/maps/MulberryWoods/scripts.pory"
+# 427 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_Toby::
-# 428 "data/maps/MulberryWoods/scripts.pory"
+# 431 "data/maps/MulberryWoods/scripts.pory"
 	trainerbattle_single TRAINER_TOBY, MulberryWoods_EventScript_TobyIntro, MulberryWoods_EventScript_TobyDefeated
-# 429 "data/maps/MulberryWoods/scripts.pory"
+# 432 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_TobyPostBattle
-# 430 "data/maps/MulberryWoods/scripts.pory"
+# 433 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
 
 MulberryWoods_EventScript_Michael::
-# 434 "data/maps/MulberryWoods/scripts.pory"
+# 437 "data/maps/MulberryWoods/scripts.pory"
 	trainerbattle_single TRAINER_MICHAEL, MulberryWoods_EventScript_MichaelIntro, MulberryWoods_EventScript_MichaelDefeated
-# 435 "data/maps/MulberryWoods/scripts.pory"
+# 438 "data/maps/MulberryWoods/scripts.pory"
 	msgbox MulberryWoods_EventScript_MichaelPostBattle
-# 436 "data/maps/MulberryWoods/scripts.pory"
+# 439 "data/maps/MulberryWoods/scripts.pory"
 	release
 	return
 
@@ -1373,111 +1381,111 @@ MulberryWoods_EventScript_GruntPostBattle_Movement_2:
 	walk_left
 	step_end
 
-# 342 "data/maps/MulberryWoods/scripts.pory"
+# 343 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_GruntPostBattle_Movement_3:
-# 342 "data/maps/MulberryWoods/scripts.pory"
+# 343 "data/maps/MulberryWoods/scripts.pory"
 	lock_facing_direction
-# 342 "data/maps/MulberryWoods/scripts.pory"
+# 343 "data/maps/MulberryWoods/scripts.pory"
 	walk_right
-# 342 "data/maps/MulberryWoods/scripts.pory"
+# 343 "data/maps/MulberryWoods/scripts.pory"
 	unlock_facing_direction
 	step_end
 
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_GruntPostBattle_Movement_4:
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_right
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_right
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_right
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_right
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
-# 345 "data/maps/MulberryWoods/scripts.pory"
+# 346 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_GruntPostBattle_Movement_5:
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_up
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_up
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_up
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_up
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_up
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_in_place_left
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	delay_16
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	delay_16
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	delay_16
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_left
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_left
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_left
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_up
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_left
-# 355 "data/maps/MulberryWoods/scripts.pory"
+# 356 "data/maps/MulberryWoods/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 359 "data/maps/MulberryWoods/scripts.pory"
+# 360 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_GruntPostBattle_Movement_6:
-# 359 "data/maps/MulberryWoods/scripts.pory"
+# 360 "data/maps/MulberryWoods/scripts.pory"
 	walk_left
 	step_end
 
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_GruntPostBattle_Movement_7:
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_right
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_right
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_right
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_right
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
-# 371 "data/maps/MulberryWoods/scripts.pory"
+# 372 "data/maps/MulberryWoods/scripts.pory"
 	walk_down
 	step_end
 
-# 404 "data/maps/MulberryWoods/scripts.pory"
+# 407 "data/maps/MulberryWoods/scripts.pory"
 MulberryWoods_EventScript_GoOtherWay_Movement_0:
-# 404 "data/maps/MulberryWoods/scripts.pory"
+# 407 "data/maps/MulberryWoods/scripts.pory"
 	walk_right
 	step_end
 
@@ -1530,24 +1538,24 @@ MulberryWoods_EventScript_GruntEncounter_Text_5:
 	.string "your party!$"
 
 MulberryWoods_EventScript_ScarlettText1::
-# 439 "data/maps/MulberryWoods/scripts.pory"
+# 442 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oh, {PLAYER}. There you are!\n"
 	.string "Took you long enough!$"
 
 MulberryWoods_EventScript_ScarlettText2::
-# 444 "data/maps/MulberryWoods/scripts.pory"
+# 447 "data/maps/MulberryWoods/scripts.pory"
 	.string "Alright, so. Here's the plan.\p"
 	.string "Whoever stole those Pokémon couldn't\n"
 	.string "have gotten very far.$"
 
 MulberryWoods_EventScript_ScarlettText3::
-# 451 "data/maps/MulberryWoods/scripts.pory"
+# 454 "data/maps/MulberryWoods/scripts.pory"
 	.string "I'll check this side of the woods, and\n"
 	.string "ask the trainers here if they saw\l"
 	.string "anyone suspicious run by.$"
 
 MulberryWoods_EventScript_ScarlettText4::
-# 457 "data/maps/MulberryWoods/scripts.pory"
+# 460 "data/maps/MulberryWoods/scripts.pory"
 	.string "Meanwhile, you'll cover this side of the\n"
 	.string "woods.\p"
 	.string "If you run into the thief, then...{PAUSE 80}\n"
@@ -1564,15 +1572,16 @@ MulberryWoods_EventScript_ScarlettText4::
 	.string "a better plan!\p"
 	.string "Listen, I know you'll be fine.\n"
 	.string "I know we've only just met, but...\p"
-	.string "You seem like the kind of person who\n"
-	.string "can handle themselves in any situation.\p"
+	.string "I get the feeling you're the kind of\n"
+	.string "person who can handle themselves\l"
+	.string "no matter what.\p"
 	.string "So... I know that things will turn out\n"
 	.string "just fine.\p"
 	.string "...Okay?{PAUSE 72} Okay!\p"
 	.string "Let's go thief hunting!$"
 
 MulberryWoods_EventScript_GruntPreBattle1::
-# 493 "data/maps/MulberryWoods/scripts.pory"
+# 497 "data/maps/MulberryWoods/scripts.pory"
 	.string "Whew, alright!\n"
 	.string "I think I shook those people off.\p"
 	.string "Man, hiding in those bushes is such a\n"
@@ -1581,7 +1590,7 @@ MulberryWoods_EventScript_GruntPreBattle1::
 	.string "package to the boss fast...$"
 
 MulberryWoods_EventScript_GruntPreBattle2::
-# 504 "data/maps/MulberryWoods/scripts.pory"
+# 508 "data/maps/MulberryWoods/scripts.pory"
 	.string "You there!\n"
 	.string "Those Pokémon belong to me!\l"
 	.string "I stole them fair and square.\p"
@@ -1589,13 +1598,13 @@ MulberryWoods_EventScript_GruntPreBattle2::
 	.string "them back!$"
 
 MulberryWoods_EventScript_GruntPreBattle3::
-# 513 "data/maps/MulberryWoods/scripts.pory"
+# 517 "data/maps/MulberryWoods/scripts.pory"
 	.string "Hey, don't try anything funny!\n"
 	.string "Look around, there's nowhere else\l"
 	.string "for you to run, you know!$"
 
 MulberryWoods_EventScript_GruntHandPackage::
-# 519 "data/maps/MulberryWoods/scripts.pory"
+# 523 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oh, you're one of the people looking for\n"
 	.string "this package, huh?\p"
 	.string "Well, that's too bad!\p"
@@ -1603,13 +1612,13 @@ MulberryWoods_EventScript_GruntHandPackage::
 	.string "crew now!$"
 
 MulberryWoods_EventScript_GruntConfused::
-# 529 "data/maps/MulberryWoods/scripts.pory"
+# 533 "data/maps/MulberryWoods/scripts.pory"
 	.string "... ... ...Huh?\p"
 	.string "W{PAUSE 60}-What was that supposed to be?\n"
 	.string "What was that noise you just made?!$"
 
 MulberryWoods_EventScript_GruntPreBattle4::
-# 536 "data/maps/MulberryWoods/scripts.pory"
+# 540 "data/maps/MulberryWoods/scripts.pory"
 	.string "L{PAUSE 60}-Look, I don't have time for this!\p"
 	.string "I've gotta get out of here and get this\n"
 	.string "package over to my boss.\p"
@@ -1617,14 +1626,14 @@ MulberryWoods_EventScript_GruntPreBattle4::
 	.string "let me get those Pokémon, or else I'll-$"
 
 MulberryWoods_EventScript_GruntPreBattle5::
-# 546 "data/maps/MulberryWoods/scripts.pory"
+# 550 "data/maps/MulberryWoods/scripts.pory"
 	.string "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...\p"
 	.string "... ... ... ...{PAUSE 90}What?\p"
 	.string "Did you-\n"
 	.string "Did you just...$"
 
 MulberryWoods_EventScript_GruntPreBattle6::
-# 555 "data/maps/MulberryWoods/scripts.pory"
+# 559 "data/maps/MulberryWoods/scripts.pory"
 	.string "Did you just take those Pokémon\n"
 	.string "WHILE I WAS TALKING TO YOU?!\p"
 	.string "Oh, that's it!\n"
@@ -1633,57 +1642,57 @@ MulberryWoods_EventScript_GruntPreBattle6::
 	.string "who mess with Team Alpha!$"
 
 MulberryWoods_Text_NoWay::
-# 566 "data/maps/MulberryWoods/scripts.pory"
+# 570 "data/maps/MulberryWoods/scripts.pory"
 	.string "N-no way! I lost?!\n"
 	.string "Why, you little...$"
 
 MulberryWoods_EventScript_GruntPostBattleLost::
-# 571 "data/maps/MulberryWoods/scripts.pory"
+# 575 "data/maps/MulberryWoods/scripts.pory"
 	.string "Heh... heheh...\n"
 	.string "I... I actually won?!\p"
 	.string "Ha! Well, you can keep those Pokémon!\n"
 	.string "They're clearly not worth my time!$"
 
 MulberryWoods_EventScript_GruntPostBattleText1::
-# 579 "data/maps/MulberryWoods/scripts.pory"
+# 583 "data/maps/MulberryWoods/scripts.pory"
 	.string "You've gotta be kidding me...\p"
 	.string "Fine, keep those Pokémon!\n"
 	.string "I didn't even like them anyway!$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett1::
-# 586 "data/maps/MulberryWoods/scripts.pory"
+# 590 "data/maps/MulberryWoods/scripts.pory"
 	.string "{PLAYER}! Are you okay?\n"
 	.string "I heard a lot of noise coming from\l"
 	.string "over here.\p"
 	.string "Don't worry, I'm on my way!$"
 
 MulberryWoods_EventScript_GruntPostBattleText2::
-# 594 "data/maps/MulberryWoods/scripts.pory"
+# 598 "data/maps/MulberryWoods/scripts.pory"
 	.string "Oh no!\n"
 	.string "I can't deal with another person\l"
 	.string "right now!$"
 
 MulberryWoods_EventScript_GruntPostBattleText3::
-# 600 "data/maps/MulberryWoods/scripts.pory"
+# 604 "data/maps/MulberryWoods/scripts.pory"
 	.string "Urgh, stealing this package has been\n"
 	.string "way too stressful!\p"
 	.string "Whatever, just take it!\n"
 	.string "I'm outta here!$"
 
 MulberryWoods_EventScript_GruntPostBattleText4::
-# 608 "data/maps/MulberryWoods/scripts.pory"
+# 612 "data/maps/MulberryWoods/scripts.pory"
 	.string "A{PAUSE 60}-Anyway, don't get cocky!\p"
 	.string "You may have won this time, but mark\n"
 	.string "my words...\p"
 	.string "You'll regret meddling with Team Alpha!$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett2::
-# 617 "data/maps/MulberryWoods/scripts.pory"
-	.string "Oof!{PAUSE 90} Hey!\n"
+# 621 "data/maps/MulberryWoods/scripts.pory"
+	.string "Oof!{PAUSE 90} Wh-{PAUSE 60}Hey!\n"
 	.string "Where do you think you're going?!$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett3::
-# 622 "data/maps/MulberryWoods/scripts.pory"
+# 626 "data/maps/MulberryWoods/scripts.pory"
 	.string "{PLAYER}! What happened?!\p"
 	.string "That... that was the thief, wasn't it?\n"
 	.string "What did they do? Are you hurt?\p"
@@ -1695,7 +1704,7 @@ MulberryWoods_EventScript_GruntPostBattleScarlett3::
 	.string "Then you can explain everything.$"
 
 MulberryWoods_EventScript_GruntPostBattleScarlett4::
-# 638 "data/maps/MulberryWoods/scripts.pory"
+# 642 "data/maps/MulberryWoods/scripts.pory"
 	.string "Huh... so that's what happened.\p"
 	.string "I'm sorry I wasn't there to help, but\n"
 	.string "you handled things really well on\l"
@@ -1710,32 +1719,32 @@ MulberryWoods_EventScript_GruntPostBattleScarlett4::
 	.string "Alright, see you there!$"
 
 MulberryWoods_EventScript_GruntPostBattleTagBreaks::
-# 658 "data/maps/MulberryWoods/scripts.pory"
+# 662 "data/maps/MulberryWoods/scripts.pory"
 	.string "(... ... ... ... ... ...{PAUSE 90}!)\p"
 	.string "(The tag Prof. Hawthorne gave you must\n"
 	.string "have fallen off during the battle...)$"
 
 MulberryWoods_EventScript_NormalGirlText::
-# 665 "data/maps/MulberryWoods/scripts.pory"
+# 669 "data/maps/MulberryWoods/scripts.pory"
 	.string "Hm? Oh no, I'm not a trainer.\p"
 	.string "But there are quite a few of them\n"
-	.string "between here and Bisque City, so you\l"
+	.string "between here and Almond City, so you\l"
 	.string "should make sure you're stocked up on\l"
 	.string "supplies.$"
 
 MulberryWoods_EventScript_PressBSignText::
-# 674 "data/maps/MulberryWoods/scripts.pory"
+# 678 "data/maps/MulberryWoods/scripts.pory"
 	.string "Trainer Tips!\p"
 	.string "When facing a wild Pokémon you don't\n"
 	.string "feel like fighting, press B to quickly\l"
 	.string "move your cursor to the “Run” option!$"
 
 MulberryWoods_EventScript_ExitSignText::
-# 682 "data/maps/MulberryWoods/scripts.pory"
+# 686 "data/maps/MulberryWoods/scripts.pory"
 	.string "Leaving Mulberry Woods\n"
-	.string "Bisque City Ahead$"
+	.string "Almond City Ahead$"
 
 MulberryWoods_EventScript_GoOtherWayText::
-# 687 "data/maps/MulberryWoods/scripts.pory"
+# 691 "data/maps/MulberryWoods/scripts.pory"
 	.string "(There are Pokémon trainers past here.\n"
 	.string "Best to go the other way for now.)$"
