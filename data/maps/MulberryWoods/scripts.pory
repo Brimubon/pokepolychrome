@@ -439,6 +439,12 @@ script MulberryWoods_EventScript_Michael {
     release
 }
 
+script MulberryWoods_EventScript_Willow {
+    trainerbattle_single(TRAINER_WILLOW, MulberryWoods_EventScript_WillowIntro, MulberryWoods_EventScript_WillowDefeated)
+    msgbox(MulberryWoods_EventScript_WillowPostBattle)
+    release
+}
+
 text MulberryWoods_EventScript_ScarlettText1 {
     "Oh, {PLAYER}. There you are!
      Took you long enough!"

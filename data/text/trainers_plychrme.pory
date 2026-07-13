@@ -48,7 +48,7 @@ text MulberryWoods_EventScript_LiraPostBattle {
 }
 
 text MulberryWoods_EventScript_TobyIntro {
-    "Eek! H{PAUSE 60}-Hey!
+    "Eek! H-Hey!
     Who's there?!"
 }
 
@@ -77,4 +77,21 @@ text MulberryWoods_EventScript_TobyPostBattle {
  text MulberryWoods_EventScript_MichaelPostBattle {
     "Huh? What's the item?
     Oh, I have no idea!"
+ }
+
+ text MulberryWoods_EventScript_WillowIntro {
+    "I've been waiting all day to catch
+    these Pok\emon!"
+ }
+
+ text MulberryWoods_EventScript_WillowDefeated {
+    "I thought my team was pretty good..."
+ }
+
+ text MulberryWoods_EventScript_WillowPostBattle {
+    "Did you know? Some Pok\emon only
+    come out at certain times of day.
+    
+    I think Hoothoot only come out
+    at night."
  }

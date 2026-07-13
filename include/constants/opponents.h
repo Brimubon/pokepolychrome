@@ -10,7 +10,7 @@
 #define TRAINER_LIRA          4
 #define TRAINER_TOBY          5
 #define TRAINER_MICHAEL       6
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
+#define TRAINER_WILLOW       7
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
 #define TRAINER_GABRIELLE_1                   9
 #define TRAINER_GRUNT_PETALBURG_WOODS        10

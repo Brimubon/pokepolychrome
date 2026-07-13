@@ -47,7 +47,7 @@ MulberryWoods_EventScript_LiraPostBattle::
 
 MulberryWoods_EventScript_TobyIntro::
 # 50 "data/text/trainers_plychrme.pory"
-	.string "Eek! H{PAUSE 60}-Hey!\n"
+	.string "Eek! H-Hey!\n"
 	.string "Who's there?!$"
 
 MulberryWoods_EventScript_TobyDefeated::
@@ -75,3 +75,19 @@ MulberryWoods_EventScript_MichaelPostBattle::
 # 77 "data/text/trainers_plychrme.pory"
 	.string "Huh? What's the item?\n"
 	.string "Oh, I have no idea!$"
+
+MulberryWoods_EventScript_WillowIntro::
+# 82 "data/text/trainers_plychrme.pory"
+	.string "I've been waiting all day to catch\n"
+	.string "these Pokémon!$"
+
+MulberryWoods_EventScript_WillowDefeated::
+# 87 "data/text/trainers_plychrme.pory"
+	.string "I thought my team was pretty good...$"
+
+MulberryWoods_EventScript_WillowPostBattle::
+# 91 "data/text/trainers_plychrme.pory"
+	.string "Did you know? Some Pokémon only\n"
+	.string "come out at certain times of day.\p"
+	.string "I think Hoothoot only come out\n"
+	.string "at night.$"

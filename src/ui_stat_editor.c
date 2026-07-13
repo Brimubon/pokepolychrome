@@ -632,15 +632,15 @@ static const struct MonPrintData StatPrintData[] =
 };
 
 static const u16 statsToPrintActual[] = {
-        MON_DATA_MAX_HP, MON_DATA_ATK, MON_DATA_DEF, MON_DATA_SPEED, MON_DATA_SPATK, MON_DATA_SPDEF,
+        MON_DATA_MAX_HP, MON_DATA_ATK, MON_DATA_DEF, MON_DATA_SPATK, MON_DATA_SPDEF, MON_DATA_SPEED,
 };
 
 static const u16 statsToPrintEVs[] = {
-        MON_DATA_HP_EV, MON_DATA_ATK_EV, MON_DATA_DEF_EV, MON_DATA_SPEED_EV, MON_DATA_SPATK_EV, MON_DATA_SPDEF_EV,
+        MON_DATA_HP_EV, MON_DATA_ATK_EV, MON_DATA_DEF_EV, MON_DATA_SPATK_EV, MON_DATA_SPDEF_EV, MON_DATA_SPEED_EV,
 };
 
 static const u16 statsToPrintIVs[] = {
-        MON_DATA_HP_IV, MON_DATA_ATK_IV, MON_DATA_DEF_IV, MON_DATA_SPEED_IV, MON_DATA_SPATK_IV, MON_DATA_SPDEF_IV,
+        MON_DATA_HP_IV, MON_DATA_ATK_IV, MON_DATA_DEF_IV, MON_DATA_SPATK_IV, MON_DATA_SPDEF_IV, MON_DATA_SPEED_IV,
 };
 
 
@@ -660,7 +660,7 @@ static const u8 sText_MenuSpeed[] = _("Speed");
 static const u8 sText_MenuTotal[] = _("Total");
 static const u8 sText_MenuStat[] = _("Stat");
 static const u8 sText_MenuActual[] = _("Actual");
-static const u8 sText_MenuEV[] = _("EVs");
+static const u8 sText_MenuEV[] = _("Pts");
 static const u8 sText_MenuIV[] = _("IV");
 static const u8 sText_MonLevel[]         = _("Lv.{CLEAR 1}{STR_VAR_1}");
 
